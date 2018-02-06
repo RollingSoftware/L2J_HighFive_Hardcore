@@ -23,6 +23,7 @@
 				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
 				<param targetType="ONE" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8201" levels="1" name="Major Arcana Robe Set - PvP">
@@ -49,6 +50,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8202" levels="1" name="Dynasty Breastplate - PvP">
@@ -1670,6 +1672,7 @@
 				<mul stat="pDef" val="1.0557" /> <!-- P. Def. +5.57% -->
 				<add stat="maxHp" val="531" /> <!-- Max HP by 531 -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8284" levels="1" name="Vesper Noble Heavy Armor Set">
@@ -1705,6 +1708,7 @@
 				<mul stat="regMp" val="1.05" /> <!-- MP Recovery Rate by 5% -->
 				<add stat="maxMp" val="347" /> <!-- Max MP by 347 -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8286" levels="1" name="Vesper Noble Light Armor Set">
@@ -1740,6 +1744,7 @@
 				<mul stat="regMp" val="1.0557" /> <!-- MP Recovery Rate by 5.57% -->
 				<sub stat="cancel" val="30" /> <!-- decreases the damage to be cancelled by magic by 30 -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8288" levels="1" name="Vesper Noble Robe Set">

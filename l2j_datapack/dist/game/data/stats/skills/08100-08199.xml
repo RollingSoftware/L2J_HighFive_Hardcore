@@ -1186,6 +1186,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8195" levels="1" name="Light Nightmarish Leather Armor Set - PvP">
@@ -1211,6 +1212,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8196" levels="1" name="Light Majestic Leather Armor Set - PvP">
@@ -1238,6 +1240,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8197" levels="1" name="Nightmare Robe Set - PvP">
@@ -1263,6 +1266,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8198" levels="1" name="Majestic Robe Set - PvP">
@@ -1288,6 +1292,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8199" levels="1" name="Heavy Imperial Crusader Breastplate Set - PvP">
@@ -1313,6 +1318,7 @@
 				<mul stat="pvpMagicalDef" val="1.05" />
 				<mul stat="pvpPhysSkillsDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 </list>
