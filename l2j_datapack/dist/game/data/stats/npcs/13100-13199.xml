@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="13100" level="55" type="L2Npc" name="Anakim">
+	<npc id="13100" level="85" originalLevel="55" type="L2Npc" name="Anakim">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
@@ -37,7 +37,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="13101" level="55" type="L2Npc" name="Venom">
+	<npc id="13101" level="85" originalLevel="55" type="L2Npc" name="Venom">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -74,7 +74,7 @@
 			<height normal="56" />
 		</collision>
 	</npc>
-	<npc id="13102" level="55" type="L2Npc" name="Gordon">
+	<npc id="13102" level="85" originalLevel="55" type="L2Npc" name="Gordon">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -110,7 +110,7 @@
 			<height normal="46.6" />
 		</collision>
 	</npc>
-	<npc id="13103" level="55" type="L2Npc" name="Ranku">
+	<npc id="13103" level="85" originalLevel="55" type="L2Npc" name="Ranku">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -147,7 +147,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="13104" level="55" type="L2Npc" name="Kiyachi">
+	<npc id="13104" level="85" originalLevel="55" type="L2Npc" name="Kiyachi">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -184,7 +184,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="13105" level="55" type="L2Npc" name="Demon Prince">
+	<npc id="13105" level="85" originalLevel="55" type="L2Npc" name="Demon Prince">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -221,7 +221,7 @@
 			<height normal="49" />
 		</collision>
 	</npc>
-	<npc id="13106" level="55" type="L2Npc" name="Heretic Male">
+	<npc id="13106" level="85" originalLevel="55" type="L2Npc" name="Heretic Male">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -258,7 +258,7 @@
 			<height normal="28.4" />
 		</collision>
 	</npc>
-	<npc id="13107" level="55" type="L2Npc" name="Heretic Female">
+	<npc id="13107" level="85" originalLevel="55" type="L2Npc" name="Heretic Female">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -295,7 +295,7 @@
 			<height normal="19.1" />
 		</collision>
 	</npc>
-	<npc id="13108" level="55" type="L2Npc" name="Veil Master">
+	<npc id="13108" level="85" originalLevel="55" type="L2Npc" name="Veil Master">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -332,7 +332,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="13109" level="55" type="L2Npc" name="Saber Tooth Tiger">
+	<npc id="13109" level="85" originalLevel="55" type="L2Npc" name="Saber Tooth Tiger">
 		<!-- Confirmed CT2.5 -->
 		<race>BEAST</race>
 		<sex>MALE</sex>
@@ -370,7 +370,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="13110" level="55" type="L2Npc" name="Ol Mahum">
+	<npc id="13110" level="85" originalLevel="55" type="L2Npc" name="Ol Mahum">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -408,7 +408,7 @@
 			<height normal="61" />
 		</collision>
 	</npc>
-	<npc id="13111" level="55" type="L2Npc" name="Doll Blader">
+	<npc id="13111" level="85" originalLevel="55" type="L2Npc" name="Doll Blader">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -445,7 +445,7 @@
 			<height normal="12" />
 		</collision>
 	</npc>
-	<npc id="13112" level="55" type="L2Npc" name="Divine Knight">
+	<npc id="13112" level="85" originalLevel="55" type="L2Npc" name="Divine Knight">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>MALE</sex>
@@ -482,7 +482,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="13113" level="55" type="L2Npc" name="Divine Warrior">
+	<npc id="13113" level="85" originalLevel="55" type="L2Npc" name="Divine Warrior">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>MALE</sex>
@@ -519,7 +519,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="13114" level="55" type="L2Npc" name="Divine Rogue">
+	<npc id="13114" level="85" originalLevel="55" type="L2Npc" name="Divine Rogue">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>MALE</sex>
@@ -556,7 +556,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="13115" level="55" type="L2Npc" name="Divine Healer">
+	<npc id="13115" level="85" originalLevel="55" type="L2Npc" name="Divine Healer">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
@@ -593,7 +593,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="13116" level="55" type="L2Npc" name="Divine Wizard">
+	<npc id="13116" level="85" originalLevel="55" type="L2Npc" name="Divine Wizard">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
@@ -630,7 +630,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="13117" level="55" type="L2Npc" name="Divine Enchanter">
+	<npc id="13117" level="85" originalLevel="55" type="L2Npc" name="Divine Enchanter">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
@@ -667,7 +667,7 @@
 			<height normal="18.25" />
 		</collision>
 	</npc>
-	<npc id="13118" level="55" type="L2Npc" name="Divine Summoner">
+	<npc id="13118" level="85" originalLevel="55" type="L2Npc" name="Divine Summoner">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
@@ -704,7 +704,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="13119" level="55" type="L2Npc" name="Dwarf Golem">
+	<npc id="13119" level="85" originalLevel="55" type="L2Npc" name="Dwarf Golem">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -741,7 +741,7 @@
 			<height normal="51.8" />
 		</collision>
 	</npc>
-	<npc id="13120" level="80" type="L2Npc" name="Giant rat">
+	<npc id="13120" level="85" originalLevel="80" type="L2Npc" name="Giant rat">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="event_animal" value="1" />
@@ -792,7 +792,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="13121" level="80" type="L2Npc" name="Giant rat">
+	<npc id="13121" level="85" originalLevel="80" type="L2Npc" name="Giant rat">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="event_animal" value="1" />
@@ -835,7 +835,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="13122" level="80" type="L2Npc" name="Giant rat">
+	<npc id="13122" level="85" originalLevel="80" type="L2Npc" name="Giant rat">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="event_animal" value="1" />
@@ -878,7 +878,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="13123" level="80" type="L2Npc" name="Super giant rat">
+	<npc id="13123" level="85" originalLevel="80" type="L2Npc" name="Super giant rat">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="event_animal" value="1" />
@@ -933,7 +933,7 @@
 			<height normal="33" />
 		</collision>
 	</npc>
-	<npc id="13124" level="80" type="L2Npc" name="Giant rat" title="Mr. Bashful">
+	<npc id="13124" level="85" originalLevel="80" type="L2Npc" name="Giant rat" title="Mr. Bashful">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="event_animal" value="1" />
@@ -987,7 +987,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="13125" level="64" type="L2Npc" name="Trap">
+	<npc id="13125" level="85" originalLevel="64" type="L2Npc" name="Trap">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="trap_skill_type" value="1" />
@@ -1028,7 +1028,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="13126" level="64" type="L2Npc" name="Trap">
+	<npc id="13126" level="85" originalLevel="64" type="L2Npc" name="Trap">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="trap_skill_type" value="1" />
@@ -1069,7 +1069,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="13127" level="68" type="L2Npc" name="Trap">
+	<npc id="13127" level="85" originalLevel="68" type="L2Npc" name="Trap">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="trap_skill_type" value="1" />
@@ -1110,7 +1110,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="13128" level="70" type="L2Merchant" name="Golem Trader">
+	<npc id="13128" level="85" originalLevel="70" type="L2Merchant" name="Golem Trader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1150,7 +1150,7 @@
 			<height normal="21.3" />
 		</collision>
 	</npc>
-	<npc id="13129" level="55" type="L2Npc" name="Teleporter">
+	<npc id="13129" level="85" originalLevel="55" type="L2Npc" name="Teleporter">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
@@ -1187,7 +1187,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="13130" level="55" type="L2Npc" name="Light Purple Maned Horse">
+	<npc id="13130" level="85" originalLevel="55" type="L2Npc" name="Light Purple Maned Horse">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>FEMALE</sex>
@@ -1224,7 +1224,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="13131" level="55" type="L2Npc" name="Grizzly Bear">
+	<npc id="13131" level="85" originalLevel="55" type="L2Npc" name="Grizzly Bear">
 		<!-- Confirmed CT2.5 -->
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
@@ -1262,7 +1262,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="13132" level="55" type="L2Npc" name="Timitran">
+	<npc id="13132" level="85" originalLevel="55" type="L2Npc" name="Timitran">
 		<!-- Confirmed CT2.5 -->
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
@@ -1300,7 +1300,7 @@
 			<height normal="90" />
 		</collision>
 	</npc>
-	<npc id="13133" level="55" type="L2Npc" name="Lava Golem">
+	<npc id="13133" level="85" originalLevel="55" type="L2Npc" name="Lava Golem">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1338,7 +1338,7 @@
 			<height normal="45" />
 		</collision>
 	</npc>
-	<npc id="13134" level="55" type="L2Npc" name="Yeti">
+	<npc id="13134" level="85" originalLevel="55" type="L2Npc" name="Yeti">
 		<!-- Confirmed CT2.5 -->
 		<race>GIANT</race>
 		<sex>MALE</sex>
@@ -1376,7 +1376,7 @@
 			<height normal="32" />
 		</collision>
 	</npc>
-	<npc id="13135" level="55" type="L2Npc" name="Pumpkin Ghost">
+	<npc id="13135" level="85" originalLevel="55" type="L2Npc" name="Pumpkin Ghost">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1413,7 +1413,7 @@
 			<height normal="18" />
 		</collision>
 	</npc>
-	<npc id="13136" level="55" type="L2Npc">
+	<npc id="13136" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1450,7 +1450,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="13137" level="55" type="L2Npc">
+	<npc id="13137" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1487,7 +1487,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="13138" level="55" type="L2Npc">
+	<npc id="13138" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1524,7 +1524,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="13139" level="55" type="L2Npc">
+	<npc id="13139" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1561,7 +1561,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="13140" level="55" type="L2Npc">
+	<npc id="13140" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1598,7 +1598,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="13141" level="55" type="L2Npc">
+	<npc id="13141" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1635,7 +1635,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="13142" level="55" type="L2Npc" name="Final Form">
+	<npc id="13142" level="85" originalLevel="55" type="L2Npc" name="Final Form">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -1672,7 +1672,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="13143" level="55" type="L2Npc" name="Final Form">
+	<npc id="13143" level="85" originalLevel="55" type="L2Npc" name="Final Form">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
@@ -1709,7 +1709,7 @@
 			<height normal="32.7" />
 		</collision>
 	</npc>
-	<npc id="13144" level="55" type="L2Npc" name="Aurabird-Falcon">
+	<npc id="13144" level="85" originalLevel="55" type="L2Npc" name="Aurabird-Falcon">
 		<!-- Confirmed CT2.5 -->
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
@@ -1745,7 +1745,7 @@
 			<height normal="14.25" />
 		</collision>
 	</npc>
-	<npc id="13145" level="55" type="L2Npc" name="Aurabird-Owl">
+	<npc id="13145" level="85" originalLevel="55" type="L2Npc" name="Aurabird-Owl">
 		<!-- Confirmed CT2.5 -->
 		<race>BEAST</race>
 		<sex>MALE</sex>
@@ -1781,7 +1781,7 @@
 			<height normal="19" />
 		</collision>
 	</npc>
-	<npc id="13146" level="55" type="L2Npc" name="Tawny-Maned Lion">
+	<npc id="13146" level="85" originalLevel="55" type="L2Npc" name="Tawny-Maned Lion">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>FEMALE</sex>
@@ -1818,7 +1818,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="13147" level="55" type="L2Npc" name="Steam Sledge">
+	<npc id="13147" level="85" originalLevel="55" type="L2Npc" name="Steam Sledge">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1855,7 +1855,7 @@
 			<height normal="27.5" />
 		</collision>
 	</npc>
-	<npc id="13148" level="55" type="L2Monster" name="Lindvior">
+	<npc id="13148" level="85" originalLevel="55" type="L2Monster" name="Lindvior">
 		<!-- Confirmed CT2.5 -->
 		<race>DRAGON</race>
 		<sex>FEMALE</sex>
@@ -1891,7 +1891,7 @@
 			<height normal="390.6" />
 		</collision>
 	</npc>
-	<npc id="13149" level="85" type="L2Npc" name="For Presentation 1">
+	<npc id="13149" level="85" originalLevel="85" type="L2Npc" name="For Presentation 1">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1934,7 +1934,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13150" level="85" type="L2Npc" name="For Presentation 2">
+	<npc id="13150" level="85" originalLevel="85" type="L2Npc" name="For Presentation 2">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1977,7 +1977,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13151" level="85" type="L2Npc" name="For Presentation 3">
+	<npc id="13151" level="85" originalLevel="85" type="L2Npc" name="For Presentation 3">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2020,7 +2020,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13152" level="85" type="L2Npc" name="For Presentation 4">
+	<npc id="13152" level="85" originalLevel="85" type="L2Npc" name="For Presentation 4">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2063,7 +2063,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13153" level="85" type="L2Npc" name="For Presentation 5">
+	<npc id="13153" level="85" originalLevel="85" type="L2Npc" name="For Presentation 5">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2106,7 +2106,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13154" level="55" type="L2Npc" name="Demon Race">
+	<npc id="13154" level="85" originalLevel="55" type="L2Npc" name="Demon Race">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -2143,7 +2143,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="13155" level="55" type="L2Npc" name="Unicorniun">
+	<npc id="13155" level="85" originalLevel="55" type="L2Npc" name="Unicorniun">
 		<!-- Confirmed CT2.5 -->
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
@@ -2180,7 +2180,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="13156" level="55" type="L2Npc" name="Myo Race">
+	<npc id="13156" level="85" originalLevel="55" type="L2Npc" name="Myo Race">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -2217,7 +2217,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="13157" level="55" type="L2Npc" name="Frog">
+	<npc id="13157" level="85" originalLevel="55" type="L2Npc" name="Frog">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -2254,7 +2254,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="13158" level="55" type="L2Npc" name="Young Child">
+	<npc id="13158" level="85" originalLevel="55" type="L2Npc" name="Young Child">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -2290,7 +2290,7 @@
 			<height normal="12.3" />
 		</collision>
 	</npc>
-	<npc id="13159" level="55" type="L2Npc" name="Mercenary">
+	<npc id="13159" level="85" originalLevel="55" type="L2Npc" name="Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>MERCENARY</race>
 		<sex>MALE</sex>
@@ -2326,7 +2326,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="13160" level="55" type="L2Npc" name="Snowman">
+	<npc id="13160" level="85" originalLevel="55" type="L2Npc" name="Snowman">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -2362,7 +2362,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="13161" level="55" type="L2Npc" name="Scarecrow">
+	<npc id="13161" level="85" originalLevel="55" type="L2Npc" name="Scarecrow">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -2398,7 +2398,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="13162" level="55" type="L2Npc" name="Tin Plate Golem">
+	<npc id="13162" level="85" originalLevel="55" type="L2Npc" name="Tin Plate Golem">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -2434,7 +2434,7 @@
 			<height normal="18.5" />
 		</collision>
 	</npc>
-	<npc id="13163" level="55" type="L2Npc" name="Tow">
+	<npc id="13163" level="85" originalLevel="55" type="L2Npc" name="Tow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -2470,7 +2470,7 @@
 			<height normal="8.25" />
 		</collision>
 	</npc>
-	<npc id="13164" level="55" type="L2Npc" name="Lure Tow">
+	<npc id="13164" level="85" originalLevel="55" type="L2Npc" name="Lure Tow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>FEMALE</sex>
@@ -2506,7 +2506,7 @@
 			<height normal="8.25" />
 		</collision>
 	</npc>
-	<npc id="13165" level="55" type="L2Npc" name="Heavy Tow">
+	<npc id="13165" level="85" originalLevel="55" type="L2Npc" name="Heavy Tow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -2542,7 +2542,7 @@
 			<height normal="8.25" />
 		</collision>
 	</npc>
-	<npc id="13166" level="55" type="L2Npc" name="Wing Tow">
+	<npc id="13166" level="85" originalLevel="55" type="L2Npc" name="Wing Tow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -2578,7 +2578,7 @@
 			<height normal="8.25" />
 		</collision>
 	</npc>
-	<npc id="13167" level="55" type="L2Npc" name="Main Role A">
+	<npc id="13167" level="85" originalLevel="55" type="L2Npc" name="Main Role A">
 		<!-- Confirmed CT2.5 -->
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
@@ -2614,7 +2614,7 @@
 			<height normal="28.3" />
 		</collision>
 	</npc>
-	<npc id="13168" level="55" type="L2Npc" name="Main Role B">
+	<npc id="13168" level="85" originalLevel="55" type="L2Npc" name="Main Role B">
 		<!-- Confirmed CT2.5 -->
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
@@ -2650,7 +2650,7 @@
 			<height normal="28.3" />
 		</collision>
 	</npc>
-	<npc id="13169" level="55" type="L2Npc" name="Human Male Mercenary">
+	<npc id="13169" level="85" originalLevel="55" type="L2Npc" name="Human Male Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -2686,7 +2686,7 @@
 			<height normal="24" />
 		</collision>
 	</npc>
-	<npc id="13170" level="55" type="L2Npc" name="Male Elf Mercenary">
+	<npc id="13170" level="85" originalLevel="55" type="L2Npc" name="Male Elf Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>ELF</race>
 		<sex>MALE</sex>
@@ -2722,7 +2722,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="13171" level="55" type="L2Npc" name="Dark Elf Female Mercenary">
+	<npc id="13171" level="85" originalLevel="55" type="L2Npc" name="Dark Elf Female Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>DARK_ELF</race>
 		<sex>FEMALE</sex>
@@ -2758,7 +2758,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="13172" level="55" type="L2Npc" name="Orc Male Mercenary">
+	<npc id="13172" level="85" originalLevel="55" type="L2Npc" name="Orc Male Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>ORC</race>
 		<sex>MALE</sex>
@@ -2794,7 +2794,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="13173" level="55" type="L2Npc" name="Dwarf Male Mercenary">
+	<npc id="13173" level="85" originalLevel="55" type="L2Npc" name="Dwarf Male Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>DWARF</race>
 		<sex>MALE</sex>
@@ -2830,7 +2830,7 @@
 			<height normal="19" />
 		</collision>
 	</npc>
-	<npc id="13174" level="55" type="L2Npc" name="Kamael Male Mercenary">
+	<npc id="13174" level="85" originalLevel="55" type="L2Npc" name="Kamael Male Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>KAMAEL</race>
 		<sex>MALE</sex>
@@ -2867,7 +2867,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="13175" level="55" type="L2Npc" name="Knight Level Mercenary">
+	<npc id="13175" level="85" originalLevel="55" type="L2Npc" name="Knight Level Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -2903,7 +2903,7 @@
 			<height normal="24" />
 		</collision>
 	</npc>
-	<npc id="13176" level="55" type="L2Npc" name="Archer Level Mercenary">
+	<npc id="13176" level="85" originalLevel="55" type="L2Npc" name="Archer Level Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>ELF</race>
 		<sex>MALE</sex>
@@ -2940,7 +2940,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="13177" level="55" type="L2Npc" name="Wizard Level Mercenary">
+	<npc id="13177" level="85" originalLevel="55" type="L2Npc" name="Wizard Level Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
@@ -2976,7 +2976,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="13178" level="55" type="L2Npc" name="Trooper Level Mercenary">
+	<npc id="13178" level="85" originalLevel="55" type="L2Npc" name="Trooper Level Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>KAMAEL</race>
 		<sex>FEMALE</sex>
@@ -3013,7 +3013,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="13179" level="55" type="L2Npc" name="Knight Leader Elite Mercenary">
+	<npc id="13179" level="85" originalLevel="55" type="L2Npc" name="Knight Leader Elite Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -3049,7 +3049,7 @@
 			<height normal="24.5" />
 		</collision>
 	</npc>
-	<npc id="13180" level="55" type="L2Npc" name="Commander Elite Mercenary">
+	<npc id="13180" level="85" originalLevel="55" type="L2Npc" name="Commander Elite Mercenary">
 		<!-- Confirmed CT2.5 -->
 		<race>DARK_ELF</race>
 		<sex>MALE</sex>
@@ -3085,7 +3085,7 @@
 			<height normal="26.985" />
 		</collision>
 	</npc>
-	<npc id="13181" level="80" type="L2Chest" name="Treasure Chest" title="Gracia">
+	<npc id="13181" level="85" originalLevel="80" type="L2Chest" name="Treasure Chest" title="Gracia">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -3122,7 +3122,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="13182" level="70" type="L2Npc" name="Free Gift Merchant" title="Gracia">
+	<npc id="13182" level="85" originalLevel="70" type="L2Npc" name="Free Gift Merchant" title="Gracia">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="30" />
@@ -3164,7 +3164,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="13183" level="80" type="L2Npc" name="Thomas D. Turkey">
+	<npc id="13183" level="85" originalLevel="80" type="L2Npc" name="Thomas D. Turkey">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>FEMALE</sex>
@@ -3200,7 +3200,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="13184" level="80" type="L2Npc" name="Santa Claus">
+	<npc id="13184" level="85" originalLevel="80" type="L2Npc" name="Santa Claus">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -3236,7 +3236,7 @@
 			<height normal="21" />
 		</collision>
 	</npc>
-	<npc id="13185" level="80" type="L2Npc" name="Santa Claus">
+	<npc id="13185" level="85" originalLevel="80" type="L2Npc" name="Santa Claus">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -3272,7 +3272,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="13186" level="80" type="L2Npc" name="Santa Claus">
+	<npc id="13186" level="85" originalLevel="80" type="L2Npc" name="Santa Claus">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
@@ -3307,7 +3307,7 @@
 			<height normal="50" />
 		</collision>
 	</npc>
-	<npc id="13187" level="85" type="L2Npc" name="Milk Cow">
+	<npc id="13187" level="85" originalLevel="85" type="L2Npc" name="Milk Cow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3343,7 +3343,7 @@
 			<height normal="12.5" />
 		</collision>
 	</npc>
-	<npc id="13188" level="85" type="L2Npc" name="Head Milk Cow">
+	<npc id="13188" level="85" originalLevel="85" type="L2Npc" name="Head Milk Cow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3379,7 +3379,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="13189" level="85" type="L2Npc" name="Bull">
+	<npc id="13189" level="85" originalLevel="85" type="L2Npc" name="Bull">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3415,7 +3415,7 @@
 			<height normal="12.5" />
 		</collision>
 	</npc>
-	<npc id="13190" level="85" type="L2Npc" name="Head Bull">
+	<npc id="13190" level="85" originalLevel="85" type="L2Npc" name="Head Bull">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3451,7 +3451,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="13191" level="85" type="L2Npc" name="Gloomy Milk Cow">
+	<npc id="13191" level="85" originalLevel="85" type="L2Npc" name="Gloomy Milk Cow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3487,7 +3487,7 @@
 			<height normal="12.5" />
 		</collision>
 	</npc>
-	<npc id="13192" level="85" type="L2Npc" name="Gloomy Head Milk Cow">
+	<npc id="13192" level="85" originalLevel="85" type="L2Npc" name="Gloomy Head Milk Cow">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3523,7 +3523,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="13193" level="55" type="L2Npc">
+	<npc id="13193" level="85" originalLevel="55" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -3560,7 +3560,7 @@
 			<height normal="177.5" />
 		</collision>
 	</npc>
-	<npc id="13194" level="85" type="L2Npc">
+	<npc id="13194" level="85" originalLevel="85" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -3596,7 +3596,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13195" level="85" type="L2Npc">
+	<npc id="13195" level="85" originalLevel="85" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -3632,7 +3632,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="13196" level="85" type="L2Monster" name="Huge Pig" title="Mis-summoned">
+	<npc id="13196" level="85" originalLevel="85" type="L2Monster" name="Huge Pig" title="Mis-summoned">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -3668,7 +3668,7 @@
 			<height normal="18.3" />
 		</collision>
 	</npc>
-	<npc id="13197" level="55" type="L2Npc" name="Guardian's Strider">
+	<npc id="13197" level="85" originalLevel="55" type="L2Npc" name="Guardian's Strider">
 		<!-- Confirmed CT2.5 -->
 		<race>ETC</race>
 		<sex>ETC</sex>
@@ -3703,7 +3703,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="13198" level="55" type="L2Npc" name="Native">
+	<npc id="13198" level="85" originalLevel="55" type="L2Npc" name="Native">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -3738,7 +3738,7 @@
 			<height normal="24" />
 		</collision>
 	</npc>
-	<npc id="13199" level="79" type="L2Npc" name="Native">
+	<npc id="13199" level="85" originalLevel="79" type="L2Npc" name="Native">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>

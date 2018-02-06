@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="21800" level="77" type="L2Monster" name="Vassal Ghost">
+	<npc id="21800" level="85" originalLevel="77" type="L2Monster" name="Vassal Ghost">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -83,7 +83,7 @@
 			<height normal="21" />
 		</collision>
 	</npc>
-	<npc id="21801" level="21" type="L2Chest" name="Treasure Chest">
+	<npc id="21801" level="85" originalLevel="21" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -144,7 +144,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21802" level="24" type="L2Chest" name="Treasure Chest">
+	<npc id="21802" level="85" originalLevel="24" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -204,7 +204,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21803" level="27" type="L2Chest" name="Treasure Chest">
+	<npc id="21803" level="85" originalLevel="27" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -267,7 +267,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21804" level="30" type="L2Chest" name="Treasure Chest">
+	<npc id="21804" level="85" originalLevel="30" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -327,7 +327,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21805" level="33" type="L2Chest" name="Treasure Chest">
+	<npc id="21805" level="85" originalLevel="33" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -393,7 +393,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21806" level="36" type="L2Chest" name="Treasure Chest">
+	<npc id="21806" level="85" originalLevel="36" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -454,7 +454,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21807" level="39" type="L2Chest" name="Treasure Chest">
+	<npc id="21807" level="85" originalLevel="39" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -528,7 +528,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21808" level="42" type="L2Chest" name="Treasure Chest">
+	<npc id="21808" level="85" originalLevel="42" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -592,7 +592,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21809" level="45" type="L2Chest" name="Treasure Chest">
+	<npc id="21809" level="85" originalLevel="45" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -674,7 +674,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21810" level="48" type="L2Chest" name="Treasure Chest">
+	<npc id="21810" level="85" originalLevel="48" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -744,7 +744,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21811" level="51" type="L2Chest" name="Treasure Chest">
+	<npc id="21811" level="85" originalLevel="51" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -812,7 +812,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21812" level="54" type="L2Chest" name="Treasure Chest">
+	<npc id="21812" level="85" originalLevel="54" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -880,7 +880,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21813" level="57" type="L2Chest" name="Treasure Chest">
+	<npc id="21813" level="85" originalLevel="57" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -952,7 +952,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21814" level="60" type="L2Chest" name="Treasure Chest">
+	<npc id="21814" level="85" originalLevel="60" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1024,7 +1024,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21815" level="63" type="L2Chest" name="Treasure Chest">
+	<npc id="21815" level="85" originalLevel="63" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1096,7 +1096,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21816" level="66" type="L2Chest" name="Treasure Chest">
+	<npc id="21816" level="85" originalLevel="66" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1166,7 +1166,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21817" level="69" type="L2Chest" name="Treasure Chest">
+	<npc id="21817" level="85" originalLevel="69" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1238,7 +1238,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21818" level="72" type="L2Chest" name="Treasure Chest">
+	<npc id="21818" level="85" originalLevel="72" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1309,7 +1309,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21819" level="75" type="L2Chest" name="Treasure Chest">
+	<npc id="21819" level="85" originalLevel="75" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1382,7 +1382,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21820" level="78" type="L2Chest" name="Treasure Chest">
+	<npc id="21820" level="85" originalLevel="78" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1453,7 +1453,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21821" level="78" type="L2Chest" name="Treasure Chest">
+	<npc id="21821" level="85" originalLevel="78" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1524,7 +1524,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21822" level="80" type="L2Chest" name="Treasure Chest">
+	<npc id="21822" level="85" originalLevel="80" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1593,7 +1593,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21823" level="78" type="L2Monster" name="Executor of Offerings">
+	<npc id="21823" level="85" originalLevel="78" type="L2Monster" name="Executor of Offerings">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -1677,7 +1677,7 @@
 			<height normal="30" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21824" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21824" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -1770,7 +1770,7 @@
 			<height normal="33" grown="40" />
 		</collision>
 	</npc>
-	<npc id="21825" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21825" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -1864,7 +1864,7 @@
 			<height normal="33" grown="40" />
 		</collision>
 	</npc>
-	<npc id="21826" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21826" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -1954,7 +1954,7 @@
 			<height normal="31" grown="38" />
 		</collision>
 	</npc>
-	<npc id="21827" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21827" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -2048,7 +2048,7 @@
 			<height normal="31" grown="38" />
 		</collision>
 	</npc>
-	<npc id="21828" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21828" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -2140,7 +2140,7 @@
 			<height normal="28" grown="34" />
 		</collision>
 	</npc>
-	<npc id="21829" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21829" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />

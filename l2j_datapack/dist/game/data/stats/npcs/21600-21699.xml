@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="21600" level="70" type="L2Monster" name="Requiem Behemoth">
+	<npc id="21600" level="85" originalLevel="70" type="L2Monster" name="Requiem Behemoth">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -93,7 +93,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="21601" level="70" type="L2Monster" name="Requiem Behemoth">
+	<npc id="21601" level="85" originalLevel="70" type="L2Monster" name="Requiem Behemoth">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -187,7 +187,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="21602" level="43" type="L2Monster" name="Zaken's Pikeman">
+	<npc id="21602" level="85" originalLevel="43" type="L2Monster" name="Zaken's Pikeman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -281,7 +281,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21603" level="43" type="L2Monster" name="Zaken's Pikeman">
+	<npc id="21603" level="85" originalLevel="43" type="L2Monster" name="Zaken's Pikeman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -375,7 +375,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21604" level="43" type="L2Monster" name="Zaken's Elite Pikeman">
+	<npc id="21604" level="85" originalLevel="43" type="L2Monster" name="Zaken's Elite Pikeman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -457,7 +457,7 @@
 			<height normal="33.6" />
 		</collision>
 	</npc>
-	<npc id="21605" level="44" type="L2Monster" name="Zaken's Archer">
+	<npc id="21605" level="85" originalLevel="44" type="L2Monster" name="Zaken's Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -544,7 +544,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="21606" level="44" type="L2Monster" name="Zaken's Archer">
+	<npc id="21606" level="85" originalLevel="44" type="L2Monster" name="Zaken's Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -631,7 +631,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="21607" level="44" type="L2Monster" name="Zaken's Elite Archer">
+	<npc id="21607" level="85" originalLevel="44" type="L2Monster" name="Zaken's Elite Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -717,7 +717,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="21608" level="45" type="L2Monster" name="Zaken's Watchman">
+	<npc id="21608" level="85" originalLevel="45" type="L2Monster" name="Zaken's Watchman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="57" />
@@ -808,7 +808,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="21609" level="45" type="L2Monster" name="Zaken's Watchman">
+	<npc id="21609" level="85" originalLevel="45" type="L2Monster" name="Zaken's Watchman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="57" />
@@ -899,7 +899,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="21610" level="45" type="L2Monster" name="Zaken's High Grade Watchman">
+	<npc id="21610" level="85" originalLevel="45" type="L2Monster" name="Zaken's High Grade Watchman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="57" />
@@ -984,7 +984,7 @@
 			<height normal="33.6" />
 		</collision>
 	</npc>
-	<npc id="21611" level="46" type="L2Monster" name="Unpleasant Humming">
+	<npc id="21611" level="85" originalLevel="46" type="L2Monster" name="Unpleasant Humming">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1077,7 +1077,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21612" level="46" type="L2Monster" name="Unpleasant Humming">
+	<npc id="21612" level="85" originalLevel="46" type="L2Monster" name="Unpleasant Humming">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1170,7 +1170,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21613" level="46" type="L2Monster" name="Unpleasant Shout">
+	<npc id="21613" level="85" originalLevel="46" type="L2Monster" name="Unpleasant Shout">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1257,7 +1257,7 @@
 			<height normal="31.2" />
 		</collision>
 	</npc>
-	<npc id="21614" level="47" type="L2Monster" name="Death Flyer">
+	<npc id="21614" level="85" originalLevel="47" type="L2Monster" name="Death Flyer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -1348,7 +1348,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21615" level="47" type="L2Monster" name="Death Flyer">
+	<npc id="21615" level="85" originalLevel="47" type="L2Monster" name="Death Flyer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -1439,7 +1439,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21616" level="47" type="L2Monster" name="Gigantic Flyer">
+	<npc id="21616" level="85" originalLevel="47" type="L2Monster" name="Gigantic Flyer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -1529,7 +1529,7 @@
 			<height normal="42" />
 		</collision>
 	</npc>
-	<npc id="21617" level="48" type="L2Monster" name="Fiend Archer">
+	<npc id="21617" level="85" originalLevel="48" type="L2Monster" name="Fiend Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="108" />
@@ -1618,7 +1618,7 @@
 			<height normal="55" />
 		</collision>
 	</npc>
-	<npc id="21618" level="48" type="L2Monster" name="Fiend Archer">
+	<npc id="21618" level="85" originalLevel="48" type="L2Monster" name="Fiend Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="108" />
@@ -1707,7 +1707,7 @@
 			<height normal="55" />
 		</collision>
 	</npc>
-	<npc id="21619" level="48" type="L2Monster" name="Pit Archer">
+	<npc id="21619" level="85" originalLevel="48" type="L2Monster" name="Pit Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="108" />
@@ -1792,7 +1792,7 @@
 			<height normal="66" />
 		</collision>
 	</npc>
-	<npc id="21620" level="49" type="L2Monster" name="Musveren">
+	<npc id="21620" level="85" originalLevel="49" type="L2Monster" name="Musveren">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="40" />
@@ -1884,7 +1884,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="21621" level="49" type="L2Monster" name="Musveren">
+	<npc id="21621" level="85" originalLevel="49" type="L2Monster" name="Musveren">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="40" />
@@ -1976,7 +1976,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="21622" level="49" type="L2Monster" name="Greater Musveren">
+	<npc id="21622" level="85" originalLevel="49" type="L2Monster" name="Greater Musveren">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="40" />
@@ -2067,7 +2067,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="21623" level="50" type="L2Monster" name="Zaken's Guard">
+	<npc id="21623" level="85" originalLevel="50" type="L2Monster" name="Zaken's Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2159,7 +2159,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="21624" level="50" type="L2Monster" name="Zaken's Guard">
+	<npc id="21624" level="85" originalLevel="50" type="L2Monster" name="Zaken's Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2251,7 +2251,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="21625" level="50" type="L2Monster" name="Zaken's Elite Guard">
+	<npc id="21625" level="85" originalLevel="50" type="L2Monster" name="Zaken's Elite Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2311,7 +2311,7 @@
 			<height normal="34.5" />
 		</collision>
 	</npc>
-	<npc id="21626" level="51" type="L2Monster" name="Kaim Vanul">
+	<npc id="21626" level="85" originalLevel="51" type="L2Monster" name="Kaim Vanul">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="108" />
@@ -2405,7 +2405,7 @@
 			<height normal="40" grown="48" />
 		</collision>
 	</npc>
-	<npc id="21627" level="51" type="L2Monster" name="Kaim Vanul">
+	<npc id="21627" level="85" originalLevel="51" type="L2Monster" name="Kaim Vanul">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="108" />
@@ -2499,7 +2499,7 @@
 			<height normal="40" grown="48" />
 		</collision>
 	</npc>
-	<npc id="21628" level="51" type="L2Monster" name="Kaim Vanul Lad">
+	<npc id="21628" level="85" originalLevel="51" type="L2Monster" name="Kaim Vanul Lad">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="108" />
@@ -2600,7 +2600,7 @@
 			<height normal="48" />
 		</collision>
 	</npc>
-	<npc id="21629" level="52" type="L2Monster" name="Pirate Zombie Captain">
+	<npc id="21629" level="85" originalLevel="52" type="L2Monster" name="Pirate Zombie Captain">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -2701,7 +2701,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="21630" level="52" type="L2Monster" name="Pirate Zombie Captain">
+	<npc id="21630" level="85" originalLevel="52" type="L2Monster" name="Pirate Zombie Captain">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -2802,7 +2802,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="21631" level="52" type="L2Monster" name="Zombie Captain's Spiritual Body">
+	<npc id="21631" level="85" originalLevel="52" type="L2Monster" name="Zombie Captain's Spiritual Body">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -2894,7 +2894,7 @@
 			<height normal="33.6" />
 		</collision>
 	</npc>
-	<npc id="21632" level="53" type="L2Monster" name="Doll Blader">
+	<npc id="21632" level="85" originalLevel="53" type="L2Monster" name="Doll Blader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="50" />
@@ -2991,7 +2991,7 @@
 			<height normal="12" />
 		</collision>
 	</npc>
-	<npc id="21633" level="53" type="L2Monster" name="Doll Blader">
+	<npc id="21633" level="85" originalLevel="53" type="L2Monster" name="Doll Blader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="50" />
@@ -3088,7 +3088,7 @@
 			<height normal="12" />
 		</collision>
 	</npc>
-	<npc id="21634" level="53" type="L2Monster" name="Crimson Doll Blader">
+	<npc id="21634" level="85" originalLevel="53" type="L2Monster" name="Crimson Doll Blader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="50" />
@@ -3179,7 +3179,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21635" level="54" type="L2Monster" name="Veil Master">
+	<npc id="21635" level="85" originalLevel="54" type="L2Monster" name="Veil Master">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="114" />
@@ -3287,7 +3287,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="21636" level="54" type="L2Monster" name="Veil Master">
+	<npc id="21636" level="85" originalLevel="54" type="L2Monster" name="Veil Master">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="114" />
@@ -3395,7 +3395,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="21637" level="54" type="L2Monster" name="Crimson Veil Master">
+	<npc id="21637" level="85" originalLevel="54" type="L2Monster" name="Crimson Veil Master">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="114" />
@@ -3490,7 +3490,7 @@
 			<height normal="48" />
 		</collision>
 	</npc>
-	<npc id="21638" level="35" type="L2Monster" name="Dread Wolf">
+	<npc id="21638" level="85" originalLevel="35" type="L2Monster" name="Dread Wolf">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="60" />
@@ -3598,7 +3598,7 @@
 			<height normal="11" />
 		</collision>
 	</npc>
-	<npc id="21639" level="36" type="L2Monster" name="Tasaba Lizardman">
+	<npc id="21639" level="85" originalLevel="36" type="L2Monster" name="Tasaba Lizardman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="139" />
@@ -3715,7 +3715,7 @@
 			<height normal="22" grown="27" />
 		</collision>
 	</npc>
-	<npc id="21640" level="37" type="L2Monster" name="Tasaba Lizardman Shaman">
+	<npc id="21640" level="85" originalLevel="37" type="L2Monster" name="Tasaba Lizardman Shaman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="75" />
@@ -3807,7 +3807,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="21641" level="38" type="L2Monster" name="Ogre">
+	<npc id="21641" level="85" originalLevel="38" type="L2Monster" name="Ogre">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="62" />
@@ -3935,7 +3935,7 @@
 			<height normal="44" grown="52.5" />
 		</collision>
 	</npc>
-	<npc id="21642" level="39" type="L2Monster" name="Tasaba Lizardman Sniper">
+	<npc id="21642" level="85" originalLevel="39" type="L2Monster" name="Tasaba Lizardman Sniper">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="139" />
@@ -4046,7 +4046,7 @@
 			<height normal="22" grown="27" />
 		</collision>
 	</npc>
-	<npc id="21643" level="39" type="L2Monster" name="Tasaba Lizardman Sniper">
+	<npc id="21643" level="85" originalLevel="39" type="L2Monster" name="Tasaba Lizardman Sniper">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="139" />
@@ -4161,7 +4161,7 @@
 			<height normal="22" grown="27" />
 		</collision>
 	</npc>
-	<npc id="21644" level="39" type="L2Monster" name="Lienrik">
+	<npc id="21644" level="85" originalLevel="39" type="L2Monster" name="Lienrik">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -4275,7 +4275,7 @@
 			<height normal="50" />
 		</collision>
 	</npc>
-	<npc id="21645" level="40" type="L2Monster" name="Lienrik Lad">
+	<npc id="21645" level="85" originalLevel="40" type="L2Monster" name="Lienrik Lad">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -4395,7 +4395,7 @@
 			<height normal="50" />
 		</collision>
 	</npc>
-	<npc id="21646" level="73" type="L2Monster" name="Grave Scarab">
+	<npc id="21646" level="85" originalLevel="73" type="L2Monster" name="Grave Scarab">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -4510,7 +4510,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21647" level="73" type="L2Monster" name="Scavenger Scarab">
+	<npc id="21647" level="85" originalLevel="73" type="L2Monster" name="Scavenger Scarab">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -4628,7 +4628,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21648" level="74" type="L2Monster" name="Grave Ant">
+	<npc id="21648" level="85" originalLevel="74" type="L2Monster" name="Grave Ant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -4743,7 +4743,7 @@
 			<height normal="17" grown="21" />
 		</collision>
 	</npc>
-	<npc id="21649" level="74" type="L2Monster" name="Scavenger Ant">
+	<npc id="21649" level="85" originalLevel="74" type="L2Monster" name="Scavenger Ant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -4860,7 +4860,7 @@
 			<height normal="17" grown="21" />
 		</collision>
 	</npc>
-	<npc id="21650" level="75" type="L2Monster" name="Shrine Knight">
+	<npc id="21650" level="85" originalLevel="75" type="L2Monster" name="Shrine Knight">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -4980,7 +4980,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21651" level="75" type="L2Monster" name="Shrine Guard">
+	<npc id="21651" level="85" originalLevel="75" type="L2Monster" name="Shrine Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -5098,7 +5098,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21652" level="78" type="L2Monster" name="Scarlet Stakato Noble">
+	<npc id="21652" level="85" originalLevel="78" type="L2Monster" name="Scarlet Stakato Noble">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="62" />
@@ -5180,7 +5180,7 @@
 			<height normal="39" />
 		</collision>
 	</npc>
-	<npc id="21653" level="78" type="L2Monster" name="Assassin Beetle">
+	<npc id="21653" level="85" originalLevel="78" type="L2Monster" name="Assassin Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -5261,7 +5261,7 @@
 			<height normal="54.5" />
 		</collision>
 	</npc>
-	<npc id="21654" level="78" type="L2Monster" name="Necromancer of Destruction">
+	<npc id="21654" level="85" originalLevel="78" type="L2Monster" name="Necromancer of Destruction">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="114" />
@@ -5346,7 +5346,7 @@
 			<height normal="48" />
 		</collision>
 	</npc>
-	<npc id="21655" level="78" type="L2Monster" name="Arimanes of Destruction">
+	<npc id="21655" level="85" originalLevel="78" type="L2Monster" name="Arimanes of Destruction">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -5430,7 +5430,7 @@
 			<height normal="57.75" grown="69" />
 		</collision>
 	</npc>
-	<npc id="21656" level="78" type="L2Monster" name="Ashuras of Destruction">
+	<npc id="21656" level="85" originalLevel="78" type="L2Monster" name="Ashuras of Destruction">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -5515,7 +5515,7 @@
 			<height normal="49" />
 		</collision>
 	</npc>
-	<npc id="21657" level="78" type="L2Monster" name="Magma Drake">
+	<npc id="21657" level="85" originalLevel="78" type="L2Monster" name="Magma Drake">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -5597,7 +5597,7 @@
 			<height normal="42" />
 		</collision>
 	</npc>
-	<npc id="21658" level="64" type="L2Monster" name="Punishment of Splendor">
+	<npc id="21658" level="85" originalLevel="64" type="L2Monster" name="Punishment of Splendor">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -5724,7 +5724,7 @@
 			<height normal="28" grown="34" />
 		</collision>
 	</npc>
-	<npc id="21659" level="30" type="L2RiftInvader" name="Otherworldly Invader Soldier">
+	<npc id="21659" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="126" />
@@ -5803,7 +5803,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21660" level="35" type="L2RiftInvader" name="Otherworldly Invader Soldier">
+	<npc id="21660" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="126" />
@@ -5885,7 +5885,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21661" level="33" type="L2RiftInvader" name="Otherworldly Invader Archer">
+	<npc id="21661" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -5962,7 +5962,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="21662" level="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21662" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -6043,7 +6043,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21663" level="33" type="L2RiftInvader" name="Otherworldly Invader Shaman">
+	<npc id="21663" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Shaman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -6127,7 +6127,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21664" level="30" type="L2RiftInvader" name="Otherworldly Invader Priest">
+	<npc id="21664" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -6209,7 +6209,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21665" level="35" type="L2RiftInvader" name="Otherworldly Invader Magus">
+	<npc id="21665" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -6290,7 +6290,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21666" level="30" type="L2RiftInvader" name="Otherworldly Invader Martyrs">
+	<npc id="21666" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Martyrs">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -6373,7 +6373,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21667" level="33" type="L2RiftInvader" name="Otherworldly Invader Warrior">
+	<npc id="21667" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="167" />
@@ -6450,7 +6450,7 @@
 			<height normal="25" grown="31" />
 		</collision>
 	</npc>
-	<npc id="21668" level="30" type="L2RiftInvader" name="Otherworldly Invader Soldier">
+	<npc id="21668" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="126" />
@@ -6531,7 +6531,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21669" level="33" type="L2RiftInvader" name="Otherworldly Invader Discipline">
+	<npc id="21669" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Discipline">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="167" />
@@ -6612,7 +6612,7 @@
 			<height normal="25" grown="31" />
 		</collision>
 	</npc>
-	<npc id="21670" level="35" type="L2RiftInvader" name="Otherworldly Invader Berserker">
+	<npc id="21670" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Berserker">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="167" />
@@ -6697,7 +6697,7 @@
 			<height normal="25" grown="31" />
 		</collision>
 	</npc>
-	<npc id="21671" level="30" type="L2Chest" name="Otherworldly Invader Food">
+	<npc id="21671" level="85" originalLevel="30" type="L2Chest" name="Otherworldly Invader Food">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -6764,7 +6764,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21672" level="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21672" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -6845,7 +6845,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21673" level="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21673" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -6929,7 +6929,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21674" level="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21674" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7009,7 +7009,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21675" level="30" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21675" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7087,7 +7087,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21676" level="33" type="L2RiftInvader" name="Otherworldly Invader Warrior">
+	<npc id="21676" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="167" />
@@ -7168,7 +7168,7 @@
 			<height normal="25" grown="31" />
 		</collision>
 	</npc>
-	<npc id="21677" level="30" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21677" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7239,7 +7239,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21678" level="33" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21678" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7310,7 +7310,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21679" level="30" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21679" level="85" originalLevel="30" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7386,7 +7386,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21680" level="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
+	<npc id="21680" level="85" originalLevel="35" type="L2RiftInvader" name="Otherworldly Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7463,7 +7463,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21681" level="33" type="L2RiftInvader" name="Otherworldly Invader Magus">
+	<npc id="21681" level="85" originalLevel="33" type="L2RiftInvader" name="Otherworldly Invader Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -7539,7 +7539,7 @@
 			<height normal="35" grown="42" />
 		</collision>
 	</npc>
-	<npc id="21682" level="40" type="L2RiftInvader" name="Dimension Invader Soldier">
+	<npc id="21682" level="85" originalLevel="40" type="L2RiftInvader" name="Dimension Invader Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="126" />
@@ -7619,7 +7619,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21683" level="45" type="L2RiftInvader" name="Dimension Invader Soldier">
+	<npc id="21683" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="126" />
@@ -7702,7 +7702,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21684" level="43" type="L2RiftInvader" name="Dimension Invader Archer">
+	<npc id="21684" level="85" originalLevel="43" type="L2RiftInvader" name="Dimension Invader Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -7780,7 +7780,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="21685" level="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
+	<npc id="21685" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7865,7 +7865,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="21686" level="43" type="L2RiftInvader" name="Dimension Invader Shaman">
+	<npc id="21686" level="85" originalLevel="43" type="L2RiftInvader" name="Dimension Invader Shaman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -7946,7 +7946,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="21687" level="40" type="L2RiftInvader" name="Dimension Invader Priest">
+	<npc id="21687" level="85" originalLevel="40" type="L2RiftInvader" name="Dimension Invader Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -8041,7 +8041,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="21688" level="45" type="L2RiftInvader" name="Dimension Invader Magus">
+	<npc id="21688" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -8125,7 +8125,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="21689" level="40" type="L2RiftInvader" name="Dimension Invader Martyrs">
+	<npc id="21689" level="85" originalLevel="40" type="L2RiftInvader" name="Dimension Invader Martyrs">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -8209,7 +8209,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="21690" level="43" type="L2RiftInvader" name="Dimension Invader Warrior">
+	<npc id="21690" level="85" originalLevel="43" type="L2RiftInvader" name="Dimension Invader Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -8295,7 +8295,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21691" level="40" type="L2RiftInvader" name="Dimension Invader Soldier">
+	<npc id="21691" level="85" originalLevel="40" type="L2RiftInvader" name="Dimension Invader Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="126" />
@@ -8373,7 +8373,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21692" level="43" type="L2RiftInvader" name="Dimension Invader Discipline">
+	<npc id="21692" level="85" originalLevel="43" type="L2RiftInvader" name="Dimension Invader Discipline">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -8460,7 +8460,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21693" level="45" type="L2RiftInvader" name="Dimension Invader Berserker">
+	<npc id="21693" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Berserker">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -8549,7 +8549,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21694" level="40" type="L2Chest" name="Dimension Invader Food">
+	<npc id="21694" level="85" originalLevel="40" type="L2Chest" name="Dimension Invader Food">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -8621,7 +8621,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="21695" level="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
+	<npc id="21695" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -8708,7 +8708,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="21696" level="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
+	<npc id="21696" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -8790,7 +8790,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="21697" level="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
+	<npc id="21697" level="85" originalLevel="45" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -8873,7 +8873,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="21698" level="40" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
+	<npc id="21698" level="85" originalLevel="40" type="L2RiftInvader" name="Dimension Invader Elite Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
@@ -8953,7 +8953,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="21699" level="43" type="L2RiftInvader" name="Dimension Invader Warrior">
+	<npc id="21699" level="85" originalLevel="43" type="L2RiftInvader" name="Dimension Invader Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />

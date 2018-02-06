@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="25500" level="44" type="L2Monster" name="Alligator of Istary" title="Raid Fighter">
+	<npc id="25500" level="85" originalLevel="44" type="L2Monster" name="Alligator of Istary" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
@@ -37,7 +37,7 @@
 			<height normal="11.5" />
 		</collision>
 	</npc>
-	<npc id="25501" level="30" type="L2RaidBoss" name="Boss Akata" title="Raid Boss">
+	<npc id="25501" level="85" originalLevel="30" type="L2RaidBoss" name="Boss Akata" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -109,7 +109,7 @@
 			<height normal="23.6" />
 		</collision>
 	</npc>
-	<npc id="25502" level="30" type="L2Monster" name="Akata's Thug" title="Raid Fighter">
+	<npc id="25502" level="85" originalLevel="30" type="L2Monster" name="Akata's Thug" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="LongRangePhysicalSpecial_a" id="4757" level="3" /> <!-- BOSS Power Shot -->
@@ -151,7 +151,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="25503" level="30" type="L2Monster" name="Akata's Lackey" title="Raid Fighter">
+	<npc id="25503" level="85" originalLevel="30" type="L2Monster" name="Akata's Lackey" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
@@ -189,7 +189,7 @@
 			<height normal="21.4" />
 		</collision>
 	</npc>
-	<npc id="25504" level="39" type="L2RaidBoss" name="Nellis' Vengeful Spirit" title="Raid Boss">
+	<npc id="25504" level="85" originalLevel="39" type="L2RaidBoss" name="Nellis' Vengeful Spirit" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -276,7 +276,7 @@
 			<height normal="28.1" />
 		</collision>
 	</npc>
-	<npc id="25505" level="38" type="L2Monster" name="Nellis' Follower" title="Raid Fighter">
+	<npc id="25505" level="85" originalLevel="38" type="L2Monster" name="Nellis' Follower" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4723" level="3" /> <!-- BOSS Strike -->
@@ -318,7 +318,7 @@
 			<height normal="16.5" />
 		</collision>
 	</npc>
-	<npc id="25506" level="37" type="L2RaidBoss" name="Rayito the Looter" title="Raid Boss">
+	<npc id="25506" level="85" originalLevel="37" type="L2RaidBoss" name="Rayito the Looter" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -385,7 +385,7 @@
 			<height normal="33.2" />
 		</collision>
 	</npc>
-	<npc id="25507" level="36" type="L2Monster" name="Rayito's Henchman" title="Raid Fighter">
+	<npc id="25507" level="85" originalLevel="36" type="L2Monster" name="Rayito's Henchman" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4728" level="3" /> <!-- Stun -->
@@ -427,7 +427,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="25508" level="36" type="L2Monster" name="Rayito's Henchman" title="Raid Fighter">
+	<npc id="25508" level="85" originalLevel="36" type="L2Monster" name="Rayito's Henchman" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="DDMagic_a" id="4194" level="3" /> <!-- BOSS Aura Burn -->
@@ -471,7 +471,7 @@
 			<height normal="16.6" />
 		</collision>
 	</npc>
-	<npc id="25509" level="53" type="L2RaidBoss" name="Dark Shaman Varangka" title="Raid Boss">
+	<npc id="25509" level="85" originalLevel="53" type="L2RaidBoss" name="Dark Shaman Varangka" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -555,7 +555,7 @@
 			<height normal="20.8" />
 		</collision>
 	</npc>
-	<npc id="25510" level="52" type="L2Monster" name="Varangka's Descendant" title="Raid Fighter">
+	<npc id="25510" level="85" originalLevel="52" type="L2Monster" name="Varangka's Descendant" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4731" level="5" /> <!-- BOSS Mortal Blow -->
@@ -597,7 +597,7 @@
 			<height normal="26.9" />
 		</collision>
 	</npc>
-	<npc id="25511" level="52" type="L2Monster" name="Varangka's Page" title="Raid Fighter">
+	<npc id="25511" level="85" originalLevel="52" type="L2Monster" name="Varangka's Page" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -635,7 +635,7 @@
 			<height normal="18.8" />
 		</collision>
 	</npc>
-	<npc id="25512" level="52" type="L2RaidBoss" name="Gigantic Chaos Golem" title="Raid Boss">
+	<npc id="25512" level="85" originalLevel="52" type="L2RaidBoss" name="Gigantic Chaos Golem" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm03_A" />
@@ -723,7 +723,7 @@
 			<height normal="51.8" />
 		</collision>
 	</npc>
-	<npc id="25514" level="80" type="L2RaidBoss" name="Queen Shyeed" title="Raid Boss">
+	<npc id="25514" level="85" originalLevel="80" type="L2RaidBoss" name="Queen Shyeed" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -794,7 +794,7 @@
 			<height normal="50.8" />
 		</collision>
 	</npc>
-	<npc id="25515" level="79" type="L2Monster" name="Spiked Stakato" title="Raid Fighter">
+	<npc id="25515" level="85" originalLevel="79" type="L2Monster" name="Spiked Stakato" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="DDMagic_a" id="4195" level="8" /> <!-- BOSS Twister -->
@@ -838,7 +838,7 @@
 			<height normal="21" />
 		</collision>
 	</npc>
-	<npc id="25516" level="79" type="L2Monster" name="Spiked Stakato" title="Raid Fighter">
+	<npc id="25516" level="85" originalLevel="79" type="L2Monster" name="Spiked Stakato" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4726" level="8" /> <!-- Stun -->
@@ -879,7 +879,7 @@
 			<height normal="22.2" />
 		</collision>
 	</npc>
-	<npc id="25523" level="73" type="L2RaidBoss" name="Plague Golem" title="Raid Boss">
+	<npc id="25523" level="85" originalLevel="73" type="L2RaidBoss" name="Plague Golem" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm01_A" />
@@ -954,7 +954,7 @@
 			<height normal="46.3765" />
 		</collision>
 	</npc>
-	<npc id="25524" level="76" type="L2RaidBoss" name="Flamestone Giant" title="Raid Boss">
+	<npc id="25524" level="85" originalLevel="76" type="L2RaidBoss" name="Flamestone Giant" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -1026,7 +1026,7 @@
 			<height normal="45" />
 		</collision>
 	</npc>
-	<npc id="25525" level="75" type="L2Monster" name="Flame Spirit" title="Raid Fighter">
+	<npc id="25525" level="85" originalLevel="75" type="L2Monster" name="Flame Spirit" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4780" level="8" /> <!-- BOSS Heal -->
@@ -1069,7 +1069,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="25526" level="75" type="L2Monster" name="Charged Spirit" title="Raid Fighter">
+	<npc id="25526" level="85" originalLevel="75" type="L2Monster" name="Charged Spirit" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1106,7 +1106,7 @@
 			<height normal="20" grown="24" />
 		</collision>
 	</npc>
-	<npc id="25527" level="80" type="L2RaidBoss" name="Uruka" title="Raid Boss">
+	<npc id="25527" level="85" originalLevel="80" type="L2RaidBoss" name="Uruka" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm03_A" />
@@ -1178,7 +1178,7 @@
 			<height normal="42.5105" />
 		</collision>
 	</npc>
-	<npc id="25528" level="22" type="L2RaidBoss" name="Tiberias" title="Prime Inspector">
+	<npc id="25528" level="85" originalLevel="22" type="L2RaidBoss" name="Tiberias" title="Prime Inspector">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveArounding" value="0" />
@@ -1266,7 +1266,7 @@
 			<height normal="24.6155" />
 		</collision>
 	</npc>
-	<npc id="25529" level="22" type="L2Npc" name="Garden Guard" title="Vice Inspector">
+	<npc id="25529" level="85" originalLevel="22" type="L2Npc" name="Garden Guard" title="Vice Inspector">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AttackRange" value="2" />
@@ -1322,7 +1322,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="25530" level="22" type="L2Npc" name="Garden Guard" title="Vice Inspector">
+	<npc id="25530" level="85" originalLevel="22" type="L2Npc" name="Garden Guard" title="Vice Inspector">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="Party_Type" value="1" />
@@ -1369,7 +1369,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="25531" level="81" type="L2RaidBoss" name="Darnel" title="Torture Maiden">
+	<npc id="25531" level="85" originalLevel="81" type="L2RaidBoss" name="Darnel" title="Torture Maiden">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="InzoneRestriction" value="1" />
@@ -1443,7 +1443,7 @@
 			<height normal="40.5985" />
 		</collision>
 	</npc>
-	<npc id="25532" level="82" type="L2RaidBoss" name="Kechi" title="Fire">
+	<npc id="25532" level="85" originalLevel="82" type="L2RaidBoss" name="Kechi" title="Fire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="InzoneRestriction" value="1" />
@@ -1533,7 +1533,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="25533" level="82" type="L2Monster" name="Kechi's Henchman">
+	<npc id="25533" level="85" originalLevel="82" type="L2Monster" name="Kechi's Henchman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="0" />
@@ -1586,7 +1586,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="25534" level="83" type="L2RaidBoss" name="Tears" title="Ice">
+	<npc id="25534" level="85" originalLevel="83" type="L2RaidBoss" name="Tears" title="Ice">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="InzoneRestriction" value="1" />
@@ -1651,7 +1651,7 @@
 			<height normal="27.5" />
 		</collision>
 	</npc>
-	<npc id="25535" level="83" type="L2Monster" name="Tears" title="Ice">
+	<npc id="25535" level="85" originalLevel="83" type="L2Monster" name="Tears" title="Ice">
 		<!-- Confirmed CT2.5 -->
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
@@ -1692,7 +1692,7 @@
 			<height normal="27.5" />
 		</collision>
 	</npc>
-	<npc id="25536" level="81" type="L2RaidBoss" name="Hannibal" title="Raid Boss">
+	<npc id="25536" level="85" originalLevel="81" type="L2RaidBoss" name="Hannibal" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm01_A" />
@@ -1763,7 +1763,7 @@
 			<height normal="40.5985" />
 		</collision>
 	</npc>
-	<npc id="25537" level="81" type="L2Monster" name="Enmity" title="Raid Fighter">
+	<npc id="25537" level="85" originalLevel="81" type="L2Monster" name="Enmity" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -1802,7 +1802,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="25538" level="81" type="L2Monster" name="Vengeance" title="Raid Fighter">
+	<npc id="25538" level="85" originalLevel="81" type="L2Monster" name="Vengeance" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4780" level="8" /> <!-- BOSS Heal -->
@@ -1847,7 +1847,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="25539" level="81" type="L2RaidBoss" name="Typhoon" title="Raid Boss">
+	<npc id="25539" level="85" originalLevel="81" type="L2RaidBoss" name="Typhoon" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -1926,7 +1926,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="25540" level="83" type="L2RaidBoss" name="Demon Prince" title="Raid Boss">
+	<npc id="25540" level="85" originalLevel="83" type="L2RaidBoss" name="Demon Prince" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -2013,7 +2013,7 @@
 			<height normal="49" grown="60.5" />
 		</collision>
 	</npc>
-	<npc id="25541" level="83" type="L2Monster" name="Fiend" title="Raid Fighter">
+	<npc id="25541" level="85" originalLevel="83" type="L2Monster" name="Fiend" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
@@ -2053,7 +2053,7 @@
 			<height normal="25.8" />
 		</collision>
 	</npc>
-	<npc id="25542" level="83" type="L2RaidBoss" name="Ranku" title="Raid Boss">
+	<npc id="25542" level="85" originalLevel="83" type="L2RaidBoss" name="Ranku" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -2133,7 +2133,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="25543" level="83" type="L2Monster" name="Eidolon" title="Raid Fighter">
+	<npc id="25543" level="85" originalLevel="83" type="L2Monster" name="Eidolon" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -2186,7 +2186,7 @@
 			<height normal="35" />
 		</collision>
 	</npc>
-	<npc id="25544" level="83" type="L2RaidBoss" name="Tully" title="Steel Citadel">
+	<npc id="25544" level="85" originalLevel="83" type="L2RaidBoss" name="Tully" title="Steel Citadel">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -2253,7 +2253,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="25545" level="83" type="L2Monster" name="Tully's Banshee" title="Raid Fighter">
+	<npc id="25545" level="85" originalLevel="83" type="L2Monster" name="Tully's Banshee" title="Raid Fighter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial1" id="5230" level="1" /> <!-- Stun -->
@@ -2305,7 +2305,7 @@
 			<height normal="47.5" />
 		</collision>
 	</npc>
-	<npc id="25546" level="75" type="L2RaidBoss" name="Rhianna the Traitor" title="Forsaken Prisoner">
+	<npc id="25546" level="85" originalLevel="75" type="L2RaidBoss" name="Rhianna the Traitor" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -2377,7 +2377,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="25547" level="74" type="L2Monster" name="Rhianna's Escort">
+	<npc id="25547" level="85" originalLevel="74" type="L2Monster" name="Rhianna's Escort">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -2418,7 +2418,7 @@
 			<height normal="21" />
 		</collision>
 	</npc>
-	<npc id="25548" level="74" type="L2Monster" name="Rhianna's Healer">
+	<npc id="25548" level="85" originalLevel="74" type="L2Monster" name="Rhianna's Healer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4781" level="7" /> <!-- BOSS Heal -->
@@ -2463,7 +2463,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="25549" level="75" type="L2RaidBoss" name="Tesla the Deceiver" title="Forsaken Prisoner">
+	<npc id="25549" level="85" originalLevel="75" type="L2RaidBoss" name="Tesla the Deceiver" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -2533,7 +2533,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="25550" level="74" type="L2Monster" name="Tesla's Apprentice">
+	<npc id="25550" level="85" originalLevel="74" type="L2Monster" name="Tesla's Apprentice">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="DDMagic_a" id="4195" level="7" /> <!-- BOSS Twister -->
@@ -2579,7 +2579,7 @@
 			<height normal="35" grown="42.2" />
 		</collision>
 	</npc>
-	<npc id="25551" level="74" type="L2Monster" name="Tesla's Herald">
+	<npc id="25551" level="85" originalLevel="74" type="L2Monster" name="Tesla's Herald">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4725" level="7" /> <!-- Stun -->
@@ -2623,7 +2623,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="25552" level="76" type="L2RaidBoss" name="Soul Hunter Chakundel" title="Forsaken Prisoner">
+	<npc id="25552" level="85" originalLevel="76" type="L2RaidBoss" name="Soul Hunter Chakundel" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm01_A" />
@@ -2698,7 +2698,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="25553" level="77" type="L2RaidBoss" name="Durango the Crusher" title="Forsaken Prisoner">
+	<npc id="25553" level="85" originalLevel="77" type="L2RaidBoss" name="Durango the Crusher" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm03_A" />
@@ -2774,7 +2774,7 @@
 			<height normal="46.3765" />
 		</collision>
 	</npc>
-	<npc id="25554" level="78" type="L2RaidBoss" name="Brutus the Obstinate" title="Forsaken Prisoner">
+	<npc id="25554" level="85" originalLevel="78" type="L2RaidBoss" name="Brutus the Obstinate" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -2848,7 +2848,7 @@
 			<height normal="40" grown="48" />
 		</collision>
 	</npc>
-	<npc id="25555" level="77" type="L2Monster" name="Brutus' Right Hand">
+	<npc id="25555" level="85" originalLevel="77" type="L2Monster" name="Brutus' Right Hand">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4721" level="7" /> <!-- BOSS Strike -->
@@ -2894,7 +2894,7 @@
 			<height normal="45" grown="52" />
 		</collision>
 	</npc>
-	<npc id="25556" level="77" type="L2Monster" name="Brutus' Left Hand">
+	<npc id="25556" level="85" originalLevel="77" type="L2Monster" name="Brutus' Left Hand">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -2938,7 +2938,7 @@
 			<height normal="31" grown="36" />
 		</collision>
 	</npc>
-	<npc id="25557" level="79" type="L2RaidBoss" name="Ranger Karankawa" title="Forsaken Prisoner">
+	<npc id="25557" level="85" originalLevel="79" type="L2RaidBoss" name="Ranger Karankawa" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3005,7 +3005,7 @@
 			<height normal="47" />
 		</collision>
 	</npc>
-	<npc id="25558" level="78" type="L2Monster" name="Karankawa's Root">
+	<npc id="25558" level="85" originalLevel="78" type="L2Monster" name="Karankawa's Root">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="DDMagic_a" id="4191" level="7" /> <!-- BOSS Windstrike -->
@@ -3052,7 +3052,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="25559" level="78" type="L2Monster" name="Karankawa's Blossom">
+	<npc id="25559" level="85" originalLevel="78" type="L2Monster" name="Karankawa's Blossom">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4740" level="7" /> <!-- BOSS Strike -->
@@ -3097,7 +3097,7 @@
 			<height normal="25.5" />
 		</collision>
 	</npc>
-	<npc id="25560" level="79" type="L2RaidBoss" name="Sargon the Mad" title="Forsaken Prisoner">
+	<npc id="25560" level="85" originalLevel="79" type="L2RaidBoss" name="Sargon the Mad" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3166,7 +3166,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="25561" level="78" type="L2Monster" name="Sargon's Attendant">
+	<npc id="25561" level="85" originalLevel="78" type="L2Monster" name="Sargon's Attendant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4780" level="7" /> <!-- BOSS Heal -->
@@ -3214,7 +3214,7 @@
 			<height normal="32" />
 		</collision>
 	</npc>
-	<npc id="25562" level="78" type="L2Monster" name="Sargon's Squire">
+	<npc id="25562" level="85" originalLevel="78" type="L2Monster" name="Sargon's Squire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -3258,7 +3258,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="25563" level="81" type="L2RaidBoss" name="Beautiful Atrielle" title="Forsaken Prisoner">
+	<npc id="25563" level="85" originalLevel="81" type="L2RaidBoss" name="Beautiful Atrielle" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3336,7 +3336,7 @@
 			<height normal="75" />
 		</collision>
 	</npc>
-	<npc id="25564" level="80" type="L2Monster" name="Atrielle's Follower">
+	<npc id="25564" level="85" originalLevel="80" type="L2Monster" name="Atrielle's Follower">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4725" level="7" /> <!-- Stun -->
@@ -3381,7 +3381,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="25565" level="80" type="L2Monster" name="Atrielle's Minion">
+	<npc id="25565" level="85" originalLevel="80" type="L2Monster" name="Atrielle's Minion">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -3424,7 +3424,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="25566" level="82" type="L2RaidBoss" name="Nagen the Tomboy" title="Forsaken Prisoner">
+	<npc id="25566" level="85" originalLevel="82" type="L2RaidBoss" name="Nagen the Tomboy" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3503,7 +3503,7 @@
 			<height normal="54" />
 		</collision>
 	</npc>
-	<npc id="25567" level="81" type="L2Monster" name="Nagen's Cohort">
+	<npc id="25567" level="85" originalLevel="81" type="L2Monster" name="Nagen's Cohort">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="DDMagic_a" id="4194" level="7" /> <!-- BOSS Aura Burn -->
@@ -3550,7 +3550,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="25568" level="81" type="L2Monster" name="Nagen's Friend">
+	<npc id="25568" level="85" originalLevel="81" type="L2Monster" name="Nagen's Friend">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4785" level="7" /> <!-- BOSS Chant of Life -->
@@ -3597,7 +3597,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="25569" level="82" type="L2RaidBoss" name="Jax the Destroyer" title="Forsaken Prisoner">
+	<npc id="25569" level="85" originalLevel="82" type="L2RaidBoss" name="Jax the Destroyer" title="Forsaken Prisoner">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3676,7 +3676,7 @@
 			<height normal="46.2" />
 		</collision>
 	</npc>
-	<npc id="25570" level="81" type="L2Monster" name="Jax's Vanguard">
+	<npc id="25570" level="85" originalLevel="81" type="L2Monster" name="Jax's Vanguard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -3720,7 +3720,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="25571" level="81" type="L2Monster" name="Jax's Raider">
+	<npc id="25571" level="85" originalLevel="81" type="L2Monster" name="Jax's Raider">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -3764,7 +3764,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="25572" level="72" type="L2RaidBoss" name="Hager the Outlaw" title="Forsaken Inmate">
+	<npc id="25572" level="85" originalLevel="72" type="L2RaidBoss" name="Hager the Outlaw" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3833,7 +3833,7 @@
 			<height normal="54" />
 		</collision>
 	</npc>
-	<npc id="25573" level="71" type="L2Monster" name="Hager's Henchman">
+	<npc id="25573" level="85" originalLevel="71" type="L2Monster" name="Hager's Henchman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4780" level="6" /> <!-- BOSS Heal -->
@@ -3879,7 +3879,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="25574" level="71" type="L2Monster" name="Hager's Bodyguard">
+	<npc id="25574" level="85" originalLevel="71" type="L2Monster" name="Hager's Bodyguard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -3921,7 +3921,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="25575" level="73" type="L2RaidBoss" name="All-Seeing Rango" title="Forsaken Inmate">
+	<npc id="25575" level="85" originalLevel="73" type="L2RaidBoss" name="All-Seeing Rango" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -3995,7 +3995,7 @@
 			<height normal="45" />
 		</collision>
 	</npc>
-	<npc id="25576" level="72" type="L2Monster" name="Rango's Iris">
+	<npc id="25576" level="85" originalLevel="72" type="L2Monster" name="Rango's Iris">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -4036,7 +4036,7 @@
 			<height normal="43" />
 		</collision>
 	</npc>
-	<npc id="25577" level="72" type="L2Monster" name="Rango's Lens">
+	<npc id="25577" level="85" originalLevel="72" type="L2Monster" name="Rango's Lens">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4741" level="6" /> <!-- BOSS Strike -->
@@ -4079,7 +4079,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="25578" level="73" type="L2RaidBoss" name="Jakard" title="Forsaken Inmate">
+	<npc id="25578" level="85" originalLevel="73" type="L2RaidBoss" name="Jakard" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm03_A" />
@@ -4149,7 +4149,7 @@
 			<height normal="98" />
 		</collision>
 	</npc>
-	<npc id="25579" level="74" type="L2RaidBoss" name="Helsing" title="Forsaken Inmate">
+	<npc id="25579" level="85" originalLevel="74" type="L2RaidBoss" name="Helsing" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -4232,7 +4232,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="25580" level="73" type="L2Monster" name="Helsing's Guard">
+	<npc id="25580" level="85" originalLevel="73" type="L2Monster" name="Helsing's Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -4274,7 +4274,7 @@
 			<height normal="31" grown="36" />
 		</collision>
 	</npc>
-	<npc id="25581" level="73" type="L2Monster" name="Helsing's Assassin">
+	<npc id="25581" level="85" originalLevel="73" type="L2Monster" name="Helsing's Assassin">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4741" level="6" /> <!-- BOSS Strike -->
@@ -4318,7 +4318,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="25582" level="75" type="L2RaidBoss" name="Gillien" title="Forsaken Inmate">
+	<npc id="25582" level="85" originalLevel="75" type="L2RaidBoss" name="Gillien" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -4386,7 +4386,7 @@
 			<height normal="31.5" grown="38" />
 		</collision>
 	</npc>
-	<npc id="25583" level="74" type="L2Monster" name="Gillien's Daughter">
+	<npc id="25583" level="85" originalLevel="74" type="L2Monster" name="Gillien's Daughter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="HealMagic_a" id="4785" level="6" /> <!-- BOSS Chant of Life -->
@@ -4432,7 +4432,7 @@
 			<height normal="28" grown="34.5" />
 		</collision>
 	</npc>
-	<npc id="25584" level="74" type="L2Monster" name="Gillien's Attendant">
+	<npc id="25584" level="85" originalLevel="74" type="L2Monster" name="Gillien's Attendant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -4474,7 +4474,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="25585" level="76" type="L2RaidBoss" name="Medici" title="Forsaken Inmate">
+	<npc id="25585" level="85" originalLevel="76" type="L2RaidBoss" name="Medici" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -4553,7 +4553,7 @@
 			<height normal="53" />
 		</collision>
 	</npc>
-	<npc id="25586" level="75" type="L2Monster" name="Medici's Sister">
+	<npc id="25586" level="85" originalLevel="75" type="L2Monster" name="Medici's Sister">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="DDMagic_a" id="4192" level="6" /> <!-- BOSS HP Drain -->
@@ -4598,7 +4598,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="25587" level="75" type="L2Monster" name="Medici's Brother">
+	<npc id="25587" level="85" originalLevel="75" type="L2Monster" name="Medici's Brother">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4725" level="6" /> <!-- Stun -->
@@ -4642,7 +4642,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="25588" level="77" type="L2RaidBoss" name="Immortal Muus" title="Forsaken Inmate">
+	<npc id="25588" level="85" originalLevel="77" type="L2RaidBoss" name="Immortal Muus" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm02_A" />
@@ -4717,7 +4717,7 @@
 			<height normal="46.5" grown="48.4" />
 		</collision>
 	</npc>
-	<npc id="25589" level="78" type="L2RaidBoss" name="Brand the Exile" title="Forsaken Inmate">
+	<npc id="25589" level="85" originalLevel="78" type="L2RaidBoss" name="Brand the Exile" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -4795,7 +4795,7 @@
 			<height normal="51" />
 		</collision>
 	</npc>
-	<npc id="25590" level="77" type="L2Monster" name="Brand's Chamberlain">
+	<npc id="25590" level="85" originalLevel="77" type="L2Monster" name="Brand's Chamberlain">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4725" level="6" /> <!-- Stun -->
@@ -4839,7 +4839,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="25591" level="77" type="L2Monster" name="Brand's Servant">
+	<npc id="25591" level="85" originalLevel="77" type="L2Monster" name="Brand's Servant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -4881,7 +4881,7 @@
 			<height normal="32" />
 		</collision>
 	</npc>
-	<npc id="25592" level="79" type="L2RaidBoss" name="Commander Koenig" title="Forsaken Inmate">
+	<npc id="25592" level="85" originalLevel="79" type="L2RaidBoss" name="Commander Koenig" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm01_A" />
@@ -4956,7 +4956,7 @@
 			<height normal="33.5" />
 		</collision>
 	</npc>
-	<npc id="25593" level="80" type="L2RaidBoss" name="Gerg the Hunter" title="Forsaken Inmate">
+	<npc id="25593" level="85" originalLevel="80" type="L2RaidBoss" name="Gerg the Hunter" title="Forsaken Inmate">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<minions name="Privates">
@@ -5025,7 +5025,7 @@
 			<height normal="71.5" />
 		</collision>
 	</npc>
-	<npc id="25594" level="79" type="L2Monster" name="Gerg's Follower">
+	<npc id="25594" level="85" originalLevel="79" type="L2Monster" name="Gerg's Follower">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="LongRangePhysicalSpecial_a" id="4760" level="7" /> <!-- Stun -->
@@ -5069,7 +5069,7 @@
 			<height normal="22" grown="27" />
 		</collision>
 	</npc>
-	<npc id="25595" level="79" type="L2Monster" name="Gerg's Henchman">
+	<npc id="25595" level="85" originalLevel="79" type="L2Monster" name="Gerg's Henchman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" /> <!-- Stubborn Resistance -->
@@ -5111,7 +5111,7 @@
 			<height normal="21.5" />
 		</collision>
 	</npc>
-	<npc id="25596" level="82" type="L2Monster" name="Ocular Servitor">
+	<npc id="25596" level="85" originalLevel="82" type="L2Monster" name="Ocular Servitor">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AttackRange" value="2" />
@@ -5171,7 +5171,7 @@
 			<height normal="50.5" />
 		</collision>
 	</npc>
-	<npc id="25597" level="82" type="L2Monster" name="Heurel">
+	<npc id="25597" level="85" originalLevel="82" type="L2Monster" name="Heurel">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AttackRange" value="2" />
@@ -5223,7 +5223,7 @@
 			<height normal="50" grown="60" />
 		</collision>
 	</npc>
-	<npc id="25598" level="82" type="L2Monster" name="Gegei">
+	<npc id="25598" level="85" originalLevel="82" type="L2Monster" name="Gegei">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AttackRange" value="2" />
@@ -5274,7 +5274,7 @@
 			<height normal="71.5" />
 		</collision>
 	</npc>
-	<npc id="25599" level="82" type="L2Monster" name="Iglas">
+	<npc id="25599" level="85" originalLevel="82" type="L2Monster" name="Iglas">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AttackRange" value="2" />

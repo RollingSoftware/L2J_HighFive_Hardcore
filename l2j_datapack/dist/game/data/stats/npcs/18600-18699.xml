@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="18600" level="86" type="L2Npc" name="Kratei's Steward">
+	<npc id="18600" level="85" originalLevel="86" type="L2Npc" name="Kratei's Steward">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -88,7 +88,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="18601" level="70" type="L2Npc" name="Kratei's Watcher">
+	<npc id="18601" level="85" originalLevel="70" type="L2Npc" name="Kratei's Watcher">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -123,7 +123,7 @@
 			<height normal="32" />
 		</collision>
 	</npc>
-	<npc id="18602" level="70" type="L2Npc" name="Kratei's Watcher">
+	<npc id="18602" level="85" originalLevel="70" type="L2Npc" name="Kratei's Watcher">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -158,7 +158,7 @@
 			<height normal="32" />
 		</collision>
 	</npc>
-	<npc id="18603" level="73" type="L2Npc">
+	<npc id="18603" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -193,7 +193,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18604" level="73" type="L2Npc">
+	<npc id="18604" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -228,7 +228,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18605" level="73" type="L2Npc">
+	<npc id="18605" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -263,7 +263,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18606" level="73" type="L2Npc">
+	<npc id="18606" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -298,7 +298,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18607" level="39" type="L2Monster" name="Gargos" title="Spirit of Fire">
+	<npc id="18607" level="85" originalLevel="39" type="L2Monster" name="Gargos" title="Spirit of Fire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="114" />
@@ -363,7 +363,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="18608" level="39" type="L2Monster" name="Kinsus" title="Spirit of Fire">
+	<npc id="18608" level="85" originalLevel="39" type="L2Monster" name="Kinsus" title="Spirit of Fire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="150" />
@@ -426,7 +426,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18609" level="36" type="L2Monster" name="Papion" title="Spirit of Water">
+	<npc id="18609" level="85" originalLevel="36" type="L2Monster" name="Papion" title="Spirit of Water">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="150" />
@@ -492,7 +492,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18610" level="36" type="L2Monster" name="Hillas" title="Spirit of Water">
+	<npc id="18610" level="85" originalLevel="36" type="L2Monster" name="Hillas" title="Spirit of Water">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -560,7 +560,7 @@
 			<height normal="70" />
 		</collision>
 	</npc>
-	<npc id="18611" level="33" type="L2Monster" name="Spirit of Water">
+	<npc id="18611" level="85" originalLevel="33" type="L2Monster" name="Spirit of Water">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -631,7 +631,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="18612" level="36" type="L2Monster" name="Spirit of Water">
+	<npc id="18612" level="85" originalLevel="36" type="L2Monster" name="Spirit of Water">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -702,7 +702,7 @@
 			<height normal="35" />
 		</collision>
 	</npc>
-	<npc id="18613" level="39" type="L2Monster" name="Spirit of Water">
+	<npc id="18613" level="85" originalLevel="39" type="L2Monster" name="Spirit of Water">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -773,7 +773,7 @@
 			<height normal="39.7" />
 		</collision>
 	</npc>
-	<npc id="18614" level="36" type="L2Monster" name="Spirit of Fire">
+	<npc id="18614" level="85" originalLevel="36" type="L2Monster" name="Spirit of Fire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -845,7 +845,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="18615" level="39" type="L2Monster" name="Spirit of Fire">
+	<npc id="18615" level="85" originalLevel="39" type="L2Monster" name="Spirit of Fire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -916,7 +916,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="18616" level="36" type="L2Monster" name="Bloom">
+	<npc id="18616" level="85" originalLevel="36" type="L2Monster" name="Bloom">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -982,7 +982,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="18617" level="36" type="L2Npc">
+	<npc id="18617" level="85" originalLevel="36" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1019,7 +1019,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18618" level="36" type="L2Npc">
+	<npc id="18618" level="85" originalLevel="36" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1056,7 +1056,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18619" level="36" type="L2Npc">
+	<npc id="18619" level="85" originalLevel="36" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1093,7 +1093,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18620" level="42" type="L2Monster" name="Adiantum">
+	<npc id="18620" level="85" originalLevel="42" type="L2Monster" name="Adiantum">
 		<!-- Confirmed CT2.5 -->
 		<race>BEAST</race>
 		<sex>MALE</sex>
@@ -1131,7 +1131,7 @@
 			<height normal="14.5" grown="18" />
 		</collision>
 	</npc>
-	<npc id="18621" level="42" type="L2Npc">
+	<npc id="18621" level="85" originalLevel="42" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -1168,7 +1168,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18622" level="61" type="L2Monster" name="Powder Keg">
+	<npc id="18622" level="85" originalLevel="61" type="L2Monster" name="Powder Keg">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -1204,7 +1204,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="18623" level="61" type="L2Monster" name="Begrudged Archer">
+	<npc id="18623" level="85" originalLevel="61" type="L2Monster" name="Begrudged Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -1271,7 +1271,7 @@
 			<height normal="32.5" />
 		</collision>
 	</npc>
-	<npc id="18624" level="58" type="L2Monster" name="Deadman's Grudge">
+	<npc id="18624" level="85" originalLevel="58" type="L2Monster" name="Deadman's Grudge">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1341,7 +1341,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="18625" level="61" type="L2Monster" name="Deadman's Grudge">
+	<npc id="18625" level="85" originalLevel="61" type="L2Monster" name="Deadman's Grudge">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -1412,7 +1412,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="18626" level="64" type="L2Monster" name="Deadman's Grudge">
+	<npc id="18626" level="85" originalLevel="64" type="L2Monster" name="Deadman's Grudge">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -1483,7 +1483,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="18627" level="64" type="L2Monster" name="Deadman's Grudge">
+	<npc id="18627" level="85" originalLevel="64" type="L2Monster" name="Deadman's Grudge">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -1554,7 +1554,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="18628" level="61" type="L2Monster" name="Atan" title="Lookout">
+	<npc id="18628" level="85" originalLevel="61" type="L2Monster" name="Atan" title="Lookout">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1622,7 +1622,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="18629" level="61" type="L2Monster" name="Kams" title="Panuka">
+	<npc id="18629" level="85" originalLevel="61" type="L2Monster" name="Kams" title="Panuka">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -1691,7 +1691,7 @@
 			<height normal="39" />
 		</collision>
 	</npc>
-	<npc id="18630" level="61" type="L2Monster" name="Hikoro" title="Panuka">
+	<npc id="18630" level="85" originalLevel="61" type="L2Monster" name="Hikoro" title="Panuka">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1760,7 +1760,7 @@
 			<height normal="39" />
 		</collision>
 	</npc>
-	<npc id="18631" level="64" type="L2Monster" name="Alkaso" title="Panuka">
+	<npc id="18631" level="85" originalLevel="64" type="L2Monster" name="Alkaso" title="Panuka">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -1829,7 +1829,7 @@
 			<height normal="33.6" />
 		</collision>
 	</npc>
-	<npc id="18632" level="64" type="L2Monster" name="Gerbera" title="Panuka">
+	<npc id="18632" level="85" originalLevel="64" type="L2Monster" name="Gerbera" title="Panuka">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -1898,7 +1898,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="18633" level="67" type="L2Monster" name="Lematan">
+	<npc id="18633" level="85" originalLevel="67" type="L2Monster" name="Lematan">
 		<!-- Confirmed CT2.5 -->
 		<race>DRAGON</race>
 		<sex>MALE</sex>
@@ -1935,7 +1935,7 @@
 			<height normal="37" />
 		</collision>
 	</npc>
-	<npc id="18634" level="64" type="L2Monster" name="Lematan's Follower">
+	<npc id="18634" level="85" originalLevel="64" type="L2Monster" name="Lematan's Follower">
 		<!-- Confirmed CT2.5 -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
@@ -1973,7 +1973,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="18635" level="71" type="L2Monster" name="Varka Silenos Recruit">
+	<npc id="18635" level="85" originalLevel="71" type="L2Monster" name="Varka Silenos Recruit">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -2040,7 +2040,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="18636" level="71" type="L2Monster" name="Varka Silenos Footman">
+	<npc id="18636" level="85" originalLevel="71" type="L2Monster" name="Varka Silenos Footman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -2105,7 +2105,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18637" level="72" type="L2Monster" name="Grazing Antelope">
+	<npc id="18637" level="85" originalLevel="72" type="L2Monster" name="Grazing Antelope">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2168,7 +2168,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="18638" level="72" type="L2Monster" name="Varka Silenos Scout">
+	<npc id="18638" level="85" originalLevel="72" type="L2Monster" name="Varka Silenos Scout">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -2233,7 +2233,7 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="18639" level="72" type="L2Monster" name="Varka Silenos Hunter">
+	<npc id="18639" level="85" originalLevel="72" type="L2Monster" name="Varka Silenos Hunter">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="75" />
@@ -2299,7 +2299,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="18640" level="72" type="L2Monster" name="Varka Silenos Shaman">
+	<npc id="18640" level="85" originalLevel="72" type="L2Monster" name="Varka Silenos Shaman">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="123" />
@@ -2367,7 +2367,7 @@
 			<height normal="39.5" />
 		</collision>
 	</npc>
-	<npc id="18641" level="72" type="L2Monster" name="Varka Silenos Priest">
+	<npc id="18641" level="85" originalLevel="72" type="L2Monster" name="Varka Silenos Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -2435,7 +2435,7 @@
 			<height normal="41.5" />
 		</collision>
 	</npc>
-	<npc id="18642" level="72" type="L2Monster" name="Varka Silenos Warrior">
+	<npc id="18642" level="85" originalLevel="72" type="L2Monster" name="Varka Silenos Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -2500,7 +2500,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18643" level="73" type="L2Monster" name="Grazing Antelope">
+	<npc id="18643" level="85" originalLevel="73" type="L2Monster" name="Grazing Antelope">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2563,7 +2563,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="18644" level="72" type="L2Monster" name="Varka Silenos Medium">
+	<npc id="18644" level="85" originalLevel="72" type="L2Monster" name="Varka Silenos Medium">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="123" />
@@ -2631,7 +2631,7 @@
 			<height normal="39.5" />
 		</collision>
 	</npc>
-	<npc id="18645" level="73" type="L2Monster" name="Varka Silenos Magus">
+	<npc id="18645" level="85" originalLevel="73" type="L2Monster" name="Varka Silenos Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -2699,7 +2699,7 @@
 			<height normal="55.2" />
 		</collision>
 	</npc>
-	<npc id="18646" level="73" type="L2Monster" name="Varka Silenos Officer">
+	<npc id="18646" level="85" originalLevel="73" type="L2Monster" name="Varka Silenos Officer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -2764,7 +2764,7 @@
 			<height normal="42.5" />
 		</collision>
 	</npc>
-	<npc id="18647" level="74" type="L2Monster" name="Grazing Flava">
+	<npc id="18647" level="85" originalLevel="74" type="L2Monster" name="Grazing Flava">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -2827,7 +2827,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="18648" level="73" type="L2Monster" name="Varka Silenos Seer">
+	<npc id="18648" level="85" originalLevel="73" type="L2Monster" name="Varka Silenos Seer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="123" />
@@ -2895,7 +2895,7 @@
 			<height normal="39.5" />
 		</collision>
 	</npc>
-	<npc id="18649" level="73" type="L2Monster" name="Varka Silenos Great Magus">
+	<npc id="18649" level="85" originalLevel="73" type="L2Monster" name="Varka Silenos Great Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -2960,7 +2960,7 @@
 			<height normal="49.2" />
 		</collision>
 	</npc>
-	<npc id="18650" level="73" type="L2Monster" name="Varka Silenos General">
+	<npc id="18650" level="85" originalLevel="73" type="L2Monster" name="Varka Silenos General">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -3027,7 +3027,7 @@
 			<height normal="42.5" />
 		</collision>
 	</npc>
-	<npc id="18651" level="74" type="L2Monster" name="Grazing Elder Antelope">
+	<npc id="18651" level="85" originalLevel="74" type="L2Monster" name="Grazing Elder Antelope">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -3090,7 +3090,7 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="18652" level="74" type="L2Monster" name="Varka Silenos Great Seer">
+	<npc id="18652" level="85" originalLevel="74" type="L2Monster" name="Varka Silenos Great Seer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="123" />
@@ -3158,7 +3158,7 @@
 			<height normal="39.5" />
 		</collision>
 	</npc>
-	<npc id="18653" level="74" type="L2Monster" name="Varka's Elite Guard">
+	<npc id="18653" level="85" originalLevel="74" type="L2Monster" name="Varka's Elite Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -3223,7 +3223,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18654" level="72" type="L2Monster" name="Varka's Commander">
+	<npc id="18654" level="85" originalLevel="72" type="L2Monster" name="Varka's Commander">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -3288,7 +3288,7 @@
 			<height normal="51" />
 		</collision>
 	</npc>
-	<npc id="18655" level="74" type="L2Monster" name="Varka's Head Guard">
+	<npc id="18655" level="85" originalLevel="74" type="L2Monster" name="Varka's Head Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -3353,7 +3353,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18656" level="74" type="L2Monster" name="Varka's Head Magus">
+	<npc id="18656" level="85" originalLevel="74" type="L2Monster" name="Varka's Head Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="123" />
@@ -3419,7 +3419,7 @@
 			<height normal="39.5" />
 		</collision>
 	</npc>
-	<npc id="18657" level="74" type="L2Monster" name="Prophet's Guard">
+	<npc id="18657" level="85" originalLevel="74" type="L2Monster" name="Prophet's Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -3484,7 +3484,7 @@
 			<height normal="41" />
 		</collision>
 	</npc>
-	<npc id="18658" level="74" type="L2Monster" name="Disciple of Prophet">
+	<npc id="18658" level="85" originalLevel="74" type="L2Monster" name="Disciple of Prophet">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -3550,7 +3550,7 @@
 			<height normal="41.5" />
 		</collision>
 	</npc>
-	<npc id="18659" level="74" type="L2Monster" name="Varka's Prophet">
+	<npc id="18659" level="85" originalLevel="74" type="L2Monster" name="Varka's Prophet">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="123" />
@@ -3618,7 +3618,7 @@
 			<height normal="47.5" />
 		</collision>
 	</npc>
-	<npc id="18660" level="75" type="L2Monster" name="Latana">
+	<npc id="18660" level="85" originalLevel="75" type="L2Monster" name="Latana">
 		<!-- Confirmed CT2.5 -->
 		<race>DRAGON</race>
 		<sex>FEMALE</sex>
@@ -3654,7 +3654,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="18661" level="75" type="L2Npc">
+	<npc id="18661" level="85" originalLevel="75" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -3690,7 +3690,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18662" level="73" type="L2Npc">
+	<npc id="18662" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -3726,7 +3726,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18663" level="73" type="L2Npc">
+	<npc id="18663" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -3761,7 +3761,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18664" level="52" type="L2Monster" name="Lucky Pig" title="The Spirit of Fortune">
+	<npc id="18664" level="85" originalLevel="52" type="L2Monster" name="Lucky Pig" title="The Spirit of Fortune">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="150" />
@@ -3802,7 +3802,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="18665" level="70" type="L2Monster" name="Lucky Pig" title="The Spirit of Fortune">
+	<npc id="18665" level="85" originalLevel="70" type="L2Monster" name="Lucky Pig" title="The Spirit of Fortune">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="150" />
@@ -3843,7 +3843,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="18666" level="75" type="L2Monster" name="Lucky Pig" title="The Spirit of Fortune">
+	<npc id="18666" level="85" originalLevel="75" type="L2Monster" name="Lucky Pig" title="The Spirit of Fortune">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="150" />
@@ -3884,7 +3884,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="18667" level="83" type="L2Monster" name="Ward of Death">
+	<npc id="18667" level="85" originalLevel="83" type="L2Monster" name="Ward of Death">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -3924,7 +3924,7 @@
 			<height normal="48.5" />
 		</collision>
 	</npc>
-	<npc id="18668" level="83" type="L2Monster" name="Ward of Death">
+	<npc id="18668" level="85" originalLevel="83" type="L2Monster" name="Ward of Death">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="type" value="1" />
@@ -3967,7 +3967,7 @@
 			<height normal="48.5" />
 		</collision>
 	</npc>
-	<npc id="18669" level="73" type="L2Npc">
+	<npc id="18669" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4002,7 +4002,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18670" level="73" type="L2Npc">
+	<npc id="18670" level="85" originalLevel="73" type="L2Npc">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4037,7 +4037,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18671" level="1" type="L2Monster" name="Block">
+	<npc id="18671" level="85" originalLevel="1" type="L2Monster" name="Block">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4073,7 +4073,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="18672" level="1" type="L2Block" name="Block">
+	<npc id="18672" level="85" originalLevel="1" type="L2Block" name="Block">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4109,7 +4109,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="18673" level="1" type="L2Monster" name="Block">
+	<npc id="18673" level="85" originalLevel="1" type="L2Monster" name="Block">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4145,7 +4145,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="18674" level="1" type="L2Monster" name="Block">
+	<npc id="18674" level="85" originalLevel="1" type="L2Monster" name="Block">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4181,7 +4181,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="18675" level="1" type="L2Monster" name="Block">
+	<npc id="18675" level="85" originalLevel="1" type="L2Monster" name="Block">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4217,7 +4217,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="18676" level="73" type="L2Monster" name="Block-Carrying GIrl">
+	<npc id="18676" level="85" originalLevel="73" type="L2Monster" name="Block-Carrying GIrl">
 		<!-- Confirmed CT2.5 -->
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
@@ -4252,7 +4252,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="18677" level="73" type="L2Monster" name="Dragon Steed Troop Messenger">
+	<npc id="18677" level="85" originalLevel="73" type="L2Monster" name="Dragon Steed Troop Messenger">
 		<!-- Confirmed CT2.5 -->
 		<race>DRAGON</race>
 		<sex>MALE</sex>
@@ -4287,7 +4287,7 @@
 			<height normal="46.5" />
 		</collision>
 	</npc>
-	<npc id="18678" level="1" type="L2Npc" name="Energy Seed - Water">
+	<npc id="18678" level="85" originalLevel="1" type="L2Npc" name="Energy Seed - Water">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4329,7 +4329,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18679" level="1" type="L2Npc" name="Energy Seed - Fire">
+	<npc id="18679" level="85" originalLevel="1" type="L2Npc" name="Energy Seed - Fire">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4371,7 +4371,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18680" level="2" type="L2Npc" name="Energy Seed - Wind">
+	<npc id="18680" level="85" originalLevel="2" type="L2Npc" name="Energy Seed - Wind">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4413,7 +4413,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18681" level="2" type="L2Npc" name="Energy Seed - Earth">
+	<npc id="18681" level="85" originalLevel="2" type="L2Npc" name="Energy Seed - Earth">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4455,7 +4455,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18682" level="3" type="L2Npc" name="Energy Seed - Holy">
+	<npc id="18682" level="85" originalLevel="3" type="L2Npc" name="Energy Seed - Holy">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4497,7 +4497,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18683" level="3" type="L2Npc" name="Energy Seed - Dark">
+	<npc id="18683" level="85" originalLevel="3" type="L2Npc" name="Energy Seed - Dark">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4539,7 +4539,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18684" level="1" type="L2Npc" name="Red Star Stone">
+	<npc id="18684" level="85" originalLevel="1" type="L2Npc" name="Red Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4581,7 +4581,7 @@
 			<height normal="61" />
 		</collision>
 	</npc>
-	<npc id="18685" level="1" type="L2Npc" name="Red Star Stone">
+	<npc id="18685" level="85" originalLevel="1" type="L2Npc" name="Red Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4623,7 +4623,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="18686" level="1" type="L2Npc" name="Red Star Stone">
+	<npc id="18686" level="85" originalLevel="1" type="L2Npc" name="Red Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4665,7 +4665,7 @@
 			<height normal="30.5" />
 		</collision>
 	</npc>
-	<npc id="18687" level="1" type="L2Npc" name="Blue Star Stone">
+	<npc id="18687" level="85" originalLevel="1" type="L2Npc" name="Blue Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4707,7 +4707,7 @@
 			<height normal="61" />
 		</collision>
 	</npc>
-	<npc id="18688" level="1" type="L2Npc" name="Blue Star Stone">
+	<npc id="18688" level="85" originalLevel="1" type="L2Npc" name="Blue Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4749,7 +4749,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="18689" level="1" type="L2Npc" name="Blue Star Stone">
+	<npc id="18689" level="85" originalLevel="1" type="L2Npc" name="Blue Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4791,7 +4791,7 @@
 			<height normal="30.5" />
 		</collision>
 	</npc>
-	<npc id="18690" level="1" type="L2Npc" name="Green Star Stone">
+	<npc id="18690" level="85" originalLevel="1" type="L2Npc" name="Green Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4833,7 +4833,7 @@
 			<height normal="61" />
 		</collision>
 	</npc>
-	<npc id="18691" level="1" type="L2Npc" name="Green Star Stone">
+	<npc id="18691" level="85" originalLevel="1" type="L2Npc" name="Green Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4875,7 +4875,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="18692" level="1" type="L2Npc" name="Green Star Stone">
+	<npc id="18692" level="85" originalLevel="1" type="L2Npc" name="Green Star Stone">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -4917,7 +4917,7 @@
 			<height normal="30.5" />
 		</collision>
 	</npc>
-	<npc id="18693" level="76" type="L2Monster" name="Treasure Chest of the Ancient Giants">
+	<npc id="18693" level="85" originalLevel="76" type="L2Monster" name="Treasure Chest of the Ancient Giants">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
@@ -4958,7 +4958,7 @@
 			<height normal="8.5" />
 		</collision>
 	</npc>
-	<npc id="18694" level="78" type="L2Monster" name="Treasure Chest Guard">
+	<npc id="18694" level="85" originalLevel="78" type="L2Monster" name="Treasure Chest Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -5010,7 +5010,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="18695" level="78" type="L2Monster" name="Treasure Chest Guard">
+	<npc id="18695" level="85" originalLevel="78" type="L2Monster" name="Treasure Chest Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -5062,7 +5062,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="18696" level="80" type="L2Monster" name="Dimension Moving Device">
+	<npc id="18696" level="85" originalLevel="80" type="L2Monster" name="Dimension Moving Device">
 		<!-- Confirmed CT2.5 -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
@@ -5101,7 +5101,7 @@
 			<height normal="7" />
 		</collision>
 	</npc>
-	<npc id="18697" level="80" type="L2Monster" name="Trap">
+	<npc id="18697" level="85" originalLevel="80" type="L2Monster" name="Trap">
 		<!-- Confirmed CT2.5 -->
 		<race>ETC</race>
 		<sex>ETC</sex>
@@ -5136,7 +5136,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18698" level="80" type="L2Monster" name="Trap">
+	<npc id="18698" level="85" originalLevel="80" type="L2Monster" name="Trap">
 		<!-- Confirmed CT2.5 -->
 		<race>ETC</race>
 		<sex>ETC</sex>
@@ -5171,7 +5171,7 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18699" level="80" type="L2Monster" name="Trap">
+	<npc id="18699" level="85" originalLevel="80" type="L2Monster" name="Trap">
 		<!-- Confirmed CT2.5 -->
 		<race>ETC</race>
 		<sex>ETC</sex>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="21400" level="78" type="L2Monster" name="Hexa Beetle">
+	<npc id="21400" level="85" originalLevel="78" type="L2Monster" name="Hexa Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -80,7 +80,7 @@
 			<height normal="54.5" grown="67" />
 		</collision>
 	</npc>
-	<npc id="21401" level="78" type="L2Monster" name="Hexa Beetle">
+	<npc id="21401" level="85" originalLevel="78" type="L2Monster" name="Hexa Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -162,7 +162,7 @@
 			<height normal="54.5" grown="67" />
 		</collision>
 	</npc>
-	<npc id="21402" level="78" type="L2Monster" name="Katraxis">
+	<npc id="21402" level="85" originalLevel="78" type="L2Monster" name="Katraxis">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -246,7 +246,7 @@
 			<height normal="52.8" />
 		</collision>
 	</npc>
-	<npc id="21403" level="78" type="L2Monster" name="Katraxis">
+	<npc id="21403" level="85" originalLevel="78" type="L2Monster" name="Katraxis">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -326,7 +326,7 @@
 			<height normal="52.8" />
 		</collision>
 	</npc>
-	<npc id="21404" level="78" type="L2Monster" name="Tera Beetle">
+	<npc id="21404" level="85" originalLevel="78" type="L2Monster" name="Tera Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -412,7 +412,7 @@
 			<height normal="54.5" grown="67" />
 		</collision>
 	</npc>
-	<npc id="21405" level="78" type="L2Monster" name="Tera Beetle">
+	<npc id="21405" level="85" originalLevel="78" type="L2Monster" name="Tera Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -496,7 +496,7 @@
 			<height normal="54.5" grown="67" />
 		</collision>
 	</npc>
-	<npc id="21406" level="78" type="L2Monster" name="Knight of Empire">
+	<npc id="21406" level="85" originalLevel="78" type="L2Monster" name="Knight of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -589,7 +589,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21407" level="78" type="L2Monster" name="Knight of Empire">
+	<npc id="21407" level="85" originalLevel="78" type="L2Monster" name="Knight of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -677,7 +677,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21408" level="78" type="L2Monster" name="Royal Guard of Empire">
+	<npc id="21408" level="85" originalLevel="78" type="L2Monster" name="Royal Guard of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -765,7 +765,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21409" level="78" type="L2Monster" name="Royal Guard of Empire">
+	<npc id="21409" level="85" originalLevel="78" type="L2Monster" name="Royal Guard of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -855,7 +855,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21410" level="78" type="L2Monster" name="Guardian Scarab">
+	<npc id="21410" level="85" originalLevel="78" type="L2Monster" name="Guardian Scarab">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -952,7 +952,7 @@
 			<height normal="26.5" />
 		</collision>
 	</npc>
-	<npc id="21411" level="78" type="L2Monster" name="Guardian Scarab">
+	<npc id="21411" level="85" originalLevel="78" type="L2Monster" name="Guardian Scarab">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -1037,7 +1037,7 @@
 			<height normal="26.5" />
 		</collision>
 	</npc>
-	<npc id="21412" level="78" type="L2Monster" name="Ustralith">
+	<npc id="21412" level="85" originalLevel="78" type="L2Monster" name="Ustralith">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -1130,7 +1130,7 @@
 			<height normal="66" />
 		</collision>
 	</npc>
-	<npc id="21413" level="78" type="L2Monster" name="Ustralith">
+	<npc id="21413" level="85" originalLevel="78" type="L2Monster" name="Ustralith">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -1222,7 +1222,7 @@
 			<height normal="66" />
 		</collision>
 	</npc>
-	<npc id="21414" level="78" type="L2Monster" name="Assassin of Empire">
+	<npc id="21414" level="85" originalLevel="78" type="L2Monster" name="Assassin of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -1313,7 +1313,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="21415" level="78" type="L2Monster" name="Assassin of Empire">
+	<npc id="21415" level="85" originalLevel="78" type="L2Monster" name="Assassin of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -1403,7 +1403,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="21416" level="78" type="L2Monster" name="Imperial Commander">
+	<npc id="21416" level="85" originalLevel="78" type="L2Monster" name="Imperial Commander">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -1486,7 +1486,7 @@
 			<height normal="30" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21417" level="78" type="L2Monster" name="Imperial Commander">
+	<npc id="21417" level="85" originalLevel="78" type="L2Monster" name="Imperial Commander">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -1567,7 +1567,7 @@
 			<height normal="30" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21418" level="78" type="L2Monster" name="Imperial Royal Guard">
+	<npc id="21418" level="85" originalLevel="78" type="L2Monster" name="Imperial Royal Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="74" />
@@ -1653,7 +1653,7 @@
 			<height normal="31" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21419" level="78" type="L2Monster" name="Imperial Royal Guard">
+	<npc id="21419" level="85" originalLevel="78" type="L2Monster" name="Imperial Royal Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="74" />
@@ -1740,7 +1740,7 @@
 			<height normal="31" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21420" level="78" type="L2Monster" name="Ashuras">
+	<npc id="21420" level="85" originalLevel="78" type="L2Monster" name="Ashuras">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1837,7 +1837,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="21421" level="78" type="L2Monster" name="Ashuras">
+	<npc id="21421" level="85" originalLevel="78" type="L2Monster" name="Ashuras">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1922,7 +1922,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="21422" level="78" type="L2Monster" name="Dancer of Empire">
+	<npc id="21422" level="85" originalLevel="78" type="L2Monster" name="Dancer of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2013,7 +2013,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="21423" level="78" type="L2Monster" name="Dancer of Empire">
+	<npc id="21423" level="85" originalLevel="78" type="L2Monster" name="Dancer of Empire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2097,7 +2097,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="21424" level="78" type="L2Monster" name="Ashkenas">
+	<npc id="21424" level="85" originalLevel="78" type="L2Monster" name="Ashkenas">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -2188,7 +2188,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="21425" level="78" type="L2Monster" name="Ashkenas">
+	<npc id="21425" level="85" originalLevel="78" type="L2Monster" name="Ashkenas">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -2278,7 +2278,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="21426" level="78" type="L2Monster" name="Abraxion">
+	<npc id="21426" level="85" originalLevel="78" type="L2Monster" name="Abraxion">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -2364,7 +2364,7 @@
 			<height normal="50" grown="60" />
 		</collision>
 	</npc>
-	<npc id="21427" level="78" type="L2Monster" name="Abraxion">
+	<npc id="21427" level="85" originalLevel="78" type="L2Monster" name="Abraxion">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -2444,7 +2444,7 @@
 			<height normal="50" grown="60" />
 		</collision>
 	</npc>
-	<npc id="21428" level="78" type="L2Monster" name="Hasturan">
+	<npc id="21428" level="85" originalLevel="78" type="L2Monster" name="Hasturan">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -2525,7 +2525,7 @@
 			<height normal="50" grown="60" />
 		</collision>
 	</npc>
-	<npc id="21429" level="78" type="L2Monster" name="Hasturan">
+	<npc id="21429" level="85" originalLevel="78" type="L2Monster" name="Hasturan">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -2608,7 +2608,7 @@
 			<height normal="50" grown="60" />
 		</collision>
 	</npc>
-	<npc id="21430" level="78" type="L2Monster" name="Arimanes">
+	<npc id="21430" level="85" originalLevel="78" type="L2Monster" name="Arimanes">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -2702,7 +2702,7 @@
 			<height normal="57.75" grown="69" />
 		</collision>
 	</npc>
-	<npc id="21431" level="78" type="L2Monster" name="Arimanes">
+	<npc id="21431" level="85" originalLevel="78" type="L2Monster" name="Arimanes">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -2788,7 +2788,7 @@
 			<height normal="57.75" grown="69" />
 		</collision>
 	</npc>
-	<npc id="21432" level="78" type="L2Monster" name="Chakram Beetle">
+	<npc id="21432" level="85" originalLevel="78" type="L2Monster" name="Chakram Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2875,7 +2875,7 @@
 			<height normal="54.5" />
 		</collision>
 	</npc>
-	<npc id="21433" level="78" type="L2Monster" name="Jamadar Beetle">
+	<npc id="21433" level="85" originalLevel="78" type="L2Monster" name="Jamadar Beetle">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -2957,7 +2957,7 @@
 			<height normal="43.6" grown="52.5" />
 		</collision>
 	</npc>
-	<npc id="21434" level="78" type="L2Monster" name="Seer of Blood">
+	<npc id="21434" level="85" originalLevel="78" type="L2Monster" name="Seer of Blood">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -3044,7 +3044,7 @@
 			<height normal="50" grown="60" />
 		</collision>
 	</npc>
-	<npc id="21435" level="78" type="L2Monster" name="Guide of Offering">
+	<npc id="21435" level="85" originalLevel="78" type="L2Monster" name="Guide of Offering">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -3123,7 +3123,7 @@
 			<height normal="30" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21436" level="78" type="L2Monster" name="Leader of Offering">
+	<npc id="21436" level="85" originalLevel="78" type="L2Monster" name="Leader of Offering">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
@@ -3199,7 +3199,7 @@
 			<height normal="30" grown="36" />
 		</collision>
 	</npc>
-	<npc id="21437" level="78" type="L2Monster" name="Offering Bug">
+	<npc id="21437" level="85" originalLevel="78" type="L2Monster" name="Offering Bug">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="65" />
@@ -3286,7 +3286,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="21438" level="65" type="L2Monster" name="Heathen Warrior">
+	<npc id="21438" level="85" originalLevel="65" type="L2Monster" name="Heathen Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -3374,7 +3374,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="21439" level="66" type="L2Monster" name="Heathen Executed">
+	<npc id="21439" level="85" originalLevel="66" type="L2Monster" name="Heathen Executed">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="130" />
@@ -3457,7 +3457,7 @@
 			<height normal="40" grown="48.5" />
 		</collision>
 	</npc>
-	<npc id="21440" level="67" type="L2Monster" name="Heathen Archer">
+	<npc id="21440" level="85" originalLevel="67" type="L2Monster" name="Heathen Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -3548,7 +3548,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="21441" level="68" type="L2Monster" name="Heathen Grunt">
+	<npc id="21441" level="85" originalLevel="68" type="L2Monster" name="Heathen Grunt">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -3639,7 +3639,7 @@
 			<height normal="28" grown="33" />
 		</collision>
 	</npc>
-	<npc id="21442" level="69" type="L2Monster" name="Heathen Knight">
+	<npc id="21442" level="85" originalLevel="69" type="L2Monster" name="Heathen Knight">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -3731,7 +3731,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21443" level="63" type="L2Monster" name="Raider of Pastureland">
+	<npc id="21443" level="85" originalLevel="63" type="L2Monster" name="Raider of Pastureland">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -3851,7 +3851,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21444" level="63" type="L2Monster" name="Raider of Pastureland">
+	<npc id="21444" level="85" originalLevel="63" type="L2Monster" name="Raider of Pastureland">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -3966,7 +3966,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21445" level="64" type="L2Monster" name="Alpine Bandersnatch">
+	<npc id="21445" level="85" originalLevel="64" type="L2Monster" name="Alpine Bandersnatch">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -4081,7 +4081,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="21446" level="64" type="L2Monster" name="Raider of Pastureland">
+	<npc id="21446" level="85" originalLevel="64" type="L2Monster" name="Raider of Pastureland">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -4203,7 +4203,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21447" level="66" type="L2Monster" name="Raider of Pastureland">
+	<npc id="21447" level="85" originalLevel="66" type="L2Monster" name="Raider of Pastureland">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -4322,7 +4322,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21448" level="66" type="L2Monster" name="Raider of Pastureland">
+	<npc id="21448" level="85" originalLevel="66" type="L2Monster" name="Raider of Pastureland">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -4435,7 +4435,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21449" level="68" type="L2Monster" name="Raider of Pastureland">
+	<npc id="21449" level="85" originalLevel="68" type="L2Monster" name="Raider of Pastureland">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -4552,7 +4552,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="21450" level="68" type="L2Monster" name="Alpine Grendel">
+	<npc id="21450" level="85" originalLevel="68" type="L2Monster" name="Alpine Grendel">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="115" />
@@ -4666,7 +4666,7 @@
 			<height normal="39" grown="47.5" />
 		</collision>
 	</npc>
-	<npc id="21451" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21451" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -4805,7 +4805,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21452" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21452" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -4912,7 +4912,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21453" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21453" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5020,7 +5020,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21454" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21454" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5127,7 +5127,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21455" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21455" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5235,7 +5235,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21456" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21456" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5359,7 +5359,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21457" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21457" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5485,7 +5485,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21458" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21458" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5612,7 +5612,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21459" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21459" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="78" />
@@ -5735,7 +5735,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21460" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21460" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -5816,7 +5816,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21461" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21461" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -5898,7 +5898,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21462" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21462" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -5979,7 +5979,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21463" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21463" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6061,7 +6061,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21464" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21464" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6159,7 +6159,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21465" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21465" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6260,7 +6260,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21466" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21466" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6361,7 +6361,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21467" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21467" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6458,7 +6458,7 @@
 			<height normal="26.4" />
 		</collision>
 	</npc>
-	<npc id="21468" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21468" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6531,7 +6531,7 @@
 			<height normal="33" grown="40" />
 		</collision>
 	</npc>
-	<npc id="21469" level="65" type="L2FeedableBeast" name="Alpine Kookaburra">
+	<npc id="21469" level="85" originalLevel="65" type="L2FeedableBeast" name="Alpine Kookaburra">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="72" />
@@ -6607,7 +6607,7 @@
 			<height normal="33" grown="40" />
 		</collision>
 	</npc>
-	<npc id="21470" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21470" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -6748,7 +6748,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21471" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21471" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -6855,7 +6855,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21472" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21472" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -6963,7 +6963,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21473" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21473" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -7070,7 +7070,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21474" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21474" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -7178,7 +7178,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21475" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21475" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -7305,7 +7305,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21476" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21476" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -7430,7 +7430,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21477" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21477" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -7557,7 +7557,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21478" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21478" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
@@ -7682,7 +7682,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="21479" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21479" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -7763,7 +7763,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21480" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21480" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -7845,7 +7845,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21481" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21481" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -7926,7 +7926,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21482" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21482" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8008,7 +8008,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21483" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21483" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8103,7 +8103,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21484" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21484" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8204,7 +8204,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21485" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21485" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8303,7 +8303,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21486" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21486" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8402,7 +8402,7 @@
 			<height normal="25.2" />
 		</collision>
 	</npc>
-	<npc id="21487" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21487" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8475,7 +8475,7 @@
 			<height normal="31" grown="38" />
 		</collision>
 	</npc>
-	<npc id="21488" level="67" type="L2FeedableBeast" name="Alpine Buffalo">
+	<npc id="21488" level="85" originalLevel="67" type="L2FeedableBeast" name="Alpine Buffalo">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8551,7 +8551,7 @@
 			<height normal="31" grown="38" />
 		</collision>
 	</npc>
-	<npc id="21489" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21489" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8685,7 +8685,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21490" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21490" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8792,7 +8792,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21491" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21491" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -8900,7 +8900,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21492" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21492" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -9007,7 +9007,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21493" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21493" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -9115,7 +9115,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21494" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21494" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -9236,7 +9236,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21495" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21495" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -9357,7 +9357,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21496" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21496" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -9484,7 +9484,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21497" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21497" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -9610,7 +9610,7 @@
 			<height normal="15.7" />
 		</collision>
 	</npc>
-	<npc id="21498" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21498" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
@@ -9691,7 +9691,7 @@
 			<height normal="17.2" />
 		</collision>
 	</npc>
-	<npc id="21499" level="69" type="L2FeedableBeast" name="Alpine Cougar">
+	<npc id="21499" level="85" originalLevel="69" type="L2FeedableBeast" name="Alpine Cougar">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="90" />
