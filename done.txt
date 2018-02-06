@@ -1,0 +1,4 @@
+subclass 85 lvl
+remove masterwork craft
+5 clans in ally
+stating level 85
