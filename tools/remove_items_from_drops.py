@@ -1,6 +1,6 @@
 import sys
 import file_helper as fh
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 import xml_helper as xh
 
 script_name, workdir, file_extension, recursive, ids_file = sys.argv
@@ -12,26 +12,26 @@ print('Ids to remove:', ids_to_remove)
 
 
 def removeEmptyGroup(item_element):
-    parent_node = item_element.parentNode
+    parent_node = item_element.getparent()
     if parent_node is not None and parent_node.children.length == 0 and parent_node.tagName.lower() == 'group'.lower():
-        print('Removing empty group',  item_element.parentNode.getValue())
-        item_element.parentNode.parentNode.removeChild(item_element.parentNode)
+        print('Removing empty group',  item_element.getparent().getValue())
+        item_element.getparent().getparent().remove(item_element.getparent())
 
 
 def processes_items(item_elements):
     for item_element in item_elements:
-        if item_element.getAttribute('id') in ids_to_remove:
-            print('Removing item', item_element.getAttribute('id'))
-            item_element.parentNode.removeChild(item_element)
+        if item_element.get('id') in ids_to_remove:
+            print('Removing item', item_element.get('id'))
+            item_element.getparent().remove(item_element)
             removeEmptyGroup(item_element)
 
 
 for item in files_to_process:
-    parser = ET.XMLParser(target=xh.CommentedTreeBuilder())
-    dom = parser(item)
-    drop_lists = dom.findall('dropLists')
+    dom = ET.parse(item)
+    drop_lists = dom.findall('.//dropLists')
     for drop_list in drop_lists:
-        item_elements = drop_list.findall('item')
+        item_elements = drop_list.findall('.//item')
         processes_items(item_elements)
 
-    dom.write(item)
+    with open(item, 'wb') as f:
+        f.write(ET.tostring(dom))
