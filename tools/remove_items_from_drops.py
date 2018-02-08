@@ -11,25 +11,31 @@ files_to_process = fh.filter_files_by_suffix(fh.files_to_process(workdir), file_
 print('Ids to remove:', ids_to_remove)
 
 
-def removeEmptyGroup(item_element):
-    parent_node = item_element.getparent()
-    if parent_node is not None and parent_node.children.length == 0 and parent_node.tagName.lower() == 'group'.lower():
-        print('Removing empty group',  item_element.getparent().getValue())
-        item_element.getparent().getparent().remove(item_element.getparent())
+def removeEmptyDeathOrCorpse(death_node):
+    if not death_node is None and (not death_node.getchildren()) and not death_node.getparent() is None and (death_node.tag.lower() == 'death' or death_node.tag.lower() == 'corpse'):
+        print('Removing empty', death_node.tag)
+        death_node.getparent().remove(death_node)
+
+
+def removeEmptyGroup(group_node):
+    if not group_node is None and (not group_node.getchildren()) and group_node.tag.lower() == 'group' and not group_node.getparent() is None:
+        print('Removing empty group')
+        death_node = group_node.getparent()
+        death_node.remove(group_node)
+        removeEmptyDeathOrCorpse(death_node)
 
 
 def processes_items(item_elements):
     removedElements = []
     for item_element in item_elements:
         if item_element.get('id') in ids_to_remove:
-            next_sibling = item_element.getnext()
-            comment = None
-            if next_sibling is not None and next_sibling.tag is ET.Comment:
-                item_element.getparent().remove(next_sibling)
-                comment = next_sibling
-            print('Removing item', item_element.get('id'), comment)
-            item_element.getparent().remove(item_element)
-            removeEmptyGroup(item_element)
+            comment_sibling = item_element.getnext()
+            if comment_sibling is not None and comment_sibling.tag is ET.Comment:
+                item_element.getparent().remove(comment_sibling)
+            print('Removing item', item_element.get('id'), comment_sibling)
+            group_node = item_element.getparent()
+            group_node.remove(item_element)
+            removeEmptyGroup(group_node)
             removedElements.append(item_element)
     return removedElements
 
