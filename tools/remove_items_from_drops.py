@@ -19,9 +19,6 @@ def removeEmptyGroup(item_element):
 def processes_items(item_elements):
     for item_element in item_elements:
         if item_element.getAttribute('id') in ids_to_remove:
-            comment = None
-            if item_element.nextSibling not None and item_element.nextSibling.nodeType == Node.COMMENT_NODE:
-                comment = item_element.nextSibling.getValue()
             print('Removing item', item_element.getAttribute('id'))
             item_element.parentNode.removeChild(item_element)
             removeEmptyGroup(item_element)
