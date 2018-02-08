@@ -21,7 +21,12 @@ def removeEmptyGroup(item_element):
 def processes_items(item_elements):
     for item_element in item_elements:
         if item_element.get('id') in ids_to_remove:
-            print('Removing item', item_element.get('id'))
+            next_sibling = item_element.getnext()
+            comment = None
+            if next_sibling is not None and next_sibling.tag is ET.Comment:
+                item_element.getparent().remove(next_sibling)
+                comment = next_sibling
+            print('Removing item', item_element.get('id'), comment)
             item_element.getparent().remove(item_element)
             removeEmptyGroup(item_element)
 
