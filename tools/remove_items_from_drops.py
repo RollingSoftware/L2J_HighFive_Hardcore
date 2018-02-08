@@ -12,13 +12,13 @@ print('Ids to remove:', ids_to_remove)
 
 
 def removeEmptyDeathOrCorpse(death_node):
-    if not death_node is None and (not death_node.getchildren()) and not death_node.getparent() is None and (death_node.tag.lower() == 'death' or death_node.tag.lower() == 'corpse'):
+    if death_node is not None and (not death_node.getchildren()) and death_node.getparent() is not None and (death_node.tag.lower() == 'death' or death_node.tag.lower() == 'corpse'):
         print('Removing empty', death_node.tag)
         death_node.getparent().remove(death_node)
 
 
 def removeEmptyGroup(group_node):
-    if not group_node is None and (not group_node.getchildren()) and group_node.tag.lower() == 'group' and not group_node.getparent() is None:
+    if group_node is not None and (not group_node.getchildren()) and group_node.tag.lower() == 'group' and group_node.getparent() is not None:
         print('Removing empty group')
         death_node = group_node.getparent()
         death_node.remove(group_node)

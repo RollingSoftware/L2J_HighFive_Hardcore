@@ -18,7 +18,7 @@ def removeEmptyDeathOrCorpse(death_node):
 
 
 def removeEmptyGroup(group_node):
-    if group_node is not None and (not group_node.getchildren()) and group_node.tag.lower() == 'group' and not group_node.getparent() is None:
+    if group_node is not None and (not group_node.getchildren()) and group_node.tag.lower() == 'group' and group_node.getparent() is not None:
         print('Removing empty group')
         death_node = group_node.getparent()
         death_node.remove(group_node)
