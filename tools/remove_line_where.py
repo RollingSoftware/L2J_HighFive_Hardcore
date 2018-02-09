@@ -15,6 +15,8 @@ for current_file in all_files:
         for line in current_file_handle:
             if remove_where not in line:
                 new_lines.append(line)
+            else:
+                print('Removing line', line)
 
     with open(current_file, 'w+') as new_file_handle:
         new_file_handle.writelines(new_lines)
