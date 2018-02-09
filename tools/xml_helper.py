@@ -9,3 +9,7 @@ class CommentedTreeBuilder(ElementTree.TreeBuilder):
         self.start(ElementTree.Comment, {})
         self.data(data)
         self.end(ElementTree.Comment)
+
+
+def extract_ids(elements):
+    return [element.get('id') for element in elements]
