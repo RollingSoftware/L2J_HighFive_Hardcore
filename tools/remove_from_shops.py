@@ -13,7 +13,11 @@ print('Ids to remove:', ids_to_remove)
 
 for file_item in files_to_process:
     dom = ET.parse(file_item)
+
+    was_empty = False
     items = dom.findall('.//item')
+    if not items:
+        was_empty = True
     results = []
     for item in items:
         ingridient_ids = xh.extract_ids(item.findall('.//ingredient'))
@@ -23,13 +27,14 @@ for file_item in files_to_process:
         all_ids.extend(production_ids)
         for id_to_remove in ids_to_remove:
             if id_to_remove in all_ids:
-                item.getparent().remove(item)
-                results.append(item)
+                if item.getparent():
+                    print('Removing', id_to_remove, 'from', item.getparent())
+                    item.getparent().remove(item)
+                    results.append(item)
 
     new_items = dom.findall('.//item')
-    if not new_items:
+    if not new_items and not was_empty:
         os.remove(file_item)
-
-    if results:
-        with open(item, 'wb') as f:
+    elif results:
+        with open(file_item, 'wb') as f:
             f.write(ET.tostring(dom))
