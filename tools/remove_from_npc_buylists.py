@@ -17,7 +17,7 @@ for file_item in files_to_process:
     npcs = dom.findall('.//npc')
     if not npcs:
         print('No npcs were found, skipping file', file_item)
-        break
+        continue
 
     items = dom.findall('.//item')
 
@@ -33,6 +33,7 @@ for file_item in files_to_process:
 
     new_items = dom.findall('.//item')
     if not new_items and not was_empty:
+        print('No items left in', file_item)
         os.remove(file_item)
     elif results:
         with open(file_item, 'wb') as f:
