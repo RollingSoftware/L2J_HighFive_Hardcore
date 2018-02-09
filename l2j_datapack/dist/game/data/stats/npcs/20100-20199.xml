@@ -2091,11 +2091,8 @@
 					<item id="57" min="770" max="1572" chance="100"/> <!-- Adena -->
 				</group>
 				<group chance="0.17980000376701355">
-					<item id="11889" min="1" max="1" chance="3.059"/> <!-- Common Item - Great Sword -->
 					<item id="4104" min="1" max="1" chance="30.5903"/> <!-- Great Sword Blade -->
-					<item id="11916" min="1" max="1" chance="3.059"/> <!-- Common Item - Keshanberk -->
 					<item id="4107" min="1" max="1" chance="30.1163"/> <!-- Keshanberk Blade -->
-					<item id="11900" min="1" max="1" chance="3.059"/> <!-- Common Item - Sword of Valhalla -->
 					<item id="4108" min="1" max="1" chance="30.1164"/> <!-- Sword of Valhalla Blade -->
 				</group>
 				<group chance="15.24530029296875">

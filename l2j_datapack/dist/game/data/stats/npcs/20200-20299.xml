@@ -3844,13 +3844,9 @@
 					<item id="57" min="727" max="1485" chance="100"/> <!-- Adena -->
 				</group>
 				<group chance="1.686400055885315">
-					<item id="12159" min="1" max="1" chance="3.6853"/> <!-- Common Item - Zubei's Shield -->
 					<item id="4101" min="1" max="1" chance="23.3935"/> <!-- Zubei's Shield Fragment -->
-					<item id="12171" min="1" max="1" chance="3.6853"/> <!-- Common Item - Avadon Shield -->
 					<item id="4439" min="1" max="1" chance="27.8302"/> <!-- Avadon Shield Fragment -->
-					<item id="12160" min="1" max="1" chance="2.5785"/> <!-- Common Item - Zubei's Helmet -->
 					<item id="4102" min="1" max="1" chance="18.1243"/> <!-- Zubei's Helmet Design -->
-					<item id="12170" min="1" max="1" chance="2.5785"/> <!-- Common Item - Avadon Circlet -->
 					<item id="4072" min="1" max="1" chance="18.1244"/> <!-- Avadon Circlet Pattern -->
 				</group>
 				<group chance="17.3080997467041">
@@ -3946,11 +3942,8 @@
 					<item id="57" min="933" max="1900" chance="100"/> <!-- Adena -->
 				</group>
 				<group chance="2.091900110244751">
-					<item id="12338" min="1" max="1" chance="4.5566"/> <!-- Common Item - Adamantite Earring -->
 					<item id="4049" min="1" max="1" chance="29.1581"/> <!-- Adamantite Earring Gemstone -->
-					<item id="12339" min="1" max="1" chance="3.4209"/> <!-- Common Item - Adamantite Necklace -->
 					<item id="4051" min="1" max="1" chance="21.559"/> <!-- Adamantite Necklace Chain -->
-					<item id="12340" min="1" max="1" chance="6.863"/> <!-- Common Item - Adamantite Ring -->
 					<item id="4050" min="1" max="1" chance="34.4424"/> <!-- Adamantite Ring Wire -->
 				</group>
 				<group chance="18.552799224853516">
