@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2016 L2J Server
- * 
+ *
  * This file is part of L2J Server.
- * 
+ *
  * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -61,31 +61,31 @@ public class NpcData implements IXmlReader
 	private final Map<Integer, L2NpcTemplate> _npcs = new ConcurrentHashMap<>();
 	private final Map<String, Integer> _clans = new ConcurrentHashMap<>();
 	private MinionData _minionData;
-	
+
 	protected NpcData()
 	{
 		load();
 	}
-	
+
 	@Override
 	public synchronized void load()
 	{
 		_minionData = new MinionData();
-		
+
 		parseDatapackDirectory("data/stats/npcs", false);
 		LOG.info("{}: Loaded {} NPCs.", getClass().getSimpleName(), _npcs.size());
-		
+
 		if (Config.CUSTOM_NPC_DATA)
 		{
 			final int npcCount = _npcs.size();
 			parseDatapackDirectory("data/stats/npcs/custom", true);
 			LOG.info("{}: Loaded {} custom NPCs.", getClass().getSimpleName(), (_npcs.size() - npcCount));
 		}
-		
+
 		_minionData = null;
 		loadNpcsSkillLearn();
 	}
-	
+
 	@Override
 	public void parseDocument(Document doc, File f)
 	{
@@ -108,6 +108,7 @@ public class NpcData implements IXmlReader
 						set.set("id", npcId);
 						set.set("displayId", parseInteger(attrs, "displayId"));
 						set.set("level", parseByte(attrs, "level"));
+						set.set("originalLevel", parseByte(attrs, "originalLevel"));
 						set.set("type", parseString(attrs, "type"));
 						set.set("name", parseString(attrs, "name"));
 						set.set("usingServerSideName", parseBoolean(attrs, "usingServerSideName"));
@@ -124,7 +125,7 @@ public class NpcData implements IXmlReader
 									{
 										parameters = new HashMap<>();
 									}
-									
+
 									for (Node parametersNode = npcNode.getFirstChild(); parametersNode != null; parametersNode = parametersNode.getNextSibling())
 									{
 										attrs = parametersNode.getAttributes();
@@ -151,12 +152,12 @@ public class NpcData implements IXmlReader
 														minions.add(new MinionHolder(parseInteger(attrs, "id"), parseInteger(attrs, "count"), parseInteger(attrs, "respawnTime"), parseInteger(attrs, "weightPoint")));
 													}
 												}
-												
+
 												if (!minions.isEmpty())
 												{
 													parameters.put(parseString(parametersNode.getAttributes(), "name"), minions);
 												}
-												
+
 												break;
 											}
 										}
@@ -424,7 +425,7 @@ public class NpcData implements IXmlReader
 									for (Node dropListsNode = npcNode.getFirstChild(); dropListsNode != null; dropListsNode = dropListsNode.getNextSibling())
 									{
 										DropListScope dropListScope = null;
-										
+
 										try
 										{
 											dropListScope = Enum.valueOf(DropListScope.class, dropListsNode.getNodeName().toUpperCase());
@@ -432,14 +433,14 @@ public class NpcData implements IXmlReader
 										catch (Exception e)
 										{
 										}
-										
+
 										if (dropListScope != null)
 										{
 											if (dropLists == null)
 											{
 												dropLists = new EnumMap<>(DropListScope.class);
 											}
-											
+
 											List<IDropItem> dropList = new ArrayList<>();
 											parseDropList(f, dropListsNode, dropListScope, dropList);
 											dropLists.put(dropListScope, Collections.unmodifiableList(dropList));
@@ -472,7 +473,7 @@ public class NpcData implements IXmlReader
 								}
 							}
 						}
-						
+
 						L2NpcTemplate template = _npcs.get(npcId);
 						if (template == null)
 						{
@@ -483,7 +484,7 @@ public class NpcData implements IXmlReader
 						{
 							template.set(set);
 						}
-						
+
 						if (_minionData._tempMinions.containsKey(npcId))
 						{
 							if (parameters == null)
@@ -492,7 +493,7 @@ public class NpcData implements IXmlReader
 							}
 							parameters.putIfAbsent("Privates", _minionData._tempMinions.get(npcId));
 						}
-						
+
 						if (parameters != null)
 						{
 							// Using unmodifiable map parameters of template are not meant to be changed at runtime.
@@ -502,7 +503,7 @@ public class NpcData implements IXmlReader
 						{
 							template.setParameters(StatsSet.EMPTY_STATSET);
 						}
-						
+
 						if (skills != null)
 						{
 							Map<AISkillScope, List<Skill>> aiSkillLists = null;
@@ -512,12 +513,12 @@ public class NpcData implements IXmlReader
 								{
 									continue;
 								}
-								
+
 								if (aiSkillLists == null)
 								{
 									aiSkillLists = new EnumMap<>(AISkillScope.class);
 								}
-								
+
 								final List<AISkillScope> aiSkillScopes = new ArrayList<>();
 								final AISkillScope shortOrLongRangeScope = skill.getCastRange() <= 150 ? AISkillScope.SHORT_RANGE : AISkillScope.LONG_RANGE;
 								if (skill.isSuicideAttack())
@@ -527,7 +528,7 @@ public class NpcData implements IXmlReader
 								else
 								{
 									aiSkillScopes.add(AISkillScope.GENERAL);
-									
+
 									if (skill.isContinuous())
 									{
 										if (!skill.isDebuff())
@@ -591,7 +592,7 @@ public class NpcData implements IXmlReader
 										}
 									}
 								}
-								
+
 								for (AISkillScope aiSkillScope : aiSkillScopes)
 								{
 									List<Skill> aiSkills = aiSkillLists.get(aiSkillScope);
@@ -600,11 +601,11 @@ public class NpcData implements IXmlReader
 										aiSkills = new ArrayList<>();
 										aiSkillLists.put(aiSkillScope, aiSkills);
 									}
-									
+
 									aiSkills.add(skill);
 								}
 							}
-							
+
 							template.setSkills(skills);
 							template.setAISkillLists(aiSkillLists);
 						}
@@ -613,17 +614,17 @@ public class NpcData implements IXmlReader
 							template.setSkills(null);
 							template.setAISkillLists(null);
 						}
-						
+
 						template.setClans(clans);
 						template.setIgnoreClanNpcIds(ignoreClanNpcIds);
-						
+
 						template.setDropLists(dropLists);
 					}
 				}
 			}
 		}
 	}
-	
+
 	private void parseDropList(File f, Node dropListNode, DropListScope dropListScope, List<IDropItem> drops)
 	{
 		for (Node dropNode = dropListNode.getFirstChild(); dropNode != null; dropNode = dropNode.getNextSibling())
@@ -639,7 +640,7 @@ public class NpcData implements IXmlReader
 					{
 						parseDropListItem(groupNode, dropListScope, groupedDropList);
 					}
-					
+
 					List<GeneralDropItem> items = new ArrayList<>(groupedDropList.size());
 					for (IDropItem item : groupedDropList)
 					{
@@ -653,7 +654,7 @@ public class NpcData implements IXmlReader
 						}
 					}
 					dropItem.setItems(items);
-					
+
 					drops.add(dropItem);
 					break;
 				}
@@ -665,7 +666,7 @@ public class NpcData implements IXmlReader
 			}
 		}
 	}
-	
+
 	private void parseDropListItem(Node dropListItem, DropListScope dropListScope, List<IDropItem> drops)
 	{
 		NamedNodeMap attrs = dropListItem.getAttributes();
@@ -682,7 +683,7 @@ public class NpcData implements IXmlReader
 			}
 		}
 	}
-	
+
 	/**
 	 * Gets or creates a clan id if it doesnt exists.
 	 * @param clanName the clan name to get or create its id
@@ -698,7 +699,7 @@ public class NpcData implements IXmlReader
 		}
 		return id;
 	}
-	
+
 	/**
 	 * Gets the clan id
 	 * @param clanName the clan name to get its id
@@ -709,7 +710,7 @@ public class NpcData implements IXmlReader
 		Integer id = _clans.get(clanName.toUpperCase());
 		return id != null ? id : -1;
 	}
-	
+
 	/**
 	 * Gets the template.
 	 * @param id the template Id to get.
@@ -719,7 +720,7 @@ public class NpcData implements IXmlReader
 	{
 		return _npcs.get(id);
 	}
-	
+
 	/**
 	 * Gets the template by name.
 	 * @param name of the template to get.
@@ -736,7 +737,7 @@ public class NpcData implements IXmlReader
 		}
 		return null;
 	}
-	
+
 	/**
 	 * Gets all templates matching the filter.
 	 * @param filter
@@ -750,7 +751,7 @@ public class NpcData implements IXmlReader
 			.collect(Collectors.toList());
 		//@formatter:on
 	}
-	
+
 	/**
 	 * Gets the all of level.
 	 * @param lvls of all the templates to get.
@@ -760,7 +761,7 @@ public class NpcData implements IXmlReader
 	{
 		return getTemplates(template -> Util.contains(lvls, template.getLevel()));
 	}
-	
+
 	/**
 	 * Gets the all monsters of level.
 	 * @param lvls of all the monster templates to get.
@@ -770,7 +771,7 @@ public class NpcData implements IXmlReader
 	{
 		return getTemplates(template -> Util.contains(lvls, template.getLevel()) && template.isType("L2Monster"));
 	}
-	
+
 	/**
 	 * Gets the all npc starting with.
 	 * @param text of all the NPC templates which its name start with.
@@ -780,7 +781,7 @@ public class NpcData implements IXmlReader
 	{
 		return getTemplates(template -> template.isType("L2Npc") && template.getName().startsWith(text));
 	}
-	
+
 	/**
 	 * Gets the all npc of class type.
 	 * @param classTypes of all the templates to get.
@@ -790,7 +791,7 @@ public class NpcData implements IXmlReader
 	{
 		return getTemplates(template -> Util.contains(classTypes, template.getType(), true));
 	}
-	
+
 	public void loadNpcsSkillLearn()
 	{
 		_npcs.values().forEach(template ->
@@ -802,7 +803,7 @@ public class NpcData implements IXmlReader
 			}
 		});
 	}
-	
+
 	/**
 	 * This class handles minions from Spawn System<br>
 	 * Once Spawn System gets reworked delete this class<br>
@@ -811,12 +812,12 @@ public class NpcData implements IXmlReader
 	private final class MinionData implements IXmlReader
 	{
 		public final Map<Integer, List<MinionHolder>> _tempMinions = new HashMap<>();
-		
+
 		protected MinionData()
 		{
 			load();
 		}
-		
+
 		@Override
 		public void load()
 		{
@@ -824,7 +825,7 @@ public class NpcData implements IXmlReader
 			parseDatapackFile("data/minionData.xml");
 			LOG.info("{}: Loaded {} minions data.", getClass().getSimpleName(), _tempMinions.size());
 		}
-		
+
 		@Override
 		public void parseDocument(Document doc)
 		{
@@ -854,7 +855,7 @@ public class NpcData implements IXmlReader
 			}
 		}
 	}
-	
+
 	/**
 	 * Gets the single instance of NpcData.
 	 * @return single instance of NpcData
@@ -863,7 +864,7 @@ public class NpcData implements IXmlReader
 	{
 		return SingletonHolder._instance;
 	}
-	
+
 	private static class SingletonHolder
 	{
 		protected static final NpcData _instance = new NpcData();
