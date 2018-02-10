@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2016 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -146,7 +146,6 @@ import quests.Q00131_BirdInACage.Q00131_BirdInACage;
 import quests.Q00132_MatrasCuriosity.Q00132_MatrasCuriosity;
 import quests.Q00134_TempleMissionary.Q00134_TempleMissionary;
 import quests.Q00135_TempleExecutor.Q00135_TempleExecutor;
-import quests.Q00136_MoreThanMeetsTheEye.Q00136_MoreThanMeetsTheEye;
 import quests.Q00137_TempleChampionPart1.Q00137_TempleChampionPart1;
 import quests.Q00138_TempleChampionPart2.Q00138_TempleChampionPart2;
 import quests.Q00139_ShadowFoxPart1.Q00139_ShadowFoxPart1;
@@ -509,7 +508,7 @@ import quests.Q10505_JewelOfValakas.Q10505_JewelOfValakas;
 public class QuestMasterHandler
 {
 	private static final Logger _log = Logger.getLogger(QuestMasterHandler.class.getName());
-	
+
 	private static final Class<?>[] QUESTS =
 	{
 		Q00001_LettersOfLove.class,
@@ -637,7 +636,6 @@ public class QuestMasterHandler
 		Q00132_MatrasCuriosity.class,
 		Q00134_TempleMissionary.class,
 		Q00135_TempleExecutor.class,
-		Q00136_MoreThanMeetsTheEye.class,
 		Q00137_TempleChampionPart1.class,
 		Q00138_TempleChampionPart2.class,
 		Q00139_ShadowFoxPart1.class,
@@ -994,7 +992,7 @@ public class QuestMasterHandler
 		Q10504_JewelOfAntharas.class,
 		Q10505_JewelOfValakas.class
 	};
-	
+
 	public static void main(String[] args)
 	{
 		for (Class<?> quest : QUESTS)
