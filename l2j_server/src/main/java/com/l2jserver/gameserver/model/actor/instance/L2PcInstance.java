@@ -5236,10 +5236,31 @@ public final class L2PcInstance extends L2Playable
 					// NOTE: Each time an item is dropped, the chance of another item being dropped gets lesser (dropCount * 2)
 					if (Rnd.get(100) < itemDropPercent)
 					{
+						if (Config.ALT_PLAYER_DROP_CAN_BE_CRYSTALIZED &&
+								itemDrop.getCrystalCount() > 0 &&
+								Rnd.get(100) < Config.ALT_PLAYER_DROP_CRYSTALIZATION_CHANCE) {
+
+							// Remove the actual item from inventory
+							L2ItemInstance removedItem = this.getInventory().destroyItem("Crystalize", itemDrop.getObjectId(), itemDrop.getCount(), this, null);
+
+							InventoryUpdate iu = new InventoryUpdate();
+							iu.addRemovedItem(removedItem);
+							this.sendPacket(iu);
+
+							SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_CRYSTALLIZED);
+							sm.addItemName(removedItem);
+							this.sendPacket(sm);
+
+							// Replace with crystals
+							int crystalId = itemDrop.getItem().getCrystalItemId();
+							int crystalAmount = itemDrop.getCrystalCount();
+							itemDrop = this.getInventory().addItem("Crystalize", crystalId, crystalAmount, this, this);
+							this.broadcastUserInfo();
+						}
 						dropItem("DieDrop", itemDrop, killer, true);
 
 						if (isKarmaDrop)
-						{
+						{	
 							LOG.info("{} has karma and dropped id = {}, count = {}", this, itemDrop.getId(), itemDrop.getCount());
 						}
 						else
@@ -5451,6 +5472,10 @@ public final class L2PcInstance extends L2Playable
 	 */
 	public void calculateDeathExpPenalty(L2Character killer, boolean atWar)
 	{
+		if (!Config.ALT_GAME_DELEVEL) {
+			return;
+		}
+
 		final int lvl = getLevel();
 		double percentLost = PlayerXpPercentLostData.getInstance().getXpPercent(getLevel());
 
@@ -11087,7 +11112,7 @@ public final class L2PcInstance extends L2Playable
 		if (Config.ALT_DISABLE_DEATH_PENALTY) {
 			return;
 		}
-
+    
 		if (isResurrectSpecialAffected() || isLucky() || isBlockedFromDeathPenalty() || isInsideZone(ZoneId.PVP) || isInsideZone(ZoneId.SIEGE) || canOverrideCond(PcCondOverride.DEATH_PENALTY))
 		{
 			return;
