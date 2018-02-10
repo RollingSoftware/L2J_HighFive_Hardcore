@@ -60,7 +60,6 @@ import quests.Q00036_MakeASewingKit.Q00036_MakeASewingKit;
 import quests.Q00037_MakeFormalWear.Q00037_MakeFormalWear;
 import quests.Q00038_DragonFangs.Q00038_DragonFangs;
 import quests.Q00039_RedEyedInvaders.Q00039_RedEyedInvaders;
-import quests.Q00040_ASpecialOrder.Q00040_ASpecialOrder;
 import quests.Q00042_HelpTheUncle.Q00042_HelpTheUncle;
 import quests.Q00043_HelpTheSister.Q00043_HelpTheSister;
 import quests.Q00044_HelpTheSon.Q00044_HelpTheSon;
@@ -550,7 +549,6 @@ public class QuestMasterHandler
 		Q00037_MakeFormalWear.class,
 		Q00038_DragonFangs.class,
 		Q00039_RedEyedInvaders.class,
-		Q00040_ASpecialOrder.class,
 		Q00042_HelpTheUncle.class,
 		Q00043_HelpTheSister.class,
 		Q00044_HelpTheSon.class,
