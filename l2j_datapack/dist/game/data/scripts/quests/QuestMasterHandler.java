@@ -234,7 +234,6 @@ import quests.Q00241_PossessorOfAPreciousSoul1.Q00241_PossessorOfAPreciousSoul1;
 import quests.Q00242_PossessorOfAPreciousSoul2.Q00242_PossessorOfAPreciousSoul2;
 import quests.Q00246_PossessorOfAPreciousSoul3.Q00246_PossessorOfAPreciousSoul3;
 import quests.Q00247_PossessorOfAPreciousSoul4.Q00247_PossessorOfAPreciousSoul4;
-import quests.Q00249_PoisonedPlainsOfTheLizardmen.Q00249_PoisonedPlainsOfTheLizardmen;
 import quests.Q00250_WatchWhatYouEat.Q00250_WatchWhatYouEat;
 import quests.Q00251_NoSecrets.Q00251_NoSecrets;
 import quests.Q00252_ItSmellsDelicious.Q00252_ItSmellsDelicious;
@@ -314,7 +313,6 @@ import quests.Q00344_1000YearsTheEndOfLamentation.Q00344_1000YearsTheEndOfLament
 import quests.Q00345_MethodToRaiseTheDead.Q00345_MethodToRaiseTheDead;
 import quests.Q00347_GoGetTheCalculator.Q00347_GoGetTheCalculator;
 import quests.Q00350_EnhanceYourWeapon.Q00350_EnhanceYourWeapon;
-import quests.Q00351_BlackSwan.Q00351_BlackSwan;
 import quests.Q00352_HelpRoodRaiseANewPet.Q00352_HelpRoodRaiseANewPet;
 import quests.Q00354_ConquestOfAlligatorIsland.Q00354_ConquestOfAlligatorIsland;
 import quests.Q00355_FamilyHonor.Q00355_FamilyHonor;
@@ -461,7 +459,6 @@ import quests.Q00700_CursedLife.Q00700_CursedLife;
 import quests.Q00701_ProofOfExistence.Q00701_ProofOfExistence;
 import quests.Q00702_ATrapForRevenge.Q00702_ATrapForRevenge;
 import quests.Q00901_HowLavasaurusesAreMade.Q00901_HowLavasaurusesAreMade;
-import quests.Q00902_ReclaimOurEra.Q00902_ReclaimOurEra;
 import quests.Q00903_TheCallOfAntharas.Q00903_TheCallOfAntharas;
 import quests.Q00904_DragonTrophyAntharas.Q00904_DragonTrophyAntharas;
 import quests.Q00905_RefinedDragonBlood.Q00905_RefinedDragonBlood;
@@ -723,7 +720,6 @@ public class QuestMasterHandler
 		Q00242_PossessorOfAPreciousSoul2.class,
 		Q00246_PossessorOfAPreciousSoul3.class,
 		Q00247_PossessorOfAPreciousSoul4.class,
-		Q00249_PoisonedPlainsOfTheLizardmen.class,
 		Q00250_WatchWhatYouEat.class,
 		Q00251_NoSecrets.class,
 		Q00252_ItSmellsDelicious.class,
@@ -803,7 +799,6 @@ public class QuestMasterHandler
 		Q00345_MethodToRaiseTheDead.class,
 		Q00347_GoGetTheCalculator.class,
 		Q00350_EnhanceYourWeapon.class,
-		Q00351_BlackSwan.class,
 		Q00352_HelpRoodRaiseANewPet.class,
 		Q00354_ConquestOfAlligatorIsland.class,
 		Q00355_FamilyHonor.class,
@@ -950,7 +945,6 @@ public class QuestMasterHandler
 		Q00701_ProofOfExistence.class,
 		Q00702_ATrapForRevenge.class,
 		Q00901_HowLavasaurusesAreMade.class,
-		Q00902_ReclaimOurEra.class,
 		Q00903_TheCallOfAntharas.class,
 		Q00904_DragonTrophyAntharas.class,
 		Q00905_RefinedDragonBlood.class,
