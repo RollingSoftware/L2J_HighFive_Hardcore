@@ -988,6 +988,8 @@ public final class Config
 	public static List<String> GAME_SERVER_HOSTS;
 	public static int PVP_NORMAL_TIME;
 	public static int PVP_PVP_TIME;
+	public static boolean ALT_PLAYER_DROP_CAN_BE_CRYSTALIZED;
+	public static float ALT_PLAYER_DROP_CRYSTALIZATION_CHANCE;
 
 	public static enum IdFactoryType
 	{
@@ -2548,6 +2550,9 @@ public final class Config
 
 			PVP_NORMAL_TIME = PVPSettings.getInt("PvPVsNormalTime", 120000);
 			PVP_PVP_TIME = PVPSettings.getInt("PvPVsPvPTime", 60000);
+
+			ALT_PLAYER_DROP_CAN_BE_CRYSTALIZED = PVPSettings.getBoolean("AltPlayerDropCanBeCrystalized", false);
+			ALT_PLAYER_DROP_CRYSTALIZATION_CHANCE = PVPSettings.getFloat("AltPlayerDropCrystalizationChance", 10);
 
 			// Load Olympiad L2Properties file (if exists)
 			final PropertiesParser Olympiad = new PropertiesParser(OLYMPIAD_CONFIG_FILE);
