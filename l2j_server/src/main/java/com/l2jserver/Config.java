@@ -1699,6 +1699,7 @@ public final class Config
 			SILENCE_MODE_EXCLUDE = character.getBoolean("SilenceModeExclude", false);
 			ALT_VALIDATE_TRIGGER_SKILLS = character.getBoolean("AltValidateTriggerSkills", false);
 			ALT_DROPPABLE_AUGMENTED_ITEMS = character.getBoolean("AltDroppableAugmentedItems", true);
+			ALT_DISABLE_DEATH_PENALTY = character.getBoolean("AltDisableDeathPenalty", false);
 			PLAYER_MOVEMENT_BLOCK_TIME = character.getInt("NpcTalkBlockingTime", 0) * 1000;
 
 			// Load Telnet L2Properties file (if exists)
