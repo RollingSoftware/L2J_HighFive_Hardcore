@@ -262,6 +262,7 @@ public final class Config
 	public static Set<String> FORBIDDEN_NAMES;
 	public static boolean SILENCE_MODE_EXCLUDE;
 	public static boolean ALT_VALIDATE_TRIGGER_SKILLS;
+	public static boolean ALT_DROPPABLE_AUGMENTED_ITEMS;
 
 	// --------------------------------------------------
 	// ClanHall Settings
@@ -1697,6 +1698,7 @@ public final class Config
 			FORBIDDEN_NAMES = new HashSet<>(Arrays.asList(character.getString("ForbiddenNames", "annou,ammou,amnou,anmou,anou,amou,announcements,announce").split(",")));
 			SILENCE_MODE_EXCLUDE = character.getBoolean("SilenceModeExclude", false);
 			ALT_VALIDATE_TRIGGER_SKILLS = character.getBoolean("AltValidateTriggerSkills", false);
+			ALT_DROPPABLE_AUGMENTED_ITEMS = character.getBoolean("AltDroppableAugmentedItems", true);
 			PLAYER_MOVEMENT_BLOCK_TIME = character.getInt("NpcTalkBlockingTime", 0) * 1000;
 
 			// Load Telnet L2Properties file (if exists)
