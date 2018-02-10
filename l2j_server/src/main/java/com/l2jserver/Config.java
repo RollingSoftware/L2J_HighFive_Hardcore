@@ -263,6 +263,7 @@ public final class Config
 	public static boolean SILENCE_MODE_EXCLUDE;
 	public static boolean ALT_VALIDATE_TRIGGER_SKILLS;
 	public static boolean ALT_DROPPABLE_AUGMENTED_ITEMS;
+	public static boolean ALT_DISABLE_DEATH_PENALTY;
 
 	// --------------------------------------------------
 	// ClanHall Settings
@@ -805,6 +806,25 @@ public final class Config
 	public static boolean GUARD_ATTACK_AGGRO_MOB;
 	public static boolean ALLOW_WYVERN_UPGRADER;
 	public static List<Integer> LIST_PET_RENT_NPC;
+
+	public static double GUARD_HP_REGEN_MULTIPLIER;
+	public static double GUARD_MP_REGEN_MULTIPLIER;
+	public static double GUARD_HP_MULTIPLIER;
+	public static double GUARD_MP_MULTIPLIER;
+	public static double GUARD_PDEFENCE_MULTIPLIER;
+	public static double GUARD_MDEFENCE_MULTIPLIER;
+	public static double GUARD_PATTACK_MULTIPLIER;
+	public static double GUARD_MATTACK_MULTIPLIER;
+
+	public static double MONSTER_HP_REGEN_MULTIPLIER;
+	public static double MONSTER_MP_REGEN_MULTIPLIER;
+	public static double MONSTER_HP_MULTIPLIER;
+	public static double MONSTER_MP_MULTIPLIER;
+	public static double MONSTER_PDEFENCE_MULTIPLIER;
+	public static double MONSTER_MDEFENCE_MULTIPLIER;
+	public static double MONSTER_PATTACK_MULTIPLIER;
+	public static double MONSTER_MATTACK_MULTIPLIER;
+
 	public static double RAID_HP_REGEN_MULTIPLIER;
 	public static double RAID_MP_REGEN_MULTIPLIER;
 	public static double RAID_PDEFENCE_MULTIPLIER;
@@ -2006,6 +2026,25 @@ public final class Config
 			{
 				LIST_PET_RENT_NPC.add(Integer.valueOf(id));
 			}
+
+			GUARD_HP_REGEN_MULTIPLIER = NPC.getDouble("GuardHpRegenMultiplier", 100D) / 100;
+			GUARD_MP_REGEN_MULTIPLIER = NPC.getDouble("GuardMpRegenMultiplier", 100D) / 100;
+			GUARD_HP_MULTIPLIER = NPC.getDouble("MonsterHpMultiplier", 100D) / 100;
+			GUARD_MP_MULTIPLIER = NPC.getDouble("MonsterMpMultiplier", 100D) / 100;
+			GUARD_PDEFENCE_MULTIPLIER = NPC.getDouble("GuardPDefenceMultiplier", 100D) / 100;
+			GUARD_MDEFENCE_MULTIPLIER = NPC.getDouble("GuardMDefenceMultiplier", 100D) / 100;
+			GUARD_PATTACK_MULTIPLIER = NPC.getDouble("GuardPAttackMultiplier", 100D) / 100;
+			GUARD_MATTACK_MULTIPLIER = NPC.getDouble("GuardMAttackMultiplier", 100D) / 100;
+
+			MONSTER_HP_REGEN_MULTIPLIER = NPC.getDouble("MonsterHpRegenMultiplier", 100D) / 100;
+			MONSTER_MP_REGEN_MULTIPLIER = NPC.getDouble("MonsterMpRegenMultiplier", 100D) / 100;
+			MONSTER_HP_MULTIPLIER = NPC.getDouble("MonsterHpMultiplier", 100D) / 100;
+			MONSTER_MP_MULTIPLIER = NPC.getDouble("MonsterMpMultiplier", 100D) / 100;
+			MONSTER_PDEFENCE_MULTIPLIER = NPC.getDouble("MonsterPDefenceMultiplier", 100D) / 100;
+			MONSTER_MDEFENCE_MULTIPLIER = NPC.getDouble("MonsterMDefenceMultiplier", 100D) / 100;
+			MONSTER_PATTACK_MULTIPLIER = NPC.getDouble("MonsterPAttackMultiplier", 100D) / 100;
+			MONSTER_MATTACK_MULTIPLIER = NPC.getDouble("MonsterMAttackMultiplier", 100D) / 100;
+
 			RAID_HP_REGEN_MULTIPLIER = NPC.getDouble("RaidHpRegenMultiplier", 100) / 100;
 			RAID_MP_REGEN_MULTIPLIER = NPC.getDouble("RaidMpRegenMultiplier", 100) / 100;
 			RAID_PDEFENCE_MULTIPLIER = NPC.getDouble("RaidPDefenceMultiplier", 100) / 100;
