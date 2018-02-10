@@ -11109,6 +11109,10 @@ public final class L2PcInstance extends L2Playable
 			return;
 		}
 
+		if (Config.ALT_DISABLE_DEATH_PENALTY) {
+			return;
+		}
+    
 		if (isResurrectSpecialAffected() || isLucky() || isBlockedFromDeathPenalty() || isInsideZone(ZoneId.PVP) || isInsideZone(ZoneId.SIEGE) || canOverrideCond(PcCondOverride.DEATH_PENALTY))
 		{
 			return;
