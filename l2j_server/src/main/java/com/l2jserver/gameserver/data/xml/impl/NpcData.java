@@ -655,7 +655,11 @@ public class NpcData implements IXmlReader
 					}
 					dropItem.setItems(items);
 
-					drops.add(dropItem);
+					if (Config.SKIP_CATEGORY_DROP_CHANCE) {
+						drops.addAll(items);
+					} else {
+						drops.add(dropItem);
+					}
 					break;
 				}
 				default:

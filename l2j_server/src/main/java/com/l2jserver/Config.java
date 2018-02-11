@@ -912,6 +912,12 @@ public final class Config
 	public static int KARMA_RATE_DROP_EQUIP;
 	public static int KARMA_RATE_DROP_EQUIP_WEAPON;
 
+	public static boolean VALUABLE_ITEMS_DETAILED_CALCULATION;
+	public static boolean VALUABLE_ITEMS_LIMIT_LOG;
+  public static int VALUABLE_ITEMS_WARNING_LIMIT;
+
+	public static boolean SKIP_CATEGORY_DROP_CHANCE;
+
 	// --------------------------------------------------
 	// Seven Signs Settings
 	// --------------------------------------------------
@@ -2143,6 +2149,12 @@ public final class Config
 			KARMA_RATE_DROP_ITEM = RatesSettings.getInt("KarmaRateDropItem", 50);
 			KARMA_RATE_DROP_EQUIP = RatesSettings.getInt("KarmaRateDropEquip", 40);
 			KARMA_RATE_DROP_EQUIP_WEAPON = RatesSettings.getInt("KarmaRateDropEquipWeapon", 10);
+
+			VALUABLE_ITEMS_DETAILED_CALCULATION = RatesSettings.getBoolean("ValuableItemsDetailedCalculation", false);
+			VALUABLE_ITEMS_LIMIT_LOG = RatesSettings.getBoolean("ValuableItemsLimitLog", false);
+			VALUABLE_ITEMS_WARNING_LIMIT = RatesSettings.getInt("ValuableItemsWarningLimit", 50);
+
+			SKIP_CATEGORY_DROP_CHANCE = RatesSettings.getBoolean("SkipCategoryDropChance", false);
 
 			RATE_DEATH_DROP_AMOUNT_MULTIPLIER = RatesSettings.getFloat("DeathDropAmountMultiplier", 1);
 			RATE_CORPSE_DROP_AMOUNT_MULTIPLIER = RatesSettings.getFloat("CorpseDropAmountMultiplier", 1);
