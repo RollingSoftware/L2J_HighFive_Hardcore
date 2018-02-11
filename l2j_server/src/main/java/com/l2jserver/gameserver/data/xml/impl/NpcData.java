@@ -36,6 +36,8 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
 import com.l2jserver.Config;
+import com.l2jserver.gameserver.datatables.ItemTable;
+import com.l2jserver.gameserver.model.drops.strategy.IDropCalculationStrategy;
 import com.l2jserver.gameserver.datatables.SkillData;
 import com.l2jserver.gameserver.enums.AISkillScope;
 import com.l2jserver.gameserver.model.StatsSet;
@@ -426,13 +428,10 @@ public class NpcData implements IXmlReader
 									{
 										DropListScope dropListScope = null;
 
-										try
-										{
-											dropListScope = Enum.valueOf(DropListScope.class, dropListsNode.getNodeName().toUpperCase());
+										try {
+										  dropListScope = Enum.valueOf(DropListScope.class, dropListsNode.getNodeName().toUpperCase());
 										}
-										catch (Exception e)
-										{
-										}
+										catch (Exception e)	{}
 
 										if (dropListScope != null)
 										{
@@ -678,7 +677,14 @@ public class NpcData implements IXmlReader
 		{
 			case "item":
 			{
-				final IDropItem dropItem = dropListScope.newDropItem(parseInteger(attrs, "id"), parseLong(attrs, "min"), parseLong(attrs, "max"), parseDouble(attrs, "chance"));
+				IDropItem dropItem;
+				if (Config.VALUABLE_ITEMS_DETAILED_CALCULATION &&
+				    IDropCalculationStrategy.isValuable(ItemTable.getInstance().getTemplate(parseInteger(attrs, "id")))) {
+					dropItem = DropListScope.VALUABLE_DEATH.newDropItem(parseInteger(attrs, "id"), parseLong(attrs, "min"), parseLong(attrs, "max"), parseDouble(attrs, "chance"));
+ 				} else {
+					dropItem = dropListScope.newDropItem(parseInteger(attrs, "id"), parseLong(attrs, "min"), parseLong(attrs, "max"), parseDouble(attrs, "chance"));
+				}
+
 				if (dropItem != null)
 				{
 					drops.add(dropItem);
