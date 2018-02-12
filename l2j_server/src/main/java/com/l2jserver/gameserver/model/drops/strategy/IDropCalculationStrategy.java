@@ -38,27 +38,45 @@ public interface IDropCalculationStrategy
 {
 	public static Logger LOG = Logger.getLogger(IDropCalculationStrategy.class.getName());
 
-	public static final IDropCalculationStrategy DEFAULT_STRATEGY = (item, victim, killer) ->	{
-		double chance = item.getChance(victim, killer);
+	public static final IDropCalculationStrategy DEFAULT_STRATEGY = (item, victim, killer) -> calculateDrop(item, victim, item.getChance(victim, killer));
 
-	  if (chance > (Rnd.nextDouble() * 100))	{
-			int amountMultiply = 1;
-			if (item.isPreciseCalculated() && (chance > 100))	{
-				amountMultiply = (int) chance / 100;
-				if ((chance % 100) > (Rnd.nextDouble() * 100)) {
-					amountMultiply++;
+	public static List<ItemHolder> calculateDrop(GeneralDropItem item, L2Character victim, double dropChance) {
+		return calculateDrop(item, victim, dropChance, 1L);
+	}
+
+	public static List<ItemHolder> calculateDrop(GeneralDropItem item, L2Character victim, double dropChance, long amountMultiplier) {
+		String itemName = ItemTable.getInstance().getTemplate( item.getItemId()).getName();
+
+		List<ItemHolder> items = new ArrayList<>();
+		long totalAmount = 0L;
+		for (long i = 0; i < amountMultiplier; i++) {
+			System.out.println("Multiplier iteration drop chance for item " + itemName + " chance is " + dropChance);
+		  if (dropChance > (Rnd.nextDouble() * 100))	{
+				int amountMultiply = 1;
+				if (item.isPreciseCalculated() && (dropChance > 100))	{
+					amountMultiply = (int) dropChance / 100;
+					if ((dropChance % 100) > (Rnd.nextDouble() * 100)) {
+						dropChance++;
+					}
 				}
+				totalAmount += Rnd.get(item.getMin(victim), item.getMax(victim)) * amountMultiply;
 			}
-
-			return Collections.singletonList(new ItemHolder(item.getItemId(), Rnd.get(item.getMin(victim), item.getMax(victim)) * amountMultiply));
 		}
 
-		return null;
-	};
+		if (totalAmount > 0L) {
+			return Collections.singletonList(new ItemHolder(item.getItemId(), totalAmount));
+		} else {
+			return null;
+		}
+	}
 
 	public static final IDropCalculationStrategy VALUABLE_STRATEGY = (item, victim, killer) -> calculateValuableDrop(item, victim, item.getChance(victim, killer));
 
 	public static List<ItemHolder> calculateValuableDrop(GeneralDropItem item, L2Character victim, double dropChance) {
+		return calculateValuableDrop(item, victim, dropChance, 1L);
+	}
+
+	public static List<ItemHolder> calculateValuableDrop(GeneralDropItem item, L2Character victim, double dropChance, long amountMultiplier) {
 		long iterations = 0;
 		if (item.getMin(victim) == item.getMax(victim) || item.getMin(victim) > item.getMax(victim)) {
 			iterations = item.getMin(victim);
@@ -66,6 +84,9 @@ public interface IDropCalculationStrategy
 			iterations = Rnd.get(item.getMin(victim), item.getMax(victim));
 		}
 
+		iterations *= amountMultiplier;
+
+		String itemName = ItemTable.getInstance().getTemplate(item.getItemId()).getName();
 		if (Config.VALUABLE_ITEMS_LIMIT_LOG && iterations > Config.VALUABLE_ITEMS_WARNING_LIMIT) {
 			LOG.warning("Warning, valuable iterations calculation for large number of items " + iterations + " caused by kill of " + victim);
 		}

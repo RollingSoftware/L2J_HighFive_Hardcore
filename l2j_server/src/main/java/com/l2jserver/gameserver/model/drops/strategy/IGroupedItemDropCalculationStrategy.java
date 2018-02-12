@@ -24,10 +24,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.l2jserver.Config;
 import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.drops.GeneralDropItem;
 import com.l2jserver.gameserver.model.drops.GroupedGeneralDropItem;
 import com.l2jserver.gameserver.model.drops.IDropItem;
+import com.l2jserver.gameserver.model.items.L2Item;
+import com.l2jserver.gameserver.datatables.ItemTable;
 import com.l2jserver.gameserver.model.holders.ItemHolder;
 import com.l2jserver.util.Rnd;
 
@@ -42,14 +45,14 @@ public interface IGroupedItemDropCalculationStrategy
 	public static final IGroupedItemDropCalculationStrategy DEFAULT_STRATEGY = new IGroupedItemDropCalculationStrategy()
 	{
 		private final Map<GroupedGeneralDropItem, GeneralDropItem> singleItemCache = new ConcurrentHashMap<>();
-		
+
 		private GeneralDropItem getSingleItem(GroupedGeneralDropItem dropItem)
 		{
 			final GeneralDropItem item1 = dropItem.getItems().iterator().next();
 			singleItemCache.putIfAbsent(dropItem, new GeneralDropItem(item1.getItemId(), item1.getMin(), item1.getMax(), (item1.getChance() * dropItem.getChance()) / 100, item1.getAmountStrategy(), item1.getChanceStrategy(), dropItem.getPreciseStrategy(), dropItem.getKillerChanceModifierStrategy(), item1.getDropCalculationStrategy()));
 			return singleItemCache.get(dropItem);
 		}
-		
+
 		@Override
 		public List<ItemHolder> calculateDrops(GroupedGeneralDropItem dropItem, L2Character victim, L2Character killer)
 		{
@@ -57,76 +60,42 @@ public interface IGroupedItemDropCalculationStrategy
 			{
 				return getSingleItem(dropItem).calculateDrops(victim, killer);
 			}
-			
+
 			GroupedGeneralDropItem normalized = dropItem.normalizeMe(victim, killer);
-			if (normalized.getChance() > (Rnd.nextDouble() * 100))
-			{
-				final double random = (Rnd.nextDouble() * 100);
-				double totalChance = 0;
-				for (GeneralDropItem item2 : normalized.getItems())
-				{
-					// Grouped item chance rates should not be modified (the whole magic was already done by normalizing thus the items' chance sum is always 100%).
-					totalChance += item2.getChance();
-					if (totalChance > random)
-					{
-						int amountMultiply = 1;
-						if (dropItem.isPreciseCalculated() && (normalized.getChance() >= 100))
-						{
-							amountMultiply = (int) (normalized.getChance()) / 100;
-							if ((normalized.getChance() % 100) > (Rnd.nextDouble() * 100))
-							{
-								amountMultiply++;
-							}
-						}
-						
-						return Collections.singletonList(new ItemHolder(item2.getItemId(), Rnd.get(item2.getMin(victim), item2.getMax(victim)) * amountMultiply));
+			double random = (Rnd.nextDouble() * 100);
+			if (normalized.getChance() >= 100 || normalized.getChance() > random) {
+
+				long multiplier = 1L;
+				if (normalized.getChance() >= 100) {
+					multiplier = Math.round(normalized.getChance() / 100);
+				}
+
+				List<ItemHolder> drop = new ArrayList<>();
+				for (GeneralDropItem item : normalized.getItems()) {
+
+					List<ItemHolder> itemDrop = new ArrayList<>();
+					L2Item itemTemplate = ItemTable.getInstance().getTemplate(item.getItemId());
+					if (Config.VALUABLE_ITEMS_DETAILED_CALCULATION && IDropCalculationStrategy.isValuable(itemTemplate)) {
+						itemDrop = IDropCalculationStrategy.calculateValuableDrop(item, victim, item.getChance(victim, killer), multiplier);
+					} else {
+						itemDrop = IDropCalculationStrategy.calculateDrop(item, victim, item.getChance(victim, killer), multiplier);
+					}
+
+					if (itemDrop == null) {
+						continue;
+					}
+
+					if (Config.ALL_CATEGORY_ITEMS_DROP_CHANCE) {
+						drop.addAll(itemDrop);
+					}	else {
+						return itemDrop;
 					}
 				}
+				return drop.isEmpty() ? null : drop;
 			}
 			return null;
 		}
 	};
-	
-	/**
-	 * This strategy calculates a group's drop by calculating drops of its individual items and merging its results.
-	 */
-	public static final IGroupedItemDropCalculationStrategy DISBAND_GROUP = (item, victim, killer) ->
-	{
-		List<ItemHolder> dropped = new ArrayList<>();
-		for (IDropItem dropItem : item.extractMe())
-		{
-			dropped.addAll(dropItem.calculateDrops(victim, killer));
-		}
-		return dropped.isEmpty() ? null : dropped;
-	};
-	
-	/**
-	 * This strategy when group has precise calculation rolls multiple times over group to determine drops when group's chance raises over 100% instead of just multiplying the dropped item's amount. Thus it can produce different items from group at once.
-	 */
-	public static final IGroupedItemDropCalculationStrategy PRECISE_MULTIPLE_GROUP_ROLLS = (item, victim, killer) ->
-	{
-		if (!item.isPreciseCalculated())
-		{
-			// if item hasn't precise calculation there's no change from DEFAULT_STRATEGY
-			return DEFAULT_STRATEGY.calculateDrops(item, victim, victim);
-		}
-		GroupedGeneralDropItem newItem = new GroupedGeneralDropItem(item.getChance(), DEFAULT_STRATEGY, item.getKillerChanceModifierStrategy(), IPreciseDeterminationStrategy.NEVER);
-		newItem.setItems(item.getItems());
-		GroupedGeneralDropItem normalized = newItem.normalizeMe(victim, killer);
-		// Let's determine the number of rolls.
-		int rolls = (int) (normalized.getChance() / 100);
-		if ((Rnd.nextDouble() * 100) < (normalized.getChance() % 100))
-		{
-			rolls++;
-		}
-		List<ItemHolder> dropped = new ArrayList<>(rolls);
-		for (int i = 0; i < rolls; i++)
-		{
-			// As further normalizing on already normalized drop group does nothing, we can just pass the calculation to DEFAULT_STRATEGY with precise calculation disabled as we handle it.
-			dropped.addAll(normalized.calculateDrops(victim, killer));
-		}
-		return dropped.isEmpty() ? null : dropped;
-	};
-	
+
 	public List<ItemHolder> calculateDrops(GroupedGeneralDropItem item, L2Character victim, L2Character killer);
 }

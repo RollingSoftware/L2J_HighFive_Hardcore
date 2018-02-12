@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2017 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -91,7 +91,7 @@ public class Q00663_SeductiveWhispers extends Quest
 	private static final int SPITEFUL_SOUL_LEADER = 20974;
 	private static final int SPITEFUL_SOUL_LEADER_CHANCE = 100;
 	private static final Map<Integer, Integer> MONSTERS = new HashMap<>();
-	
+
 	static
 	{
 		MONSTERS.put(20674, 807);
@@ -121,7 +121,7 @@ public class Q00663_SeductiveWhispers extends Quest
 		MONSTERS.put(21009, 740);
 		MONSTERS.put(21010, 595);
 	}
-	
+
 	public Q00663_SeductiveWhispers()
 	{
 		super(663, Q00663_SeductiveWhispers.class.getSimpleName(), "Seductive Whispers");
@@ -130,7 +130,7 @@ public class Q00663_SeductiveWhispers extends Quest
 		addKillId(MONSTERS.keySet());
 		addKillId(SPITEFUL_SOUL_LEADER);
 	}
-	
+
 	@Override
 	public String onTalk(L2Npc npc, L2PcInstance player)
 	{
@@ -140,7 +140,7 @@ public class Q00663_SeductiveWhispers extends Quest
 		{
 			return htmltext;
 		}
-		
+
 		switch (qs.getState())
 		{
 			case State.CREATED:
@@ -161,7 +161,7 @@ public class Q00663_SeductiveWhispers extends Quest
 						htmltext = "30846-04.html";
 					}
 				}
-				
+
 				if ((qs.getMemoState() / 1000) == 0)
 				{
 					switch (qs.getMemoState() % 10)
@@ -213,7 +213,7 @@ public class Q00663_SeductiveWhispers extends Quest
 		}
 		return htmltext;
 	}
-	
+
 	@Override
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
@@ -222,7 +222,7 @@ public class Q00663_SeductiveWhispers extends Quest
 		{
 			return null;
 		}
-		
+
 		String htmltext = null;
 		switch (event)
 		{
@@ -726,18 +726,18 @@ public class Q00663_SeductiveWhispers extends Quest
 		}
 		return htmltext;
 	}
-	
+
 	@Override
 	public String onKill(L2Npc npc, L2PcInstance killer, boolean isSummon)
 	{
 		final List<L2PcInstance> players = new LinkedList<>();
 		final QuestState qs = getQuestState(killer, false);
-		if ((qs != null) && qs.isStarted() && (qs.getMemoState() >= 1) && (qs.getMemoState() <= 4))
-		{
+		if ((qs != null) && qs.isStarted() && (qs.getMemoState() >= 1) && (qs.getMemoState() <= 4)) {
 			players.add(killer);
-			players.add(killer);
+		} else {
+			return super.onKill(npc, killer, isSummon);
 		}
-		
+
 		if (killer.isInParty())
 		{
 			for (L2PcInstance partyMember : killer.getParty().getMembers())
@@ -749,12 +749,12 @@ public class Q00663_SeductiveWhispers extends Quest
 				}
 			}
 		}
-		
+
 		final L2PcInstance rewardedPlayer = players.get(getRandom(players.size()));
 		if ((rewardedPlayer != null) && Util.checkIfInRange(1500, npc, rewardedPlayer, false))
 		{
 			final int rnd = getRandom(1000);
-			
+
 			if (npc.getId() == SPITEFUL_SOUL_LEADER)
 			{
 				if (rnd <= SPITEFUL_SOUL_LEADER_CHANCE)
@@ -772,10 +772,10 @@ public class Q00663_SeductiveWhispers extends Quest
 				playSound(rewardedPlayer, Sound.ITEMSOUND_QUEST_ITEMGET);
 			}
 		}
-		
+
 		return super.onKill(npc, killer, isSummon);
 	}
-	
+
 	private String getHtml(L2PcInstance player, String htmlName, int card1pic, int card2pic, int winCount, int card1)
 	{
 		String html = getHtm(player.getHtmlPrefix(), htmlName);

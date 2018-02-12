@@ -917,6 +917,7 @@ public final class Config
   public static int VALUABLE_ITEMS_WARNING_LIMIT;
 
 	public static boolean SKIP_CATEGORY_DROP_CHANCE;
+	public static boolean ALL_CATEGORY_ITEMS_DROP_CHANCE;
 
 	// --------------------------------------------------
 	// Seven Signs Settings
@@ -2155,6 +2156,7 @@ public final class Config
 			VALUABLE_ITEMS_WARNING_LIMIT = RatesSettings.getInt("ValuableItemsWarningLimit", 50);
 
 			SKIP_CATEGORY_DROP_CHANCE = RatesSettings.getBoolean("SkipCategoryDropChance", false);
+			ALL_CATEGORY_ITEMS_DROP_CHANCE = RatesSettings.getBoolean("AllCategoryItemsDropChance", false);			
 
 			RATE_DEATH_DROP_AMOUNT_MULTIPLIER = RatesSettings.getFloat("DeathDropAmountMultiplier", 1);
 			RATE_CORPSE_DROP_AMOUNT_MULTIPLIER = RatesSettings.getFloat("CorpseDropAmountMultiplier", 1);
