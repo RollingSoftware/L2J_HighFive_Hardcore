@@ -26,7 +26,7 @@ for file_item in files_to_process:
         was_empty = True
     results = []
     for item in items:
-        if item.get('id') in ids_to_remove and item.getparent():
+        if item.get('id') in ids_to_remove and item.getparent() and not item.get('price'):
             print('Removing item', item.get('id'), 'from buylist')
             item.getparent().remove(item)
             results.append(item)
