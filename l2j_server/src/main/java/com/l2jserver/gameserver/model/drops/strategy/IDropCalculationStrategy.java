@@ -50,7 +50,6 @@ public interface IDropCalculationStrategy
 		List<ItemHolder> items = new ArrayList<>();
 		long totalAmount = 0L;
 		for (long i = 0; i < amountMultiplier; i++) {
-			System.out.println("Multiplier iteration drop chance for item " + itemName + " chance is " + dropChance);
 		  if (dropChance > (Rnd.nextDouble() * 100))	{
 				int amountMultiply = 1;
 				if (item.isPreciseCalculated() && (dropChance > 100))	{
