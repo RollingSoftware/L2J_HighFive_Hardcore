@@ -12834,7 +12834,7 @@ public final class L2PcInstance extends L2Playable
 	}
 
 	public PlayerClass getPlayerClass() {
-		return PlayerClass.values()[getClassId()];
+		return PlayerClass.values()[getClassId().getId()];
 	}
 
 	public ClassLevel getPlayerClassLevel() {
