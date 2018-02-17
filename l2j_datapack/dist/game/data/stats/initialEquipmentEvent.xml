@@ -2,142 +2,177 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/initialEquipment.xsd">
 	<!-- Human Fighter -->
 	<equipment classId="0">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2369" count="1" equipped="true" /> <!-- Squire's Sword -->
 		<item id="10" count="1" /> <!-- Dagger -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9030" count="1" /> <!-- Shadow Item: Bronze Breastplate  -->
+		<item id="9031" count="1" /> <!-- Shadow Item: Bronze Gaiters -->
+		<item id="10479" count="1" /> <!-- Shadow Item - Long Sword -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 	<!-- Human Mystic -->
 	<equipment classId="10">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20637" count="1" /> <!-- D-Grade Mage Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="6" count="1" equipped="true" /> <!-- Apprentice's Wand -->
 		<item id="425" count="1" equipped="true" /> <!-- Apprentice's Tunic -->
 		<item id="461" count="1" equipped="true" /> <!-- Apprentice's Stockings -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9034" count="1" /> <!-- Shadow Item: Tunic of Magic -->
+		<item id="9035" count="1" /> <!-- Shadow Item: Stockings of Magic -->
+		<item id="10474" count="1" /> <!-- Shadow Item - Apprentice's Staff -->
+		<item id="5790" count="5000" /> <!-- Spiritshots -->
+		<item id="20394" count="4" /> <!-- Fresh Fruit Cocktail -->
 	</equipment>
 	<!-- Elven Fighter -->
 	<equipment classId="18">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2369" count="1" equipped="true" /> <!-- Squire's Sword -->
 		<item id="10" count="1" /> <!-- Dagger -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9030" count="1" /> <!-- Shadow Item: Bronze Breastplate  -->
+		<item id="9031" count="1" /> <!-- Shadow Item: Bronze Gaiters -->
+		<item id="10479" count="1" /> <!-- Shadow Item - Long Sword -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 	<!-- Elven Mystic -->
 	<equipment classId="25">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20637" count="1" /> <!-- D-Grade Mage Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="6" count="1" equipped="true" /> <!-- Apprentice's Wand -->
 		<item id="425" count="1" equipped="true" /> <!-- Apprentice's Tunic -->
 		<item id="461" count="1" equipped="true" /> <!-- Apprentice's Stockings -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9034" count="1" /> <!-- Shadow Item: Tunic of Magic -->
+		<item id="9035" count="1" /> <!-- Shadow Item: Stockings of Magic -->
+		<item id="10474" count="1" /> <!-- Shadow Item - Apprentice's Staff -->
+		<item id="5790" count="5000" /> <!-- Spiritshots -->
+		<item id="20394" count="4" /> <!-- Fresh Fruit Cocktail -->
 	</equipment>
 	<!-- Dark Fighter -->
 	<equipment classId="31">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2369" count="1" equipped="true" /> <!-- Squire's Sword -->
 		<item id="10" count="1" /> <!-- Dagger -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9030" count="1" /> <!-- Shadow Item: Bronze Breastplate  -->
+		<item id="9031" count="1" /> <!-- Shadow Item: Bronze Gaiters -->
+		<item id="10479" count="1" /> <!-- Shadow Item - Long Sword -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 	<!-- Dark Mystic -->
 	<equipment classId="38">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20637" count="1" /> <!-- D-Grade Mage Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="6" count="1" equipped="true" /> <!-- Apprentice's Wand -->
 		<item id="425" count="1" equipped="true" /> <!-- Apprentice's Tunic -->
 		<item id="461" count="1" equipped="true" /> <!-- Apprentice's Stockings -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9034" count="1" /> <!-- Shadow Item: Tunic of Magic -->
+		<item id="9035" count="1" /> <!-- Shadow Item: Stockings of Magic -->
+		<item id="10474" count="1" /> <!-- Shadow Item - Apprentice's Staff -->
+		<item id="5790" count="5000" /> <!-- Spiritshots -->
+		<item id="20394" count="4" /> <!-- Fresh Fruit Cocktail -->
 	</equipment>
 	<!-- Orc Fighter -->
 	<equipment classId="44">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2369" count="1" /> <!-- Squire's Sword -->
 		<item id="2368" count="1" equipped="true" /> <!-- Training Gloves -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9030" count="1" /> <!-- Shadow Item: Bronze Breastplate  -->
+		<item id="9031" count="1" /> <!-- Shadow Item: Bronze Gaiters -->
+		<item id="10477" count="1" /> <!-- Shadow Item - Cestus -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 	<!-- Orc Mystic -->
-	<!-- NOTE: This is orc_mage (orc_shaman is retail typo) -->
 	<equipment classId="49">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20637" count="1" /> <!-- D-Grade Mage Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2368" count="1" equipped="true" /> <!-- Training Gloves -->
 		<item id="425" count="1" equipped="true" /> <!-- Apprentice's Tunic -->
 		<item id="461" count="1" equipped="true" /> <!-- Apprentice's Stockings -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9032" count="1" /> <!-- Shadow Item: Hard Leather Shirt -->
+		<item id="9033" count="1" /> <!-- Shadow Item: Hard Leather Gaiters -->
+		<item id="10477" count="1" /> <!-- Shadow Item - Cestus -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="5790" count="5000" /> <!-- Spiritshots -->
+		<item id="20394" count="4" /> <!-- Fresh Fruit Cocktail -->
 	</equipment>
 	<!-- Dwarf Fighter -->
 	<equipment classId="53">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2370" count="1" equipped="true" /> <!-- Guild Member's Club -->
 		<item id="10" count="1" /> <!-- Dagger -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="9030" count="1" /> <!-- Shadow Item: Bronze Breastplate  -->
+		<item id="9031" count="1" /> <!-- Shadow Item: Bronze Gaiters -->
+		<item id="10475" count="1" /> <!-- Shadow Item - Bone Club -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 	<!-- Male Kamael Soldier -->
 	<equipment classId="123">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2369" count="1" equipped="true" /> <!-- Squire's Sword -->
 		<item id="10" count="1" /> <!-- Dagger -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="10479" count="1" /> <!-- Shadow Item - Long Sword -->
+		<item id="9032" count="1" /> <!-- Shadow Item: Hard Leather Shirt -->
+		<item id="9033" count="1" /> <!-- Shadow Item: Hard Leather Gaiters -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="5790" count="5000" /> <!-- Spiritshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 	<!-- Female Kamael Soldier -->
 	<equipment classId="124">
-		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
-		<item id="20636" count="1" /> <!-- D-Grade Fighter Support Pack -->
-		<item id="20638" count="1" /> <!-- Beginner's Adventurer Reinforcement Pack -->
 		<item id="2369" count="1" equipped="true" /> <!-- Squire's Sword -->
 		<item id="10" count="1" /> <!-- Dagger -->
 		<item id="1146" count="1" equipped="true" /> <!-- Squire's Shirt -->
 		<item id="1147" count="1" equipped="true" /> <!-- Squire's Pants -->
 		<item id="5588" count="1" /> <!-- Tutorial Guide -->
+		<item id="1060" count="15" />	<!-- Lesser healing potion -->
 		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
 		<item id="12753" count="10" /> <!-- Kamael Village Teleportation Scroll -->
+		<item id="10479" count="1" /> <!-- Shadow Item - Long Sword -->
+		<item id="9032" count="1" /> <!-- Shadow Item: Hard Leather Shirt -->
+		<item id="9033" count="1" /> <!-- Shadow Item: Hard Leather Gaiters -->
+		<item id="5789" count="5000" /> <!-- Soulshots -->
+		<item id="5790" count="5000" /> <!-- Spiritshots -->
+		<item id="20393" count="4" />  <!-- Sweet Fruit Cocktail -->
 	</equipment>
 </list>
