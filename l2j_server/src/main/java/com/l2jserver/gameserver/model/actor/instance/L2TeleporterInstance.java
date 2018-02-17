@@ -146,7 +146,7 @@ public final class L2TeleporterInstance extends L2Npc
 			{
 			}
 
-			if ((val == 1) && (player.getLevel() < 41))
+			if ((val == 1) && (player.isNewbie()))
 			{
 				showNewbieHtml(player);
 				return;
@@ -292,8 +292,7 @@ public final class L2TeleporterInstance extends L2Npc
 			}
 
 			int price = list.getPrice();
-			if (player.getLevel() < 41 || (player.getPlayerClassLevel().equals(ClassLevel.First) || player.getPlayerClassLevel().equals(ClassLevel.Second)))
-			{
+			if (player.isNewbie()) {
 				price = 0;
 			}
 			else if (!list.getIsForNoble())

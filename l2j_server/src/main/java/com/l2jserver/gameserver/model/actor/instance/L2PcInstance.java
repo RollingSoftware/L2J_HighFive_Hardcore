@@ -12841,6 +12841,11 @@ public final class L2PcInstance extends L2Playable
 		return getPlayerClass().getLevel();
 	}
 
+	public boolean isNewbie() {
+		return getLevel() < 41 ||
+					 (getPlayerClassLevel().equals(ClassLevel.First) || getPlayerClassLevel().equals(ClassLevel.Second));
+	}
+
 	public boolean isPartyBanned()
 	{
 		return PunishmentManager.getInstance().hasPunishment(getObjectId(), PunishmentAffect.CHARACTER, PunishmentType.PARTY_BAN);
