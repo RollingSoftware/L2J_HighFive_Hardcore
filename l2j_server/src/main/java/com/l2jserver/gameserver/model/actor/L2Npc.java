@@ -25,6 +25,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.lang.Math;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -420,7 +421,7 @@ public class L2Npc extends L2Character
 	{
 		int aggroRange = hasAIValue("aggroRange") ? getAIValue("aggroRange") : getTemplate().getAggroRange();
 		if (aggroRange > 0) {
-			return aggroRange * Config.AGGRO_RANGE_MODIFIER;
+			return Math.round(aggroRange * Config.AGGRO_RANGE_MODIFIER);
 		} else {
 			return aggroRange;
 		}

@@ -848,7 +848,7 @@ public final class Config
 	public static int DROP_ITEM_MIN_LEVEL_DIFFERENCE;
 	public static int DROP_ITEM_MAX_LEVEL_DIFFERENCE;
 	public static double DROP_ITEM_MIN_LEVEL_GAP_CHANCE;
-	public static double AGGRO_RANGE_MODIFIER;
+	public static float AGGRO_RANGE_MODIFIER;
 
 	// --------------------------------------------------
 	// PvP Settings
@@ -2101,7 +2101,7 @@ public final class Config
 			DROP_ITEM_MAX_LEVEL_DIFFERENCE = NPC.getInt("DropItemMaxLevelDifference", 10);
 			DROP_ITEM_MIN_LEVEL_GAP_CHANCE = NPC.getDouble("DropItemMinLevelGapChance", 10);
 
-			AGGRO_RANGE_MODIFIER = NPC.getDouble("AggroRangeModifier",  100) / 100;
+			AGGRO_RANGE_MODIFIER = NPC.getFloat("AggroRangeModifier",  100) / 100;
 
 			// Load Rates L2Properties file (if exists)
 			final PropertiesParser RatesSettings = new PropertiesParser(RATES_CONFIG_FILE);
