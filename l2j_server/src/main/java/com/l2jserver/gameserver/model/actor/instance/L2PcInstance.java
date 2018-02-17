@@ -5260,7 +5260,7 @@ public final class L2PcInstance extends L2Playable
 						dropItem("DieDrop", itemDrop, killer, true);
 
 						if (isKarmaDrop)
-						{	
+						{
 							LOG.info("{} has karma and dropped id = {}, count = {}", this, itemDrop.getId(), itemDrop.getCount());
 						}
 						else
@@ -11112,7 +11112,7 @@ public final class L2PcInstance extends L2Playable
 		if (Config.ALT_DISABLE_DEATH_PENALTY) {
 			return;
 		}
-    
+
 		if (isResurrectSpecialAffected() || isLucky() || isBlockedFromDeathPenalty() || isInsideZone(ZoneId.PVP) || isInsideZone(ZoneId.SIEGE) || canOverrideCond(PcCondOverride.DEATH_PENALTY))
 		{
 			return;
@@ -12831,6 +12831,14 @@ public final class L2PcInstance extends L2Playable
 	public int getId()
 	{
 		return getClassId().getId();
+	}
+
+	public PlayerClass getPlayerClass() {
+		return PlayerClass.values()[getClassId()];
+	}
+
+	public ClassLevel getPlayerClassLevel() {
+		return getPlayerClass().getLevel();
 	}
 
 	public boolean isPartyBanned()
