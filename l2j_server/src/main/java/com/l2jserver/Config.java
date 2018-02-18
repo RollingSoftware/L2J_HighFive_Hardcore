@@ -850,6 +850,9 @@ public final class Config
 	public static double DROP_ITEM_MIN_LEVEL_GAP_CHANCE;
 	public static float AGGRO_RANGE_MODIFIER;
 
+	public static float MONSTER_RESPAWN_MODIFIER;
+	public static int MONSTER_RESPAWN_RANDOM_DEFAULT;
+
 	// --------------------------------------------------
 	// PvP Settings
 	// --------------------------------------------------
@@ -2102,6 +2105,9 @@ public final class Config
 			DROP_ITEM_MIN_LEVEL_GAP_CHANCE = NPC.getDouble("DropItemMinLevelGapChance", 10);
 
 			AGGRO_RANGE_MODIFIER = NPC.getFloat("AggroRangeModifier",  100) / 100;
+
+			MONSTER_RESPAWN_MODIFIER = NPC.getFloat("MonsterRespawnModifier",  100) / 100;
+			MONSTER_RESPAWN_RANDOM_DEFAULT = NPC.getInt("MonsterRespawnRandomDefault",  0);
 
 			// Load Rates L2Properties file (if exists)
 			final PropertiesParser RatesSettings = new PropertiesParser(RATES_CONFIG_FILE);

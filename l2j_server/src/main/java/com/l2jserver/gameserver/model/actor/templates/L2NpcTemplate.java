@@ -587,6 +587,10 @@ public final class L2NpcTemplate extends L2CharTemplate implements IIdentifiable
 		return false;
 	}
 
+	public boolean isMonster() {
+		return _type.equals("L2Monster");
+	}
+
 	/**
 	 * Checks if obj can be assigned to the Class represented by clazz.<br>
 	 * This is true if, and only if, obj is the same class represented by clazz, or a subclass of it or obj implements the interface represented by clazz.
