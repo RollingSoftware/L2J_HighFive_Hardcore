@@ -852,6 +852,7 @@ public final class Config
 
 	public static float MONSTER_RESPAWN_MODIFIER;
 	public static int MONSTER_RESPAWN_RANDOM_DEFAULT;
+	public static int MONSTER_MAX_DRIFT_FROM_SPAWN;
 
 	// --------------------------------------------------
 	// PvP Settings
@@ -2108,6 +2109,7 @@ public final class Config
 
 			MONSTER_RESPAWN_MODIFIER = NPC.getFloat("MonsterRespawnModifier",  100) / 100;
 			MONSTER_RESPAWN_RANDOM_DEFAULT = NPC.getInt("MonsterRespawnRandomDefault",  0);
+			MONSTER_MAX_DRIFT_FROM_SPAWN = NPC.getInt("MonsterMaxDriftFromSpawn",  400);
 
 			// Load Rates L2Properties file (if exists)
 			final PropertiesParser RatesSettings = new PropertiesParser(RATES_CONFIG_FILE);
