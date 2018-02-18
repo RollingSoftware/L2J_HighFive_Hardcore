@@ -5164,14 +5164,7 @@ public final class L2PcInstance extends L2Playable
 		}
 
 		L2PcInstance pk = killer.getActingPlayer();
-		if ((getKarma() <= 0) && (pk != null) && (pk.getClan() != null) && (getClan() != null) && (pk.getClan().isAtWarWith(getClanId())
-		// || getClan().isAtWarWith(((L2PcInstance)killer).getClanId())
-		))
-		{
-			return;
-		}
-
-		if ((!isInsideZone(ZoneId.PVP) || (pk == null)) && (!isGM() || Config.KARMA_DROP_GM))
+		if (!isGM() || Config.KARMA_DROP_GM)
 		{
 			boolean isKarmaDrop = false;
 			boolean isKillerNpc = (killer instanceof L2Npc);
@@ -5192,7 +5185,7 @@ public final class L2PcInstance extends L2Playable
 				dropItem = Config.KARMA_RATE_DROP_ITEM;
 				dropLimit = Config.KARMA_DROP_LIMIT;
 			}
-			else if (isKillerNpc && (getLevel() > 4) && !isFestivalParticipant())
+			else if (!isFestivalParticipant())
 			{
 				dropPercent = Config.PLAYER_RATE_DROP;
 				dropEquip = Config.PLAYER_RATE_DROP_EQUIP;
