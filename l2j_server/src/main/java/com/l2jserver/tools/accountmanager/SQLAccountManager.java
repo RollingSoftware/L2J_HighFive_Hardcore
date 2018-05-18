@@ -29,6 +29,7 @@ import java.util.Scanner;
 import com.l2jserver.Config;
 import com.l2jserver.Server;
 import com.l2jserver.commons.database.pool.impl.ConnectionFactory;
+import org.mindrot.jbcrypt.BCrypt;
 
 /**
  * This class SQL Account Manager
@@ -192,13 +193,11 @@ public class SQLAccountManager
 		try (Connection con = ConnectionFactory.getInstance().getConnection();
 			PreparedStatement ps = con.prepareStatement("REPLACE accounts(login, password, accessLevel) VALUES (?, ?, ?)"))
 		{
-			MessageDigest md = MessageDigest.getInstance("SHA");
-			byte[] newPassword;
-			newPassword = password.getBytes("UTF-8");
-			newPassword = md.digest(newPassword);
+
+			String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 			
 			ps.setString(1, account);
-			ps.setString(2, Base64.getEncoder().encodeToString(newPassword));
+			ps.setString(2, hashedPassword);
 			ps.setString(3, level);
 			if (ps.executeUpdate() > 0)
 			{

@@ -12,6 +12,8 @@ __pycache__/
 .ropeproject
 .settings/
 
+.idea/
+
 *result.txt
 
 # Mobile Tools for Java (J2ME)

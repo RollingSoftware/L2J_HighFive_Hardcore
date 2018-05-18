@@ -20,17 +20,14 @@ package com.l2jserver.loginserver;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.KeyPairGenerator;
-import java.security.MessageDigest;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.RSAKeyGenParameterSpec;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
@@ -50,6 +47,7 @@ import com.l2jserver.loginserver.network.gameserverpackets.ServerStatus;
 import com.l2jserver.loginserver.network.serverpackets.LoginFail.LoginFailReason;
 import com.l2jserver.util.Rnd;
 import com.l2jserver.util.crypt.ScrambledKeyPair;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class LoginController
 {
@@ -86,7 +84,7 @@ public class LoginController
 		
 		_keyPairs = new ScrambledKeyPair[10];
 		
-		KeyPairGenerator keygen = null;
+		KeyPairGenerator keygen;
 		
 		keygen = KeyPairGenerator.getInstance("RSA");
 		RSAKeyGenParameterSpec spec = new RSAKeyGenParameterSpec(1024, RSAKeyGenParameterSpec.F4);
@@ -167,9 +165,9 @@ public class LoginController
 		return _loginServerClients.get(account);
 	}
 	
-	public AccountInfo retriveAccountInfo(InetAddress clientAddr, String login, String password)
+	public AccountInfo retrieveAccountInfo(InetAddress clientAddr, String login, String password)
 	{
-		return retriveAccountInfo(clientAddr, login, password, true);
+		return retrieveAccountInfo(clientAddr, login, password, true);
 	}
 	
 	private void recordFailedLoginAttemp(InetAddress addr)
@@ -210,21 +208,15 @@ public class LoginController
 		}
 	}
 	
-	private AccountInfo retriveAccountInfo(InetAddress addr, String login, String password, boolean autoCreateIfEnabled)
+	private AccountInfo retrieveAccountInfo(InetAddress addr, String login, String password, boolean autoCreateIfEnabled)
 	{
-		try
-		{
-			MessageDigest md = MessageDigest.getInstance("SHA");
-			byte[] raw = password.getBytes(StandardCharsets.UTF_8);
-			String hashBase64 = Base64.getEncoder().encodeToString(md.digest(raw));
-			
+		try {
 			try (Connection con = ConnectionFactory.getInstance().getConnection();
 				PreparedStatement ps = con.prepareStatement(USER_INFO_SELECT))
 			{
 				ps.setString(1, Long.toString(System.currentTimeMillis()));
 				ps.setString(2, login);
-				try (ResultSet rset = ps.executeQuery())
-				{
+				try (ResultSet rset = ps.executeQuery()) {
 					if (rset.next())
 					{
 						if (Config.DEBUG)
@@ -233,7 +225,7 @@ public class LoginController
 						}
 						
 						AccountInfo info = new AccountInfo(rset.getString("login"), rset.getString("password"), rset.getInt("accessLevel"), rset.getInt("lastServer"));
-						if (!info.checkPassHash(hashBase64))
+						if (!info.checkPassword(password))
 						{
 							// wrong password
 							recordFailedLoginAttemp(addr);
@@ -252,25 +244,14 @@ public class LoginController
 				recordFailedLoginAttemp(addr);
 				return null;
 			}
-			
-			try (Connection con = ConnectionFactory.getInstance().getConnection();
-				PreparedStatement ps = con.prepareStatement(AUTOCREATE_ACCOUNTS_INSERT))
-			{
-				ps.setString(1, login);
-				ps.setString(2, hashBase64);
-				ps.setLong(3, System.currentTimeMillis());
-				ps.setInt(4, 0);
-				ps.setString(5, addr.getHostAddress());
-				ps.execute();
-			}
-			catch (Exception e)
-			{
-				_log.log(Level.WARNING, "Exception while auto creating account for '" + login + "'!", e);
+
+			boolean autoCreated = autoCreateAccount(login, password, addr);
+			if (!autoCreated) {
 				return null;
 			}
 			
 			_log.info("Auto created account '" + login + "'.");
-			return retriveAccountInfo(addr, login, password, false);
+			return retrieveAccountInfo(addr, login, password, false);
 		}
 		catch (Exception e)
 		{
@@ -278,7 +259,26 @@ public class LoginController
 			return null;
 		}
 	}
-	
+
+	private boolean autoCreateAccount(String login, String password, InetAddress addr) {
+		try (Connection con = ConnectionFactory.getInstance().getConnection();
+			PreparedStatement ps = con.prepareStatement(AUTOCREATE_ACCOUNTS_INSERT))
+		{
+			ps.setString(1, login);
+			ps.setString(2, BCrypt.hashpw(password, BCrypt.gensalt()));
+			ps.setLong(3, System.currentTimeMillis());
+			ps.setInt(4, 0);
+			ps.setString(5, addr.getHostAddress());
+			ps.execute();
+			return true;
+		}
+		catch (Exception e)
+		{
+			_log.log(Level.WARNING, "Exception while auto creating account for '" + login + "'!", e);
+			return false;
+		}
+	}
+
 	public AuthLoginResult tryCheckinAccount(L2LoginClient client, InetAddress address, AccountInfo info)
 	{
 		if (info.getAccessLevel() < 0)

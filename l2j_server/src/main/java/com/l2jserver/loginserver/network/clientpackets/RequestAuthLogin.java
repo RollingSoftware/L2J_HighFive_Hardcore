@@ -123,7 +123,7 @@ public class RequestAuthLogin extends L2LoginClientPacket
 		InetAddress clientAddr = getClient().getConnection().getInetAddress();
 		
 		final LoginController lc = LoginController.getInstance();
-		AccountInfo info = lc.retriveAccountInfo(clientAddr, _user, _password);
+		AccountInfo info = lc.retrieveAccountInfo(clientAddr, _user, _password);
 		if (info == null)
 		{
 			// user or pass wrong

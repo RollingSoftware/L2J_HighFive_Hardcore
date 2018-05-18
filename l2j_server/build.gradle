@@ -27,6 +27,7 @@ dependencies {
 	compile 'org.python:jython:2.2.1'
 	compile 'org.slf4j:slf4j-api:1.7.23'
 	compile 'org.slf4j:slf4j-jdk14:1.7.23'
+	compile group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
 	compile fileTree(dir: 'dist/libs', include: '*.jar')
 	testCompile 'org.testng:testng:6.10'
 	testCompile 'com.beust:jcommander:1.48'

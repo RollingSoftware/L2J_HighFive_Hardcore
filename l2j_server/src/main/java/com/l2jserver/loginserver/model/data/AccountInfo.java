@@ -19,6 +19,7 @@
 package com.l2jserver.loginserver.model.data;
 
 import java.util.Objects;
+import org.mindrot.jbcrypt.BCrypt;
 
 /**
  * @author HorridoJoho
@@ -49,12 +50,11 @@ public final class AccountInfo
 		_accessLevel = accessLevel;
 		_lastServer = lastServer;
 	}
-	
-	public boolean checkPassHash(final String passHash)
-	{
-		return _passHash.equals(passHash);
+
+	public boolean checkPassword(String password) {
+		return BCrypt.checkpw(password, _passHash);
 	}
-	
+
 	public String getLogin()
 	{
 		return _login;
