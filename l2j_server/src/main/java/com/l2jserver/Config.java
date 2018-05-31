@@ -904,7 +904,10 @@ public final class Config
 	public static float RATE_DROP_MP_HERBS;
 	public static float RATE_DROP_SPECIAL_HERBS;
 	public static int PLAYER_DROP_LIMIT;
-	public static int PLAYER_RATE_DROP;
+	public static int PLAYER_RATE_PVP_DROP;
+	public static int PLAYER_RATE_NPC_DROP;
+	public static int PLAYER_RATE_WAR_DROP;
+	public static int PLAYER_RATE_SIEGE_DROP;
 	public static int PLAYER_RATE_DROP_ITEM;
 	public static int PLAYER_RATE_DROP_EQUIP;
 	public static int PLAYER_RATE_DROP_EQUIP_WEAPON;
@@ -2149,7 +2152,10 @@ public final class Config
 			RATE_KARMA_EXP_LOST = RatesSettings.getFloat("RateKarmaExpLost", 1);
 			RATE_SIEGE_GUARDS_PRICE = RatesSettings.getFloat("RateSiegeGuardsPrice", 1);
 			PLAYER_DROP_LIMIT = RatesSettings.getInt("PlayerDropLimit", 3);
-			PLAYER_RATE_DROP = RatesSettings.getInt("PlayerRateDrop", 5);
+			PLAYER_RATE_PVP_DROP = RatesSettings.getInt("PlayerRatePvpDeathDrop", 5);
+			PLAYER_RATE_NPC_DROP = RatesSettings.getInt("PlayerRateNpcDeathDrop", 5);
+			PLAYER_RATE_WAR_DROP = RatesSettings.getInt("PlayerRateClanWarDeathDrop", 5);
+			PLAYER_RATE_SIEGE_DROP = RatesSettings.getInt("PlayerRateSiegeDeathDrop", 5);
 			PLAYER_RATE_DROP_ITEM = RatesSettings.getInt("PlayerRateDropItem", 70);
 			PLAYER_RATE_DROP_EQUIP = RatesSettings.getInt("PlayerRateDropEquip", 25);
 			PLAYER_RATE_DROP_EQUIP_WEAPON = RatesSettings.getInt("PlayerRateDropEquipWeapon", 5);
@@ -2991,7 +2997,7 @@ public final class Config
 				PLAYER_DROP_LIMIT = Integer.parseInt(pValue);
 				break;
 			case "playerratedrop":
-				PLAYER_RATE_DROP = Integer.parseInt(pValue);
+				PLAYER_RATE_PVP_DROP = Integer.parseInt(pValue);
 				break;
 			case "playerratedropitem":
 				PLAYER_RATE_DROP_ITEM = Integer.parseInt(pValue);

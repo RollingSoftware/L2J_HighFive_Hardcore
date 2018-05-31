@@ -5166,39 +5166,40 @@ public final class L2PcInstance extends L2Playable
 		L2PcInstance pk = killer.getActingPlayer();
 		if (!isGM() || Config.KARMA_DROP_GM)
 		{
-			boolean isKarmaDrop = false;
-			boolean isKillerNpc = (killer instanceof L2Npc);
 			int pkLimit = Config.KARMA_PK_LIMIT;
 
-			int dropEquip = 0;
-			int dropEquipWeapon = 0;
-			int dropItem = 0;
-			int dropLimit = 0;
+			boolean isKarmaDrop = (getKarma() > 0) && (getPkKills() >= pkLimit);
+			boolean isKillerNpc = (killer instanceof L2Npc);
+			final boolean isSiegeKill = isInsideZone(ZoneId.SIEGE);
+			boolean isWarKill = _clan.isAtWarWith(pk.getClanId());
+
+
+			int dropEquip = Config.PLAYER_RATE_DROP_EQUIP;
+			int dropEquipWeapon = Config.PLAYER_RATE_DROP_EQUIP_WEAPON;
+			int dropItem = Config.PLAYER_RATE_DROP_ITEM;
+			int dropLimit = Config.PLAYER_DROP_LIMIT;
 			int dropPercent = 0;
 
-			if ((getKarma() > 0) && (getPkKills() >= pkLimit))
-			{
-				isKarmaDrop = true;
+			if (isKarmaDrop) {
 				dropPercent = Config.KARMA_RATE_DROP;
 				dropEquip = Config.KARMA_RATE_DROP_EQUIP;
 				dropEquipWeapon = Config.KARMA_RATE_DROP_EQUIP_WEAPON;
 				dropItem = Config.KARMA_RATE_DROP_ITEM;
 				dropLimit = Config.KARMA_DROP_LIMIT;
-			}
-			else if (!isFestivalParticipant())
-			{
-				dropPercent = Config.PLAYER_RATE_DROP;
-				dropEquip = Config.PLAYER_RATE_DROP_EQUIP;
-				dropEquipWeapon = Config.PLAYER_RATE_DROP_EQUIP_WEAPON;
-				dropItem = Config.PLAYER_RATE_DROP_ITEM;
-				dropLimit = Config.PLAYER_DROP_LIMIT;
+			} else if (isSiegeKill) {
+				dropPercent = Config.PLAYER_RATE_SIEGE_DROP;
+			} else if (isWarKill) {
+				dropPercent = Config.PLAYER_RATE_WAR_DROP;
+			} else if (isKillerNpc) {
+				dropPercent = Config.PLAYER_RATE_NPC_DROP;
+			} else {
+				dropPercent = Config.PLAYER_RATE_PVP_DROP;
 			}
 
 			if ((dropPercent > 0) && (Rnd.get(100) < dropPercent))
 			{
 				int dropCount = 0;
-
-				int itemDropPercent = 0;
+				int itemDropPercent;
 
 				for (L2ItemInstance itemDrop : getInventory().getItems())
 				{
@@ -5234,11 +5235,9 @@ public final class L2PcInstance extends L2Playable
 								Rnd.get(100) < Config.ALT_PLAYER_DROP_CRYSTALIZATION_CHANCE) {
 
 							// Remove the actual item from inventory
-							L2ItemInstance removedItem = this.getInventory().destroyItem("Crystalize", itemDrop.getObjectId(), itemDrop.getCount(), this, null);
+							L2ItemInstance removedItem = this.getInventory().destroyItem("Crystallize", itemDrop.getObjectId(), itemDrop.getCount(), this, null);
 
-							InventoryUpdate iu = new InventoryUpdate();
-							iu.addRemovedItem(removedItem);
-							this.sendPacket(iu);
+							this.sendPacket( new InventoryUpdate(removedItem));
 
 							SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_CRYSTALLIZED);
 							sm.addItemName(removedItem);
@@ -5247,18 +5246,22 @@ public final class L2PcInstance extends L2Playable
 							// Replace with crystals
 							int crystalId = itemDrop.getItem().getCrystalItemId();
 							int crystalAmount = itemDrop.getCrystalCount();
-							itemDrop = this.getInventory().addItem("Crystalize", crystalId, crystalAmount, this, this);
+							itemDrop = this.getInventory().addItem("Crystallize", crystalId, crystalAmount, this, this);
+
+							this.sendPacket(new InventoryUpdate(itemDrop));
 							this.broadcastUserInfo();
+
+							L2World.getInstance().removeObject(removedItem);
 						}
 						dropItem("DieDrop", itemDrop, killer, true);
 
 						if (isKarmaDrop)
 						{
-							LOG.info("{} has karma and dropped id = {}, count = {}", this, itemDrop.getId(), itemDrop.getCount());
+							LOG.debug("{} has karma and dropped id = {}, count = {}", this, itemDrop.getId(), itemDrop.getCount());
 						}
 						else
 						{
-							LOG.info("{} dropped id = {}, count = {}", this, itemDrop.getId(), itemDrop.getCount());
+							LOG.debug("{} dropped id = {}, count = {}", this, itemDrop.getId(), itemDrop.getCount());
 						}
 
 						if (++dropCount >= dropLimit)
