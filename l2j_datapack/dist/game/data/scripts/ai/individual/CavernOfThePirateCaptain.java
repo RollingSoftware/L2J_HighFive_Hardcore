@@ -16,8 +16,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package instances.CavernOfThePirateCaptain;
+package ai.individual;
 
+import ai.npc.AbstractNpcAI;
 import instances.AbstractInstance;
 
 import java.util.ArrayList;
@@ -39,7 +40,7 @@ import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
  * Cavern Of The Pirate Captain (Day Dream) instance Zone.
  * @author St3eT
  */
-public final class CavernOfThePirateCaptain extends AbstractInstance
+public final class CavernOfThePirateCaptain extends AbstractNpcAI
 {
 	protected class CavernOfThePirateCaptainWorld extends InstanceWorld
 	{
@@ -203,7 +204,6 @@ public final class CavernOfThePirateCaptain extends AbstractInstance
 		teleportPlayer(player, ENTER_LOC[getRandom(ENTER_LOC.length)], world.getInstanceId(), false);
 	}
 	
-	@Override
 	protected boolean checkConditions(L2PcInstance player, int templateId)
 	{
 		if (player.canOverrideCond(PcCondOverride.INSTANCE_CONDITIONS))

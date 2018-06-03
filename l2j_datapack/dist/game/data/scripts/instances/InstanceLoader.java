@@ -18,7 +18,6 @@
  */
 package instances;
 
-import instances.CavernOfThePirateCaptain.CavernOfThePirateCaptain;
 import instances.CrystalCaverns.CrystalCaverns;
 import instances.DarkCloudMansion.DarkCloudMansion;
 import instances.DisciplesNecropolisPast.DisciplesNecropolisPast;
@@ -51,7 +50,6 @@ public final class InstanceLoader
 
 	private static final Class<?>[] SCRIPTS =
 	{
-		CavernOfThePirateCaptain.class,
 		CrystalCaverns.class,
 		DarkCloudMansion.class,
 		DisciplesNecropolisPast.class,
