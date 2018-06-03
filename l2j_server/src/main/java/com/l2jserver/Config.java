@@ -76,7 +76,8 @@ import com.l2jserver.util.data.xml.IXmlReader;
  */
 public final class Config
 {
-	private static final Logger LOG = LoggerFactory.getLogger(Config.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(Config.class);
 
 	// --------------------------------------------------
 	// Constants
@@ -1080,6 +1081,10 @@ public final class Config
 	public static int ANTHARAS_WAIT_TIME;
 	public static int ANTHARAS_SPAWN_INTERVAL;
 	public static int ANTHARAS_SPAWN_RANDOM;
+
+	// Zaken
+	public static int ZAKEN_SPAWN_INTERVAL;
+	public static int ZAKEN_SPAWN_RANDOM;
 
 	// Valakas
 	public static int VALAKAS_WAIT_TIME;
@@ -2705,6 +2710,9 @@ public final class Config
 			ANTHARAS_WAIT_TIME = GrandBossSettings.getInt("AntharasWaitTime", 30);
 			ANTHARAS_SPAWN_INTERVAL = GrandBossSettings.getInt("IntervalOfAntharasSpawn", 264);
 			ANTHARAS_SPAWN_RANDOM = GrandBossSettings.getInt("RandomOfAntharasSpawn", 72);
+
+			ZAKEN_SPAWN_INTERVAL = GrandBossSettings.getInt("IntervalOfZakenSpawn", 40);
+			ZAKEN_SPAWN_RANDOM = GrandBossSettings.getInt("RandomOfZakenSpawn", 8);
 
 			VALAKAS_WAIT_TIME = GrandBossSettings.getInt("ValakasWaitTime", 30);
 			VALAKAS_SPAWN_INTERVAL = GrandBossSettings.getInt("IntervalOfValakasSpawn", 264);

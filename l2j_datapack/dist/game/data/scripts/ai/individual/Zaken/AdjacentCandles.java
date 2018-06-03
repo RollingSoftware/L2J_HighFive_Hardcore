@@ -1,5 +1,8 @@
 package ai.individual.Zaken;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class AdjacentCandles {
 
     private final int leftCandleId;
@@ -28,6 +31,14 @@ public class AdjacentCandles {
 
     public int getDownCandleId() {
         return downCandleId;
+    }
+
+    public List<Integer> getCandleIds() {
+        return Arrays.asList(leftCandleId, upCandleId, downCandleId, rightCandleId);
+    }
+
+    public static AdjacentCandles none() {
+        return new AdjacentCandles(-1, -1, -1, -1);
     }
 
 }

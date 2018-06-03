@@ -21,7 +21,12 @@ public class ShipRoom {
         return roomCenter;
     }
 
-    public AdjacentCandles getCandleIds() {
+    public AdjacentCandles getAdjacentCandles() {
         return candles;
     }
+
+    public static ShipRoom none() {
+        return new ShipRoom(-1, new Location(-1, -1, -1), AdjacentCandles.none());
+    }
+
 }
