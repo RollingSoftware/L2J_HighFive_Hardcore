@@ -19,21 +19,25 @@
 package ai.individual.Zaken;
 
 import ai.npc.AbstractNpcAI;
+import com.l2jserver.gameserver.instancemanager.GrandBossManager;
 import com.l2jserver.gameserver.instancemanager.InstanceManager;
 import com.l2jserver.gameserver.instancemanager.ZoneManager;
 import com.l2jserver.gameserver.model.L2Party;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.PcCondOverride;
+import com.l2jserver.gameserver.model.StatsSet;
 import com.l2jserver.gameserver.model.actor.L2Attackable;
 import com.l2jserver.gameserver.model.actor.L2Npc;
+import com.l2jserver.gameserver.model.actor.instance.L2GrandBossInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
-import com.l2jserver.gameserver.model.instancezone.InstanceWorld;
 import com.l2jserver.gameserver.model.zone.type.L2NoRestartZone;
 import com.l2jserver.gameserver.network.NpcStringId;
 import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Cavern Of The Pirate Captain (Day Dream) instance Zone.
@@ -43,10 +47,9 @@ import java.util.List;
 public final class Zaken extends AbstractNpcAI {
 
     protected class ZakenWorld {
-
-        L2Attackable _zaken;
+        L2GrandBossInstance _zaken;
         int _zakenRoom;
-        int _blueFound;
+        AtomicInteger _blueFound = new AtomicInteger();
     }
 
     // NPCs
@@ -117,17 +120,34 @@ public final class Zaken extends AbstractNpcAI {
         new Location(57215, 218079, -2954),
     };
 
+    private static final int ALIVE = 0;
+    private static final int FIGHTING = 1;
+    private static final int DEAD = 3;
+
     private static final int MIN_LV_83 = 78;
     private static final int PLAYERS_83_MAX = 27;
     private static final int TEMPLATE_ID_83 = 135;
 
-    private static final int[][] ROOM_DATA = {
+        /*new Location(53313, 220133, -3498),
+        new Location(53313, 218079, -3498),
+        new Location(54240, 221045, -3498),
+        new Location(54325, 219095, -3498),
+        new Location(54240, 217155, -3498),
+        new Location(55257, 220028, -3498),
+        new Location(55257, 218172, -3498),
+        new Location(56280, 221045, -3498),
+        new Location(56195, 219095, -3498),
+        new Location(56280, 217155, -3498),
+        new Location(57215, 220133, -3498),
+        new Location(57215, 218079, -3498),*/
+
+    private static final List<ShipRoom> ROOM_DATA = Arrays.asList(
         // Floor 1
-        {54240, 220133, -3498, 1, 3, 4, 6},
-        {54240, 218073, -3498, 2, 5, 4, 7},
-        {55265, 219095, -3498, 4, 9, 6, 7},
-        {56289, 220133, -3498, 8, 11, 6, 9},
-        {56289, 218073, -3498, 10, 12, 7, 9},
+        new ShipRoom(1, new Location(54240, 220133, -3498), new AdjacentCandles(1, 3, 4, 6)),
+        new ShipRoom(2, new Location(54240, 218073, -3498), new AdjacentCandles(2, 4, 5, 7)),
+        new ShipRoom(3, new Location(55265, 219095, -3498), new AdjacentCandles(4, 9, 6, 7)),
+        new ShipRoom(4, new Location(56289, 220133, -3498), new AdjacentCandles(8, 11, 6, 9)),
+        new ShipRoom(5, new Location(56289, 218073, -3498), new AdjacentCandles(10, 12, 7, 9)),
         // Floor 2
         {54240, 220133, -3226, 13, 15, 16, 18},
         {54240, 218073, -3226, 14, 17, 16, 19},
@@ -140,7 +160,7 @@ public final class Zaken extends AbstractNpcAI {
         {55265, 219095, -2954, 33, 28, 31, 30},
         {56289, 220133, -2954, 32, 35, 30, 33},
         {56289, 218073, -2954, 34, 36, 31, 33}
-    };
+    );
 
     private ZakenWorld world;
 
@@ -152,14 +172,66 @@ public final class Zaken extends AbstractNpcAI {
         addFirstTalkId(CANDLE);
 
         world = new ZakenWorld();
-        manageNpcSpawn(world);
+        final StatsSet bossInfo = GrandBossManager.getInstance().getStatsSet(ZAKEN_83);
+
+        switch (getStatus()) {
+            case ALIVE: {
+                world._blueFound.set(0);
+                spawnAllNpcs(world);
+                restoreZakenState(bossInfo);
+                break;
+            }
+            case FIGHTING: {
+                world._blueFound.set(4);
+                spawnZaken(roomId);
+                spawnZakenGuards(roomId);
+                restoreZakenState(bossInfo);
+                showZaken();
+                break;
+            }
+            case DEAD: {
+                final long respawnTime = bossInfo.getLong("respawn_time");
+                final long remain = respawnTime - System.currentTimeMillis();
+                if (remain > 0) {
+                    startQuestTimer("RESPAWN", remain, null, null);
+                } else {
+                    setStatus(ALIVE);
+                    spawnAllNpcs(world);
+                }
+                break;
+            }
+        }
+
+    }
+
+    private void restoreZakenState(StatsSet bossInfo) {
+        final int curr_hp = bossInfo.getInt("currentHP");
+        final int curr_mp = bossInfo.getInt("currentMP");
+        final int loc_x = bossInfo.getInt("loc_x");
+        final int loc_y = bossInfo.getInt("loc_y");
+        final int loc_z = bossInfo.getInt("loc_z");
+        final int heading = bossInfo.getInt("heading");
     }
 
     private void teleportPlayerInside(L2PcInstance player) {
         player.teleToLocation(ENTER_LOC[getRandom(ENTER_LOC.length)]);
     }
 
-    protected boolean checkConditions(L2PcInstance player, int templateId) {
+    private int getStatus() {
+        return GrandBossManager.getInstance().getBossStatus(ZAKEN_83);
+    }
+
+    private void setStatus(int status)
+    {
+        GrandBossManager.getInstance().setBossStatus(ZAKEN_83, status);
+    }
+
+    private void setRespawn(long respawnTime)
+    {
+        GrandBossManager.getInstance().getStatsSet(ZAKEN_83).set("respawn_time", (System.currentTimeMillis() + respawnTime));
+    }
+
+    protected boolean checkEntranceConditions(L2PcInstance player) {
         if (player.canOverrideCond(PcCondOverride.INSTANCE_CONDITIONS)) {
             return true;
         }
@@ -236,102 +308,96 @@ public final class Zaken extends AbstractNpcAI {
 
     @Override
     public String onAdvEvent(String event, L2Npc npc, L2PcInstance player) {
-        if (event.equals("enter60")) {
-            enterInstance(player, new ZakenWorld(), "CavernOfThePirateCaptainWorldDay60.xml",
-                TEMPLATE_ID_60);
-        } else if (event.equals("enter83")) {
-            enterInstance(player, new ZakenWorld(), "CavernOfThePirateCaptainWorldDay83.xml",
-                TEMPLATE_ID_83);
-        } else {
-            switch (event) {
-                case "BURN_BLUE": {
-                    if (npc.getRightHandItem() == 0) {
-                        npc.setRHandId(FIRE);
-                        startQuestTimer("BURN_BLUE2", 3000, npc, player);
-                        if (world._blueFound == 4) {
-                            startQuestTimer("SHOW_ZAKEN", 5000, npc, player);
-                        }
-                    }
-                    break;
+        switch (event) {
+            case "enter": {
+                if (checkEntranceConditions(player)) {
+                    teleportPlayerInside(player);
                 }
-                case "BURN_BLUE2": {
-                    if (npc.getRightHandItem() == FIRE) {
-                        npc.setRHandId(BLUE);
-                    }
-                    break;
-                }
-                case "BURN_RED": {
-                    if (npc.getRightHandItem() == 0) {
-                        npc.setRHandId(FIRE);
-                        startQuestTimer("BURN_RED2", 3000, npc, player);
-                    }
-                    break;
-                }
-                case "BURN_RED2": {
-                    if (npc.getRightHandItem() == FIRE) {
-                        final int room = getRoomByCandle(npc);
-                        npc.setRHandId(RED);
-                        manageScreenMsg(world,
-                            NpcStringId.THE_CANDLES_CAN_LEAD_YOU_TO_ZAKEN_DESTROY_HIM);
-                        spawnNpc(world._is83 ? DOLL_BLADER_83 : DOLL_BLADER_60, room, player,
-                            world);
-                        spawnNpc(world._is83 ? VALE_MASTER_83 : VALE_MASTER_60, room, player,
-                            world);
-                        spawnNpc(world._is83 ? PIRATES_ZOMBIE_83 : PIRATES_ZOMBIE_60, room,
-                            player, world);
-                        spawnNpc(
-                            world._is83 ? PIRATES_ZOMBIE_CAPTAIN_83 : PIRATES_ZOMBIE_CAPTAIN_60,
-                            room, player, world);
-                    }
-                    break;
-                }
-                case "SHOW_ZAKEN": {
-                    if (world._is83) {
-                        manageScreenMsg(world, NpcStringId.WHO_DARES_AWKAWEN_THE_MIGHTY_ZAKEN);
-                    }
-                    world._zaken.setInvisible(false);
-                    world._zaken.setIsParalyzed(false);
-                    spawnNpc(world._is83 ? DOLL_BLADER_83 : DOLL_BLADER_60, world._zakenRoom,
-                        player, world);
-                    spawnNpc(world._is83 ? PIRATES_ZOMBIE_83 : PIRATES_ZOMBIE_60,
-                        world._zakenRoom, player, world);
-                    spawnNpc(
-                        world._is83 ? PIRATES_ZOMBIE_CAPTAIN_83 : PIRATES_ZOMBIE_CAPTAIN_60,
-                        world._zakenRoom, player, world);
-                    break;
-                }
+                break;
+            }
+            case "BURN_BLUE": {
+                burnBlueFirstTime(npc, player);
+                break;
+            }
+            case "BURN_BLUE2": {
+                burnBlueTwice(npc, player);
+                break;
+            }
+            case "BURN_RED": {
+                burnRedFirstTime(npc, player);
+                break;
+            }
+            case "BURN_RED2": {
+                burnRedTwice(npc, player);
+                break;
+            }
+            case "SHOW_ZAKEN": {
+                showZaken();
+                spawnZakenGuardsOn(player);
+                break;
             }
         }
+
         return super.onAdvEvent(event, npc, player);
+    }
+
+    private void burnBlueFirstTime(L2Npc npc, L2PcInstance player) {
+        if (npc.getRightHandItem() == 0) {
+            npc.setRHandId(FIRE);
+            startQuestTimer("BURN_BLUE2", 3000, npc, player);
+            if (world._blueFound.get() == 4) {
+                startQuestTimer("SHOW_ZAKEN", 5000, npc, player);
+            }
+        }
+    }
+
+    private void burnBlueTwice(L2Npc npc, L2PcInstance player) {
+        if (npc.getRightHandItem() == FIRE) {
+            npc.setRHandId(BLUE);
+        }
+    }
+
+    private void burnRedFirstTime(L2Npc npc, L2PcInstance player) {
+        if (npc.getRightHandItem() == 0) {
+            npc.setRHandId(FIRE);
+            startQuestTimer("BURN_RED2", 3000, npc, player);
+        }
+    }
+
+    private void burnRedTwice(L2Npc npc, L2PcInstance player) {
+        if (npc.getRightHandItem() == FIRE) {
+            final int room = getRoomByCandle(npc);
+            npc.setRHandId(RED);
+            manageScreenMsg(NpcStringId.THE_CANDLES_CAN_LEAD_YOU_TO_ZAKEN_DESTROY_HIM);
+            spawnNpcAggroedOnPlayer(DOLL_BLADER_83, room, player);
+            spawnNpcAggroedOnPlayer(VALE_MASTER_83, room, player);
+            spawnNpcAggroedOnPlayer(PIRATES_ZOMBIE_83, room, player);
+            spawnNpcAggroedOnPlayer(PIRATES_ZOMBIE_CAPTAIN_83, room, player);
+        }
+    }
+
+    private void showZaken() {
+        manageScreenMsg(NpcStringId.WHO_DARES_AWKAWEN_THE_MIGHTY_ZAKEN);
+        world._zaken.setInvisible(false);
+        world._zaken.setIsParalyzed(false);
+    }
+
+    private void spawnZakenGuards() {
+        spawnNpc(DOLL_BLADER_83, world._zakenRoom);
+        spawnNpc(PIRATES_ZOMBIE_83, world._zakenRoom);
+        spawnNpc(PIRATES_ZOMBIE_CAPTAIN_83, world._zakenRoom);
+    }
+
+    private void spawnZakenGuardsOn(L2PcInstance player) {
+        spawnNpcAggroedOnPlayer(DOLL_BLADER_83, world._zakenRoom, player);
+        spawnNpcAggroedOnPlayer(PIRATES_ZOMBIE_83, world._zakenRoom, player);
+        spawnNpcAggroedOnPlayer(PIRATES_ZOMBIE_CAPTAIN_83, world._zakenRoom, player);
     }
 
     @Override
     public String onKill(L2Npc npc, L2PcInstance killer, boolean isSummon) {
-        if (npc.getId() == ZAKEN_83) {
-            for (L2PcInstance playersInside : world.playersInside) {
-                if ((playersInside != null) && (
-                    (playersInside.getInstanceId() == world.getInstanceId()) && playersInside
-                        .isInsideRadius(npc, 1500, true, true))) {
-                    final long time = System.currentTimeMillis() - world.storeTime;
-                    if (time <= 300000) // 5 minutes
-                    {
-                        if (getRandomBoolean()) {
-                            giveItems(playersInside, VORPAL_RING, 1);
-                        }
-                    } else if (time <= 600000) // 10 minutes
-                    {
-                        if (getRandom(100) < 30) {
-                            giveItems(playersInside, VORPAL_EARRING, 1);
-                        }
-                    } else if (time <= 900000) // 15 minutes
-                    {
-                        if (getRandom(100) < 25) {
-                            giveItems(playersInside, VORPAL_RING, 1);
-                        }
-                    }
-                }
-            }
-        }
+        //TODO Grandboss Timer
+        world._blueFound.set(0);
         return super.onKill(npc, killer, isSummon);
     }
 
@@ -341,7 +407,7 @@ public final class Zaken extends AbstractNpcAI {
 
         if (npc.isScriptValue(0)) {
             if (isBlue) {
-                world._blueFound++;
+                world._blueFound.incrementAndGet();
                 startQuestTimer("BURN_BLUE", 500, npc, player);
             } else {
                 startQuestTimer("BURN_RED", 500, npc, player);
@@ -378,8 +444,12 @@ public final class Zaken extends AbstractNpcAI {
         }
     }
 
-    private L2Attackable spawnNpc(int npcId, int roomId) {
-        return (L2Attackable) addSpawn(npcId, ROOM_DATA[roomId - 1][0], ROOM_DATA[roomId - 1][1],
+    private L2GrandBossInstance spawnZaken(int roomId) {
+        return spawnNpc(ZAKEN_83, roomId);
+    }
+
+    private L2GrandBossInstance spawnNpc(int npcId, int roomId) {
+        return (L2GrandBossInstance) addSpawn(npcId, ROOM_DATA[roomId - 1][0], ROOM_DATA[roomId - 1][1],
             ROOM_DATA[roomId - 1][2], 0, false, 0, false);
     }
 
@@ -392,7 +462,7 @@ public final class Zaken extends AbstractNpcAI {
         return mob;
     }
 
-    private void manageNpcSpawn(ZakenWorld world) {
+    private void spawnAllNpcs(ZakenWorld world) {
         final List<L2Npc> candles = new ArrayList<>();
         world._zakenRoom = getRandom(1, 15);
 
@@ -405,7 +475,7 @@ public final class Zaken extends AbstractNpcAI {
         for (int i = 3; i < 7; i++) {
             candles.get(ROOM_DATA[world._zakenRoom - 1][i] - 1).getVariables().set("isBlue", 1);
         }
-        world._zaken = spawnNpc(ZAKEN_83, world._zakenRoom);
+        world._zaken = spawnZaken(world._zakenRoom);
         world._zaken.setInvisible(true);
         world._zaken.setIsParalyzed(true);
     }
