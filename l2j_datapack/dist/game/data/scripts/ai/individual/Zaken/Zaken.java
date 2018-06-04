@@ -20,12 +20,10 @@ package ai.individual.Zaken;
 
 import ai.npc.AbstractNpcAI;
 import com.l2jserver.Config;
+import com.l2jserver.gameserver.instancemanager.GlobalVariablesManager;
 import com.l2jserver.gameserver.instancemanager.GrandBossManager;
-import com.l2jserver.gameserver.instancemanager.InstanceManager;
 import com.l2jserver.gameserver.instancemanager.ZoneManager;
-import com.l2jserver.gameserver.model.L2Party;
 import com.l2jserver.gameserver.model.Location;
-import com.l2jserver.gameserver.model.PcCondOverride;
 import com.l2jserver.gameserver.model.StatsSet;
 import com.l2jserver.gameserver.model.actor.L2Attackable;
 import com.l2jserver.gameserver.model.actor.L2Npc;
@@ -33,8 +31,6 @@ import com.l2jserver.gameserver.model.actor.instance.L2GrandBossInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.zone.type.L2NoRestartZone;
 import com.l2jserver.gameserver.network.NpcStringId;
-import com.l2jserver.gameserver.network.SystemMessageId;
-import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +51,11 @@ public final class Zaken extends AbstractNpcAI {
         List<L2Npc> candles = new ArrayList<>();
 
         public ZakenState(int zakenRoom) {
-            this.zakenRoom = zakenRoom;
+            if (zakenRoom > 0) {
+                this.zakenRoom = zakenRoom;
+            } else {
+                this.zakenRoom = getRandom(1, 15);
+            }
         }
 
         public void blueCandleFound() {
@@ -68,10 +68,6 @@ public final class Zaken extends AbstractNpcAI {
 
         public void allCandlesFound() {
             blueFound.set(4);
-        }
-
-        public void save() {
-            setRoom(zakenRoom);
         }
 
         public boolean allBlueFound() {
@@ -188,18 +184,19 @@ public final class Zaken extends AbstractNpcAI {
         final StatsSet bossInfo = GrandBossManager.getInstance().getStatsSet(ZAKEN_83);
         state = new ZakenState(getRoom());
 
+
         switch (getStatus()) {
             case ALIVE: {
                 freshSpawnZaken();
                 break;
             }
             case FIGHTING: {
+                _log.info("Zaken room number will be " + state.zakenRoom);
                 state.allCandlesFound();
-                setBlueCandlesBurning();
-                spawnZaken(state.zakenRoom);
+                state.zaken = spawnZaken(state.zakenRoom);
                 spawnZakenGuards(state.zakenRoom);
                 spawnCandles(state.zakenRoom);
-                restoreZakenState(bossInfo);
+                setBlueCandlesBurning();
                 showZaken();
                 break;
             }
@@ -219,19 +216,6 @@ public final class Zaken extends AbstractNpcAI {
     private void freshSpawnZaken() {
         state.resetCandles();
         firstSpawnAllNpcs(state);
-    }
-
-    private void restoreZakenState(StatsSet bossInfo) {
-        final int curr_hp = bossInfo.getInt("currentHP");
-        final int curr_mp = bossInfo.getInt("currentMP");
-        final int loc_x = bossInfo.getInt("loc_x");
-        final int loc_y = bossInfo.getInt("loc_y");
-        final int loc_z = bossInfo.getInt("loc_z");
-        final int heading = bossInfo.getInt("heading");
-
-        state.zaken.setCurrentHp(curr_hp);
-        state.zaken.setCurrentMp(curr_mp);
-        state.zaken.teleToLocation(loc_x, loc_y, loc_z, heading);
     }
 
     private void teleportPlayerInside(L2PcInstance player) {
@@ -292,7 +276,7 @@ public final class Zaken extends AbstractNpcAI {
     }
 
     private void setBlueCandlesBurning() {
-        state.candles.stream().filter(candle -> candle.getVariables().getBoolean("isBlue")).forEach(candle -> candle.setRHandId(BLUE));
+        state.candles.stream().filter(candle -> candle.getVariables().getBoolean("isBlue", false)).forEach(candle -> candle.setRHandId(BLUE));
     }
 
     private void burnBlueTwice(L2Npc npc) {
@@ -345,6 +329,9 @@ public final class Zaken extends AbstractNpcAI {
         setRespawn(respawnTime);
         setStatus(DEAD);
 
+        startQuestTimer("RESPAWN", respawnTime, null, null);
+
+        setRoom(-1);
         despawnNpcs();
         state.resetCandles();
 
@@ -386,11 +373,13 @@ public final class Zaken extends AbstractNpcAI {
     }
 
     private L2GrandBossInstance spawnZaken(int roomId) {
-        return spawnNpc(ZAKEN_83, roomId);
+        L2GrandBossInstance boss = (L2GrandBossInstance) spawnNpc(ZAKEN_83, roomId);
+        GrandBossManager.getInstance().addBoss(boss);
+        return boss;
     }
 
-    private L2GrandBossInstance spawnNpc(int npcId, int roomId) {
-        return (L2GrandBossInstance) addSpawn(npcId, SHIP.findRoom(roomId).getRoomCenter());
+    private L2Attackable spawnNpc(int npcId, int roomId) {
+        return (L2Attackable) addSpawn(npcId, SHIP.findRoom(roomId).getRoomCenter());
     }
 
     private L2Attackable spawnNpcAggroedOnPlayer(int npcId, int roomId, L2PcInstance player) {
@@ -403,7 +392,7 @@ public final class Zaken extends AbstractNpcAI {
         SHIP.findRoom(roomNumber)
             .getAdjacentCandles()
             .getCandleIds()
-            .forEach(candleId -> candles.get(candleId).getVariables().set("isBlue", true));
+            .forEach(candleId -> candles.get(candleId - 1).getVariables().set("isBlue", true));
     }
 
     private void spawnCandles(int zakenRoomNumber) {
@@ -423,7 +412,8 @@ public final class Zaken extends AbstractNpcAI {
 
     private void firstSpawnAllNpcs(ZakenState state) {
         state.zakenRoom = getRandom(1, 15);
-        state.save();
+        _log.info("Zaken room number will be " + state.zakenRoom);
+        setRoom(state.zakenRoom);
 
         spawnCandles(state.zakenRoom);
 
@@ -433,8 +423,9 @@ public final class Zaken extends AbstractNpcAI {
     }
 
     private void setRespawn(long respawnTime) {
-        GrandBossManager.getInstance().getStatsSet(ZAKEN_83)
-            .set("respawn_time", (System.currentTimeMillis() + respawnTime));
+        StatsSet statsSet = GrandBossManager.getInstance().getStatsSet(ZAKEN_83);
+        statsSet.set("respawn_time", (System.currentTimeMillis() + respawnTime));
+        GrandBossManager.getInstance().setStatsSet(ZAKEN_83, statsSet);
     }
 
     private int getRespawn() {
@@ -450,11 +441,15 @@ public final class Zaken extends AbstractNpcAI {
     }
 
     private void setRoom(int roomNumber) {
-        GrandBossManager.getInstance().getStatsSet(ZAKEN_83).set("room_number", roomNumber);
+        GlobalVariablesManager.getInstance().set("ZakenRoom", roomNumber);
     }
 
     private int getRoom() {
-        return GrandBossManager.getInstance().getStatsSet(ZAKEN_83).getInt("room_number");
+        return GlobalVariablesManager.getInstance().getInt("ZakenRoom", 0);
+    }
+
+    public static void main(String[] args) {
+        new Zaken();
     }
 
 }

@@ -3855,7 +3855,7 @@
 					<item id="15701" min="1" max="1" chance="5.88"/> <!-- Sealed Moirai Leather Legging -->
 					<item id="15702" min="1" max="1" chance="5.88"/> <!-- Sealed Moirai Stockings -->
 				</group>
-				<group chance="50">
+				<group chance="70">
 					<item id="14162" min="1" max="1" chance="33.4"/> <!-- Sealed Vesper Ring -->
 					<item id="14160" min="1" max="1" chance="33.3"/> <!-- Sealed Vesper Earring -->
 					<item id="14161" min="1" max="1" chance="33.3"/> <!-- Sealed Vesper Necklace -->
@@ -3867,14 +3867,17 @@
 					<item id="3936" min="1" max="10" chance="100"/> <!-- Blessed Scroll of Resurrection -->
 				</group>
 				<group chance="100">
-					<item id="57" min="9000000" max="1100000" chance="100"/> <!-- Adena -->
+					<item id="57" min="9000000" max="11100000" chance="100"/> <!-- Adena -->
 				</group>
 				<group chance="100">
 					<item id="16162" min="2" max="4" chance="60"/> <!-- High-Grade Life Stone - Level 85 -->
 					<item id="16166" min="2" max="4" chance="40"/> <!-- High-Grade Life Stone - Level 86 -->
 				</group>
-				<group chance="0.09">
+				<group chance="0.2">
 					<item id="21712" min="1" max="1" chance="100"/> <!-- Blessed Earring of Zaken -->
+				</group>
+				<group chance="5">
+					<item id="6659" min="1" max="1" chance="100"/> <!-- Earring of Zaken -->
 				</group>
 				<group chance="0.1">
 					<item id="21935" min="1" max="1" chance="100"/> <!-- Butcher Blades -->
