@@ -1086,6 +1086,11 @@ public final class Config
 	public static int ZAKEN_SPAWN_INTERVAL;
 	public static int ZAKEN_SPAWN_RANDOM;
 
+	// FREYA
+	public static int FREYA_CONTEST_TIME;
+	public static int FREYA_SPAWN_INTERVAL;
+	public static int FREYA_SPAWN_RANDOM;
+
 	// Valakas
 	public static int VALAKAS_WAIT_TIME;
 	public static int VALAKAS_SPAWN_INTERVAL;
@@ -2713,6 +2718,10 @@ public final class Config
 
 			ZAKEN_SPAWN_INTERVAL = GrandBossSettings.getInt("IntervalOfZakenSpawn", 40);
 			ZAKEN_SPAWN_RANDOM = GrandBossSettings.getInt("RandomOfZakenSpawn", 8);
+
+			FREYA_CONTEST_TIME = GrandBossSettings.getInt("FreyaWaitTime", 5);
+			FREYA_SPAWN_INTERVAL = GrandBossSettings.getInt("IntervalOfFreyaSpawn", 52);
+			FREYA_SPAWN_RANDOM = GrandBossSettings.getInt("RandomOfFreyaSpawn", 8);
 
 			VALAKAS_WAIT_TIME = GrandBossSettings.getInt("ValakasWaitTime", 30);
 			VALAKAS_SPAWN_INTERVAL = GrandBossSettings.getInt("IntervalOfValakasSpawn", 264);

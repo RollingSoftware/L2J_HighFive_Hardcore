@@ -25,7 +25,7 @@ import instances.ElcadiasTent.ElcadiasTent;
 import instances.FinalEmperialTomb.FinalEmperialTomb;
 import instances.HideoutOfTheDawn.HideoutOfTheDawn;
 import instances.IceQueensCastle.IceQueensCastle;
-import instances.IceQueensCastleNormalBattle.IceQueensCastleNormalBattle;
+import ai.individual.Freya.Freya;
 import instances.JiniaGuildHideout1.JiniaGuildHideout1;
 import instances.JiniaGuildHideout2.JiniaGuildHideout2;
 import instances.JiniaGuildHideout3.JiniaGuildHideout3;
@@ -57,7 +57,7 @@ public final class InstanceLoader
 		FinalEmperialTomb.class,
 		HideoutOfTheDawn.class,
 		IceQueensCastle.class,
-		IceQueensCastleNormalBattle.class,
+		Freya.class,
 		JiniaGuildHideout1.class,
 		JiniaGuildHideout2.class,
 		JiniaGuildHideout3.class,

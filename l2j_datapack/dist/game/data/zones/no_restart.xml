@@ -322,11 +322,11 @@
 		<node X="-253907" Y="221193" />
 	</zone>
 
-	<zone name="allow_s_item_freezing_core" id="90573" type="NoRestartZone" shape="NPoly" minZ="-11249" maxZ="-10749">
+	<zone name="freya_no_restart_zone" id="90573" type="NoRestartZone" shape="NPoly" minZ="-11249" maxZ="-10749">
 		<stat name="restartTime" val="0" />
 		<node X="112898" Y="-117865" />
 		<node X="116554" Y="-117891" />
-		<node X="116597" Y="-112972" />
-		<node X="112920" Y="-112997" />
+		<node X="116597" Y="-112000" />
+		<node X="112920" Y="-112000" />
 	</zone>
 </list>
