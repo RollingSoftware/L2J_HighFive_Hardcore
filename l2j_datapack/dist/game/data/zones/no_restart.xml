@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/zones.xsd">
 	<!-- No Restart Zones -->
-	<zone name="zaken_no_restart" id="70049" type="NoRestartZone" shape="NPoly" minZ="-4815" maxZ="-315"> <!-- 21_24 -->
+	<zone name="zaken_no_restart" id="70049" type="NoRestartZone" shape="NPoly" minZ="-3500" maxZ="-2900">
 		<stat name="restartTime" val="1800" />
 		<stat name="restartAllowedTime" val="600" />
-		<node X="50797" Y="213515" />
-		<node X="57617" Y="213510" />
-		<node X="57669" Y="221683" />
-		<node X="50773" Y="221632" />
+		<node X="52400" Y="217000" />
+		<node X="57315" Y="217000" />
+		<node X="57315" Y="221300" />
+		<node X="52400" Y="221300" />
 	</zone>
 	<zone name="antaras_no_restart" id="70050" type="NoRestartZone" shape="NPoly" minZ="-8380" maxZ="-4880"> <!-- 25_21 -->
 		<stat name="restartTime" val="1800" />
@@ -320,5 +320,13 @@
 		<node X="-237670" Y="204949" />
 		<node X="-237640" Y="221171" />
 		<node X="-253907" Y="221193" />
+	</zone>
+
+	<zone name="allow_s_item_freezing_core" id="90573" type="NoRestartZone" shape="NPoly" minZ="-11249" maxZ="-10749">
+		<stat name="restartTime" val="0" />
+		<node X="112898" Y="-117865" />
+		<node X="116554" Y="-117891" />
+		<node X="116597" Y="-112972" />
+		<node X="112920" Y="-112997" />
 	</zone>
 </list>

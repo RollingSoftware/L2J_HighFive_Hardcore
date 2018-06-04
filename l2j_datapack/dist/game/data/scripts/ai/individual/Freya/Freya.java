@@ -16,15 +16,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package instances.IceQueensCastleNormalBattle;
+package ai.individual.Freya;
 
+import ai.npc.AbstractNpcAI;
 import instances.AbstractInstance;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import java.util.stream.Collectors;
+import javafx.util.Pair;
 import quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
 
 import com.l2jserver.gameserver.ai.CtrlIntention;
@@ -62,9 +67,9 @@ import com.l2jserver.gameserver.util.Util;
  * Ice Queen's Castle (Normal Battle) instance zone.
  * @author St3eT
  */
-public final class IceQueensCastleNormalBattle extends AbstractInstance
+public final class IceQueensCastleNormalBattle extends AbstractNpcAI
 {
-	protected class IQCNBWorld extends InstanceWorld
+	protected class IQCNBWorld
 	{
 		protected List<L2PcInstance> playersInside = new ArrayList<>();
 		protected List<L2Npc> knightStatues = new ArrayList<>();
@@ -1298,4 +1303,9 @@ public final class IceQueensCastleNormalBattle extends AbstractInstance
 			}
 		}
 	}
+
+	public static void main(String[] args) {
+		new IceQueensCastleNormalBattle();
+	}
+
 }
