@@ -2,6 +2,7 @@
 *.class
 
 .gradle/
+.gradle
 
 # Log file
 *.log

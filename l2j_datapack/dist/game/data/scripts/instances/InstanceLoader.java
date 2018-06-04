@@ -57,7 +57,6 @@ public final class InstanceLoader
 		FinalEmperialTomb.class,
 		HideoutOfTheDawn.class,
 		IceQueensCastle.class,
-		Freya.class,
 		JiniaGuildHideout1.class,
 		JiniaGuildHideout2.class,
 		JiniaGuildHideout3.class,

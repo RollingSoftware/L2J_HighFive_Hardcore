@@ -215,13 +215,14 @@ public final class Freya extends AbstractNpcAI {
     private static final int DEAD = 5;
 
     private static final long CHECK_ACTIVITY_DELAY = 60000;
-    private static final long CHECK_ACTIVITY_THRESHOLD = 60000 * 5;
+    //TODO RESTORE private static final long CHECK_ACTIVITY_THRESHOLD = 60000 * 5;
+    private static final long CHECK_ACTIVITY_THRESHOLD = 60000 * 1;
 
     private final FreyaState state;
 
     private final L2GrandBossInstance fakeFreyaInstance = new L2GrandBossInstance(NpcData.getInstance().getTemplate(FREYA_STAND));
 
-    public Freya() {
+    private Freya() {
         super(Freya.class.getSimpleName(), "ai/individual");
         addStartNpc(SIRRA, SUPP_KEGOR, SUPP_JINIA);
         addFirstTalkId(SUPP_KEGOR, SUPP_JINIA);
@@ -230,6 +231,9 @@ public final class Freya extends AbstractNpcAI {
         addKillId(GLAKIAS, FREYA_STAND, KNIGHT, GLACIER, BREATH);
         addSpawnId(GLAKIAS, FREYA_STAND, KNIGHT, GLACIER, BREATH);
         addSpellFinishedId(GLACIER, BREATH);
+
+        //TODO REMOVE
+        Config.FREYA_CONTEST_TIME = 1;
 
         state = new FreyaState();
         GrandBossManager.getInstance().addBoss(fakeFreyaInstance);
@@ -255,8 +259,13 @@ public final class Freya extends AbstractNpcAI {
         state.supp_Jinia.decayMe();
         state.supp_Kegor.decayMe();
         state.isSupportActive = false;
-        state.canSpawnMobs = false;
+        state.canSpawnMobs = true;
         state.setStatus(ALIVE);
+        teleportPlayersOut();
+    }
+
+    private void teleportPlayersOut() {
+
     }
 
     @Override
@@ -288,8 +297,9 @@ public final class Freya extends AbstractNpcAI {
                             }
                         }
                     }
+
+                    manageTimer(Config.FREYA_CONTEST_TIME * 60);
                     startQuestTimer("STAGE_1_MOVIE", Config.FREYA_CONTEST_TIME * 60000, state.controller, null);
-                    startQuestTimer("CHECK_ACTIVITY", CHECK_ACTIVITY_DELAY, state.controller, null);
                 }
                 break;
             }
@@ -327,6 +337,7 @@ public final class Freya extends AbstractNpcAI {
                 manageScreenMsg(NpcStringId.BEGIN_STAGE_1);
                 startQuestTimer("CAST_BLIZZARD", 50000, state.controller, null);
                 startQuestTimer("STAGE_1_SPAWN", 2000, state.freya, null);
+                startQuestTimer("CHECK_ACTIVITY", CHECK_ACTIVITY_DELAY, state.controller, null);
                 break;
             }
             case "STAGE_1_SPAWN": {
@@ -686,6 +697,7 @@ public final class Freya extends AbstractNpcAI {
             }
             case "CHECK_ACTIVITY": {
                 if (System.currentTimeMillis() - state.getLastAttackTime() > CHECK_ACTIVITY_THRESHOLD) {
+                    cancelQuestTimer("CHECK_ACTIVITY", state.controller, null);
                     resetState();
                 } else {
                     startQuestTimer("CHECK_ACTIVITY", CHECK_ACTIVITY_DELAY, state.controller, null);
@@ -987,7 +999,8 @@ public final class Freya extends AbstractNpcAI {
     }
 
     private long getRespawnDelay() {
-        return (Config.FREYA_SPAWN_INTERVAL + getRandom(-Config.FREYA_SPAWN_RANDOM, Config.FREYA_SPAWN_RANDOM)) * 3600000;
+        return 60000;
+        //TODO restore (Config.FREYA_SPAWN_INTERVAL + getRandom(-Config.FREYA_SPAWN_RANDOM, Config.FREYA_SPAWN_RANDOM)) * 3600000;
     }
 
     @Override
@@ -1067,11 +1080,7 @@ public final class Freya extends AbstractNpcAI {
             return true;
         }
 
-        if (state.isStatus(ALIVE)) {
-
-        }
-
-        return true;
+        return state.isStatus(ALIVE);
     }
 
     private void manageRandomAttack(L2Attackable mob) {
@@ -1105,7 +1114,7 @@ public final class Freya extends AbstractNpcAI {
     private void manageTimer(int time) {
         for (L2PcInstance player : zone.getPlayersInside()) {
             if (player != null) {
-                player.sendPacket(new ExSendUIEvent(player, false, false, time, 0, "Time remaining until next battle"));
+                player.sendPacket(new ExSendUIEvent(player, false, false, time, 0, "Time remaining until battle"));
             }
         }
     }
