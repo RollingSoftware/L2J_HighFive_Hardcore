@@ -72,6 +72,7 @@ public final class Freya extends AbstractNpcAI {
         protected boolean isSupportActive = false;
         protected boolean canSpawnMobs = true;
         private L2NpcInstance sirra;
+        private long lastAttackTime = 0;
 
         int getInstanceId() {
             return 0;
@@ -111,6 +112,13 @@ public final class Freya extends AbstractNpcAI {
             return sirra;
         }
 
+        public void updateLastAttackTime() {
+            lastAttackTime = System.currentTimeMillis();
+        }
+
+        public long getLastAttackTime() {
+            return lastAttackTime;
+        }
     }
 
     private static final L2NoRestartZone zone = ZoneManager.getInstance().getZoneById(90573, L2NoRestartZone.class);
@@ -206,6 +214,9 @@ public final class Freya extends AbstractNpcAI {
     private static final int FREYA_FIGHT = 4;
     private static final int DEAD = 5;
 
+    private static final long CHECK_ACTIVITY_DELAY = 60000;
+    private static final long CHECK_ACTIVITY_THRESHOLD = 60000 * 5;
+
     private final FreyaState state;
 
     private final L2GrandBossInstance fakeFreyaInstance = new L2GrandBossInstance(NpcData.getInstance().getTemplate(FREYA_STAND));
@@ -234,6 +245,18 @@ public final class Freya extends AbstractNpcAI {
                 state.spawnSirra();
             }
         }
+    }
+
+    private void resetState() {
+        closeDoor(DOOR_ID, state.getInstanceId());
+        state.sirra.setScriptValue(0);
+        manageDespawnMinions();
+        state.freya.decayMe();
+        state.supp_Jinia.decayMe();
+        state.supp_Kegor.decayMe();
+        state.isSupportActive = false;
+        state.canSpawnMobs = false;
+        state.setStatus(ALIVE);
     }
 
     @Override
@@ -266,6 +289,7 @@ public final class Freya extends AbstractNpcAI {
                         }
                     }
                     startQuestTimer("STAGE_1_MOVIE", Config.FREYA_CONTEST_TIME * 60000, state.controller, null);
+                    startQuestTimer("CHECK_ACTIVITY", CHECK_ACTIVITY_DELAY, state.controller, null);
                 }
                 break;
             }
@@ -349,6 +373,7 @@ public final class Freya extends AbstractNpcAI {
                 }
                 final L2RaidBossInstance glakias = (L2RaidBossInstance) addSpawn(GLAKIAS, GLAKIAS_SPAWN, false,
                     0, true, state.getInstanceId());
+                state.spawnedMobs.add(glakias);
                 startQuestTimer("LEADER_DELAY", 5000, glakias, null);
                 break;
             }
@@ -659,6 +684,13 @@ public final class Freya extends AbstractNpcAI {
                 state.spawnSirra();
                 break;
             }
+            case "CHECK_ACTIVITY": {
+                if (System.currentTimeMillis() - state.getLastAttackTime() > CHECK_ACTIVITY_THRESHOLD) {
+                    resetState();
+                } else {
+                    startQuestTimer("CHECK_ACTIVITY", CHECK_ACTIVITY_DELAY, state.controller, null);
+                }
+            }
         }
 
         return super.onAdvEvent(event, npc, player);
@@ -689,6 +721,7 @@ public final class Freya extends AbstractNpcAI {
 
     @Override
     public String onAttack(L2Npc npc, L2PcInstance attacker, int damage, boolean isSummon, Skill skill) {
+        state.updateLastAttackTime();
         switch (npc.getId()) {
             case FREYA_THRONE: {
                 if ((state.controller.getVariables().getInt("FREYA_MOVE") == 0) && state.isStatus(NPC_BATTLE)) {
@@ -975,6 +1008,7 @@ public final class Freya extends AbstractNpcAI {
                 cancelQuestTimer("ATTACK_FREYA", state.supp_Kegor, null);
                 cancelQuestTimer("GIVE_SUPPORT", state.controller, null);
                 cancelQuestTimer("CAST_BLIZZARD", state.controller, null);
+                cancelQuestTimer("CHECK_ACTIVITY", state.controller, null);
                 startQuestTimer("FINISH_STAGE", 16000, state.controller, null);
                 startQuestTimer("FINISH_WORLD", 300000, state.controller, null);
                 break;
