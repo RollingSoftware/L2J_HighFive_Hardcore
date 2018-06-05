@@ -18,6 +18,7 @@
  */
 package ai.npc.Jinia;
 
+import com.l2jserver.gameserver.instancemanager.GrandBossManager;
 import quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
 import ai.npc.AbstractNpcAI;
 
@@ -29,15 +30,17 @@ import com.l2jserver.gameserver.model.quest.QuestState;
  * Jinia AI.
  * @author Adry_85
  */
-public final class Jinia extends AbstractNpcAI
-{
-	// NPC
+public final class Jinia extends AbstractNpcAI {
 	private static final int JINIA = 32781;
-	// Items
+
 	private static final int FROZEN_CORE = 15469;
 	private static final int BLACK_FROZEN_CORE = 15470;
-	// Misc
+
 	private static final int MIN_LEVEL = 82;
+
+	private static final int FREYA_STAND = 29179;
+
+	private static final int ALIVE = 0;
 	
 	private Jinia()
 	{
@@ -51,12 +54,19 @@ public final class Jinia extends AbstractNpcAI
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
 		String htmltext = event;
-		switch (event)
-		{
-			case "32781-10.html":
-			case "32781-11.html":
-			{
-				htmltext = event;
+		switch (event) {
+			case "challenge": {
+				if (GrandBossManager.getInstance().getBossStatus(FREYA_STAND) != ALIVE) {
+					return "32781-07.html";
+				}
+
+				final QuestState st = player.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
+				if (st.isCompleted()) {
+					return "32781-05.html";
+				}
+				else if (st.isCond(5) || st.isCond(6)) {
+					return "32781-10.html";
+				}
 				break;
 			}
 			case "check":

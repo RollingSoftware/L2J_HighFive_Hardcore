@@ -24,6 +24,7 @@ import com.l2jserver.gameserver.instancemanager.GlobalVariablesManager;
 import com.l2jserver.gameserver.instancemanager.GrandBossManager;
 import com.l2jserver.gameserver.instancemanager.ZoneManager;
 import com.l2jserver.gameserver.model.Location;
+import com.l2jserver.gameserver.model.PcCondOverride;
 import com.l2jserver.gameserver.model.StatsSet;
 import com.l2jserver.gameserver.model.actor.L2Attackable;
 import com.l2jserver.gameserver.model.actor.L2Npc;
@@ -181,10 +182,7 @@ public final class Zaken extends AbstractNpcAI {
         addKillId(ZAKEN_83);
         addFirstTalkId(CANDLE);
 
-        final StatsSet bossInfo = GrandBossManager.getInstance().getStatsSet(ZAKEN_83);
         state = new ZakenState(getRoom());
-
-
         switch (getStatus()) {
             case ALIVE: {
                 freshSpawnZaken();
@@ -226,6 +224,11 @@ public final class Zaken extends AbstractNpcAI {
     public String onAdvEvent(String event, L2Npc npc, L2PcInstance player) {
         switch (event) {
             case "enter": {
+                if (player.isGM() && player.canOverrideCond(PcCondOverride.INSTANCE_CONDITIONS)) {
+                    teleportPlayerInside(player);
+                    break;
+                }
+
                 if (zone.getPlayersInside().size() >= MAX_PEOPLE) {
                     return "32713-1.html";
                 } else {

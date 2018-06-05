@@ -25,7 +25,6 @@ import instances.ElcadiasTent.ElcadiasTent;
 import instances.FinalEmperialTomb.FinalEmperialTomb;
 import instances.HideoutOfTheDawn.HideoutOfTheDawn;
 import instances.IceQueensCastle.IceQueensCastle;
-import instances.IceQueensCastleNormalBattle.IceQueensCastleNormalBattle;
 import instances.JiniaGuildHideout1.JiniaGuildHideout1;
 import instances.JiniaGuildHideout2.JiniaGuildHideout2;
 import instances.JiniaGuildHideout3.JiniaGuildHideout3;
@@ -36,7 +35,6 @@ import instances.MonasteryOfSilence1.MonasteryOfSilence1;
 import instances.NornilsGarden.NornilsGarden;
 import instances.NornilsGardenQuest.NornilsGardenQuest;
 import instances.SanctumOftheLordsOfDawn.SanctumOftheLordsOfDawn;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -57,7 +55,6 @@ public final class InstanceLoader
 		FinalEmperialTomb.class,
 		HideoutOfTheDawn.class,
 		IceQueensCastle.class,
-		IceQueensCastleNormalBattle.class,
 		JiniaGuildHideout1.class,
 		JiniaGuildHideout2.class,
 		JiniaGuildHideout3.class,
